@@ -10,6 +10,6 @@ pass  : Cloudngadmin
 github : github.com
 user   : ridwan@oke.net.id
 
-collaborators Project GIT BRAKET ? https://github.com/OKEBILING/biling
-request now for collaborators
+collaborators Project GIT BRAKET  ? https://github.com/OKEBILING/biling
+PRIVATE REPO request now for collaborators
 Live Test repo https://biling.oke.net.id/
