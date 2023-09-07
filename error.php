@@ -10,6 +10,7 @@
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
+        <base href="https://biling.oke.net.id/">
         <!-- Layout Js -->
         <script src="assets/js/layout.js"></script>
         <!-- Bootstrap Css -->
