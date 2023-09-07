@@ -1,4 +1,4 @@
-proxmox:
+proxmox:https://180.214.255.86:8006/
 user  :OKEBiling
 pass  :Proxmoxngadmin
 panel : https://180.214.255.87:7800/admin
