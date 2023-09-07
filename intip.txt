@@ -1,3 +1,6 @@
+proxmox:
+user  :OKEBiling
+pass  :Proxmoxngadmin
 panel : https://180.214.255.87:7800/admin
 user  : OKEBiling
 pass  : Panelngadmin
