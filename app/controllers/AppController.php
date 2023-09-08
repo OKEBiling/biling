@@ -1,10 +1,12 @@
 <?php
 class App {
     public $urlSegments;
+    public $baseUrl;
 
     public function __construct() {
 
         $this->urlSegments = URLController::getUrlSegments();
+        $this->baseUrl = URLController::getBaseUrl();
     }
     public function Start() {
         if ($this->matchRoute($this->urlSegments)) {
@@ -19,6 +21,7 @@ class App {
                 'home' => 'homeController',
                 'dashboard' => 'dashboardController',
                 'login' => 'loginController',
+                'oke' => 'loginController',
             ];
             // jika controller berada di segment 1 maka lanjutkan ke level lebih tinggi yatu panggil filenya dan classnya
             // Di dalam matchRoute()
@@ -78,9 +81,9 @@ class App {
     }
 
     public function renderView($viewName, $data = []) {
-        $viewPath = "views/$viewName.php";
+        $viewPath = LAYOUT."$viewName.php";
         $viewContent = $this->renderFile($viewPath, $data);
-        $layoutPath = 'views/layout.php';
+        $layoutPath = LAYOUT.'index.php';
         $layoutData = ['content' => $viewContent];
         echo $this->renderFile($layoutPath, $layoutData);
     }
