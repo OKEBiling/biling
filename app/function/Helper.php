@@ -24,4 +24,11 @@ class Helper {
             return 'tidak dapat melakukan ping';
         }
         }
+        
+        public static function  redirectLogin($argv){
+            
+            die(header('Location: login.php'));
+            
+            
+        }
 }

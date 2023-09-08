@@ -41,7 +41,8 @@ class dashboardController {
             echo 'sudah login';
             
         } else {
-           include BASIC_PATH.'login.php';
+            
+           return  Helper::redirectLogin(true);
         }
 
 
