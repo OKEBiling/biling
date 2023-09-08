@@ -1,2 +1,4 @@
-clone repo braket main
-Buat Bracket baru untuk pull git supaya saya merge
+WELLCOME
+
+CLONE THIS REPO 
+MAKE NEW branches FOR PULL
