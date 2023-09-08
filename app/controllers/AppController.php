@@ -39,6 +39,7 @@ class App {
         }
     }
     private function processUnauthorized() {
+
         include('error.php');
     }
     private function loadController($controllerName) {
@@ -67,6 +68,33 @@ class App {
             // Tangani kesalahan jika file controller tidak ditemukan
             $this->processUnauthorized();
         }
+    }
+    
+  
+    public function renderScript($scriptName, $data = []) {
+        $scriptPath = "js/$scriptName.js";
+        $renderedContent = $this->renderFile($scriptPath, $data);
+        echo $renderedContent;
+    }
+
+    public function renderView($viewName, $data = []) {
+        $viewPath = "views/$viewName.php";
+        $viewContent = $this->renderFile($viewPath, $data);
+        $layoutPath = 'views/layout.php';
+        $layoutData = ['content' => $viewContent];
+        echo $this->renderFile($layoutPath, $layoutData);
+    }
+
+    private function renderFile($filePath, $data = []) {
+        if (!file_exists($filePath)) {
+            throw new Exception("File not found: $filePath");
+        }
+
+        extract($data);
+
+        ob_start();
+        include $filePath;
+        return ob_get_clean();
     }
 
 
