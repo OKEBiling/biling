@@ -14,10 +14,7 @@ class dashboardController {
             $actionSegments = array_combine(range(1, count($actionSegments)), $actionSegments);
         }
         $this->dashboard(Helper::reindexJsonArray($actionSegments));
-        
-        
-    
-        
+
     }
 
 

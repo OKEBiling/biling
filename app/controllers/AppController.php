@@ -18,6 +18,7 @@ class App {
             $Controllers = [
                 'home' => 'homeController',
                 'dashboard' => 'dashboardController',
+                'login' => 'loginController',
             ];
             // jika controller berada di segment 1 maka lanjutkan ke level lebih tinggi yatu panggil filenya dan classnya
             // Di dalam matchRoute()

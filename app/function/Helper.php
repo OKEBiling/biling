@@ -27,7 +27,7 @@ class Helper {
         
         public static function  redirectLogin($argv){
             
-            die(header('Location: login.php'));
+            die(header('Location: login'));
             
             
         }

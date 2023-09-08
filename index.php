@@ -3,8 +3,8 @@
 require_once 'config/config.php';
 require_once FUNCTION_DIR.'Helper.php';
 require_once CONTROLLER_DIR.'URLController.php';
-require_once CONTROLLER_DIR.'Session.php';
-require_once CONTROLLER_DIR.'App.php';
+require_once CONTROLLER_DIR.'SessionController.php';
+require_once CONTROLLER_DIR.'AppController.php';
 
 
 $app = new App();
