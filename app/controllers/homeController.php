@@ -3,7 +3,7 @@
 /**
  * 
  */
-class homeController{
+class homeController extends App{
     private $isLogin;
     private $doLogin;
     /**
