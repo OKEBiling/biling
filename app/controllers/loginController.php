@@ -6,15 +6,11 @@
  */
 class loginController extends App{
     public $login;
-    /**
-     * 
-     */
-     
-     
+    
     public function __construct(){
      
         parent::__construct();
-        
+        $this->titile='Login - OKEBiling';
         $this->renderView('login', $data = []);
        
     }

@@ -25,4 +25,11 @@ class URLController {
             return null;
         }
     }
+    
+  public  static function getBaseUrl() {
+        $protocol = !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http';
+        $host = $_SERVER['HTTP_HOST'];
+        $baseUrl = "$protocol://$host";
+        return $baseUrl;
+    }
 }

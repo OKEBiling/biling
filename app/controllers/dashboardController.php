@@ -13,7 +13,6 @@ class dashboardController {
         if (count($actionSegments) > 0) {
             $actionSegments = array_combine(range(1, count($actionSegments)), $actionSegments);
         }
-        //urutkan index segment
         $this->dashboard(Helper::reindexJsonArray($actionSegments));
 
     }

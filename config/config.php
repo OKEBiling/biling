@@ -1,4 +1,7 @@
 <?php
+
+
+
 @date_default_timezone_set('Asia/Jakarta');
 @set_time_limit(1200);
 @ini_set("max_execution_time",1200);
@@ -12,6 +15,6 @@ define('PLUGIN_DIR',    BASIC_PATH .'plugins/');
 define('ASSETS_DIR',    BASIC_PATH .'assets/');
 define('CONTROLLER_DIR',LIB_DIR .'controllers/');
 define('MODEL_DIR',     LIB_DIR .'model/');
-define('TEMPLATE',      LIB_DIR .'views/');
+define('LAYOUT',      BASIC_PATH .'views/');
 define('FUNCTION_DIR',	LIB_DIR .'function/');
 define('DEFAULT_PERRMISSIONS',0755);
