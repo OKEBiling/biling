@@ -1,5 +1,6 @@
 <?php
-include('header.php')
+include('header.php');
+
 ?>
 
 <body data-sidebar="colored">

@@ -7,6 +7,7 @@
 @ini_set("max_execution_time",1200);
 @ini_set('memory_limit','500M');//
 @ini_set('session.cache_expire',1800);
+
 //Load Define Folder
 define('BASIC_PATH',str_replace('\\','/',dirname(dirname(__FILE__))).'/');
 define('LIB_DIR',       BASIC_PATH .'app/'); 

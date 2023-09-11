@@ -1,38 +1,34 @@
 <?php
 
-
 /**
- * 
+ * Controller for handling user login.
  */
-class loginController extends App{
-    public $login;
-    
-    public function __construct(){
+class LoginController extends App {
+    public function __construct() {
         parent::__construct();
-        if ($this->requestMethod==='GET') {
-          $this->login();
-        } else if ($this->requestMethod==='POST') {
-         $this->loginform();
+
+        if ($this->requestMethod === 'GET') {
+            $this->showLoginForm();
+        } else if ($this->requestMethod === 'POST') {
+            $this->processLogin();
         }
     }
-    
-    
-    public function doLogin(){
-        
-        
+
+    /**
+     * Display the login form.
+     */
+    public function showLoginForm() {
+        // Set the page title
+        $this->title = 'Login - OKEBiling';
+        // Render the login view with empty data
+        $this->renderView('login', []);
     }
-    public function login(){
-        
-        $this->titile='Login - OKEBiling';
-        $this->renderView('login', $data = []);
-        
+
+    /**
+     * Process the login form submission.
+     */
+    public function processLogin() {
+        // TODO: Implement login logic here
+        // You should handle user authentication, validation, and redirection on successful login.
     }
-    
-    public function loginform(){
-        echo json_encode($_POST);
-        
-    }
-    
-    
-    
 }
