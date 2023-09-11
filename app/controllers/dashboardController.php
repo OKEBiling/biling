@@ -4,16 +4,18 @@
 *
 */
 
-class dashboardController {
+class dashboardController extends App{
     private $isLogin;
     private $doLogin;
 
-    public function __construct($actionSegments) {
-        array_shift($actionSegments);
-        if (count($actionSegments) > 0) {
-            $actionSegments = array_combine(range(1, count($actionSegments)), $actionSegments);
-        }
-        $this->dashboard(Helper::reindexJsonArray($actionSegments));
+    public function __construct() {
+        
+        
+        
+        parent::__construct();
+        $this->titile='Dashboard - Okebiling';
+
+        $this->dashboard(Helper::reindexJsonArray($this->urlSegments));
 
     }
 
@@ -22,13 +24,11 @@ class dashboardController {
     public function dashboard($segment) {
         
         if(empty($segment)){
-            $this->isLogin();
+           return  Helper::redirectLogin(true);
             
         }else{
             
-            echo json_encode($segment);
-            
-            echo 'segment tidak di ketahui';
+            return  Helper::redirectLogin(true);
         }
     }
 

@@ -2,9 +2,10 @@
 class App {
     public $urlSegments;
     public $baseUrl;
+    public $requestMethod;
 
     public function __construct() {
-
+        $this->requestMethod = URLController::getMetodeSegment();
         $this->urlSegments = URLController::getUrlSegments();
         $this->baseUrl = URLController::getBaseUrl();
     }
@@ -38,7 +39,7 @@ class App {
                 $this->processUnauthorized();
             }
         } else {
-            $this->processUnauthorized();
+               die(header('Location: '.URLController::getBaseUrl().'/login'));
         }
     }
     private function processUnauthorized() {
@@ -62,7 +63,7 @@ class App {
             // Periksa apakah class controller ada
             if (class_exists($controllerClassName)) {
                 // Buat instance dari class controller dan kembalikan
-                return new $controllerClassName($this->urlSegments);
+                return new $controllerClassName();
             } else {
                 // Tangani kesalahan jika class controller tidak ditemukan
                 $this->processUnauthorized();
@@ -75,7 +76,7 @@ class App {
     
   
     public function renderScript($scriptName, $data = []) {
-        $scriptPath = "js/$scriptName.js";
+        $scriptPath = ASSETS_DIR."js/$scriptName.js";
         $renderedContent = $this->renderFile($scriptPath, $data);
         echo $renderedContent;
     }
@@ -92,9 +93,7 @@ class App {
         if (!file_exists($filePath)) {
             throw new Exception("File not found: $filePath");
         }
-
         extract($data);
-
         ob_start();
         include $filePath;
         return ob_get_clean();
