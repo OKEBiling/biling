@@ -8,6 +8,7 @@
         <meta content="OKEBILING membuat pembayaran semudah itu. Temukan kenyamanan dan kemudahan dalam melakukan pembayaran tagihan dengan menggunakan OKEBILING. Nikmati kemudahan ini dan pelajari lebih lanjut di sini." name="description" />
         <meta content="OKEBILING adalah platform pembayaran yang mudah digunakan dan praktis. Dengan OKEBILING, Anda bisa melakukan pembayaran dengan cepat dan aman. Temukan lebih banyak informasi tentang layanan pembayaran ini di sini." name="author" />
         <!-- App favicon -->
+        <base href="<?=$this->baseUrl;?>"><!--[if lte IE 6]></base><![endif]-->
         <link rel="apple-touch-icon" sizes="57x57" href="<?=$this->baseUrl;?>/assets/images/ico/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="<?=$this->baseUrl;?>/assets/images/ico/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="<?=$this->baseUrl;?>/assets/images/ico/apple-icon-72x72.png">
@@ -21,7 +22,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="<?=$this->baseUrl;?>/assets/images/ico/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="<?=$this->baseUrl;?>/assets/images/ico/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="<?=$this->baseUrl;?>/assets/images/ico/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">

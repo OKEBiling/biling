@@ -1,6 +1,6 @@
 <?php
 class session {
-    const SSO_NAMESPACE = 'matadana';
+    const SSO_NAMESPACE = 'metaOKEBiling';
 
     public static function startSession() {
         if (session_status() == PHP_SESSION_NONE) {

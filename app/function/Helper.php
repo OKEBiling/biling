@@ -25,10 +25,10 @@ class Helper {
         }
         }
         
-        public static function  redirectLogin($argv){
-            
-            die(header('Location: login'));
-            
+    public static function  redirectLogin($argv){
+            die(header('Location: '.URLController::getBaseUrl().'/login'));
             
         }
+        
+    
 }

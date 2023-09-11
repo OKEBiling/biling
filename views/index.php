@@ -6,6 +6,8 @@ include('header.php')
         <div id="layout-wrapper">
             <?php echo $content;?>
        </div>
+       
+       
 <?php
 include('footer.php')
 
