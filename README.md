@@ -1,4 +1,6 @@
 
+
+
 public property yang di hasilkan class App
 Menampilkan seluruh metode url
 $this->requestMethod return POST GET
@@ -18,3 +20,4 @@ lalu rendering misalkan file login.php dengan cara
 
     
  
+
