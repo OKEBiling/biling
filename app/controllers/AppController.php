@@ -3,11 +3,16 @@ class App {
     public $urlSegments;
     public $baseUrl;
     public $requestMethod;
+    protected $layout = 'index'; // Default layout
+    public  $content ;
+    protected $viewContent;
+
+
 
     public function __construct() {
         $this->requestMethod = URLController::getMetodeSegment();
-        $this->urlSegments = URLController::getUrlSegments();
-        $this->baseUrl = URLController::getBaseUrl();
+        $this->urlSegments   = URLController::getUrlSegments();
+        $this->baseUrl       = URLController::getBaseUrl();
     }
     public function Start() {
         if ($this->matchRoute($this->urlSegments)) {
@@ -43,9 +48,9 @@ class App {
         }
     }
     private function processUnauthorized() {
-
         include('error.php');
     }
+    
     private function loadController($controllerName) {
         // Tentukan direktori di mana controller-controller Anda disimpan
         $controllerDirectory = CONTROLLER_DIR;
@@ -58,11 +63,11 @@ class App {
             // Muat file controller
             require_once $controllerFile;
             // Buat nama class controller yang sesuai
+           
             $controllerClassName = $controllerName;
 
             // Periksa apakah class controller ada
             if (class_exists($controllerClassName)) {
-                // Buat instance dari class controller dan kembalikan
                 return new $controllerClassName();
             } else {
                 // Tangani kesalahan jika class controller tidak ditemukan
@@ -74,19 +79,40 @@ class App {
         }
     }
     
-  
-    public function renderScript($scriptName, $data = []) {
-        $scriptPath = ASSETS_DIR."js/$scriptName.js";
-        $renderedContent = $this->renderFile($scriptPath, $data);
-        echo $renderedContent;
-    }
 
-    public function renderView($viewName, $data = []) {
-        $viewPath = LAYOUT."$viewName.php";
+
+    public function layout($layoutName = null) {
+        if ($layoutName !== null) {
+        $this->layout = $layoutName;
+        return $this;
+        }else{
+        $viewPath = LAYOUT . "index.php";
+        $this->viewContent = $this->renderFile($viewPath);
+        return $this;
+        }
+    }
+    
+    public function debug(){
+        echo   $this->viewContent;
+        
+    }
+    
+    
+    public function view($viewName, $data = []) {
+        $viewPath = LAYOUT . "$viewName.php";
         $viewContent = $this->renderFile($viewPath, $data);
-        $layoutPath = LAYOUT.'index.php';
-        $layoutData = ['content' => $viewContent];
-        echo $this->renderFile($layoutPath, $layoutData);
+        if ($this->layout) {
+            $layoutPath = LAYOUT . $this->layout . '.php';
+            $layoutData = [
+                'content' => $viewContent,
+            ];
+            
+            
+            $mergedArray = array_merge($data, $layoutData);
+            echo $this->renderFile($layoutPath, $mergedArray);
+        } else {
+            echo $viewContent;
+        }
     }
 
     private function renderFile($filePath, $data = []) {

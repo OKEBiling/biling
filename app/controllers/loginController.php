@@ -21,9 +21,12 @@ class LoginController extends App {
         // Set the page title
         $this->title = 'Login - OKEBiling';
         // Render the login view with empty data
-        $this->renderView('login', []);
-    }
 
+        $this->layout('loginLayout')->view('login', $data = []);
+    }
+    
+    
+    
     /**
      * Process the login form submission.
      */
