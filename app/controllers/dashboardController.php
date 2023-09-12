@@ -12,15 +12,20 @@ class dashboardController extends App {
 
         parent::__construct();
         if ($this->requestMethod === 'GET') {
-            $this->showDashboard();
+            $this->init();
         } else if ($this->requestMethod === 'POST') {
             $this->processPost();
         }
     }
 
-    public function showDashboard() {
+    public function init() {
         $this->title = 'Dashboard - Okebiling';
+        
+        
+        
+        
         $this->layout()->view('dashboard', $this->LoadLib());
+        
     }
 
     public function isLogin() {
