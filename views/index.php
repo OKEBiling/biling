@@ -3,7 +3,7 @@ include('header.php');
 
 ?>
 
-<body data-sidebar="colored">
+<body data-sidebar="colored" >
     <div id="layout-wrapper">
         <?php
          include('headerbar.php');

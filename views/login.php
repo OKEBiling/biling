@@ -1,85 +1,87 @@
-<body><div class="auth-maintenance d-flex align-items-center min-vh-100">
-            <div class="bg-overlay bg-light"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
-                        <div class="auth-full-page-content d-flex min-vh-100 py-sm-5 py-4">
-                            <div class="w-100">
-                                <div class="d-flex flex-column h-100 py-0 py-xl-3">
-                                    <div class="text-center mb-4">
-                                        <a href="#" class="">
-                                            <img src="assets/images/logo-dark.png" alt="" height="22" class="auth-logo logo-dark mx-auto">
-                                            <img src="assets/images/logo-light.png" alt="" height="22" class="auth-logo logo-light mx-auto">
-                                        </a>
-                                        <p class="text-muted mt-2"> Temukan kenyamanan dan kemudahan dalam melakukan pembayaran tagihan dengan menggunakan OKEBILING.</p>
-                                    </div>
-    
-                                    <div class="card my-auto overflow-hidden">
-                                            <div class="row g-0">
-                                                <div class="col-lg-6">
-                                                    <div class="bg-overlay bg-primary"></div>
-                                                    <div class="h-100 bg-auth align-items-end">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-6">
-                                                    <div class="p-lg-5 p-4">
-                                                        <div>
-                                                            <div class="text-center mt-1">
-                                                                <h4 class="font-size-18">Welcome Back !</h4>
-                                                                <p class="text-muted">Sign in to continue  OKEBiling.</p>
-                                                            </div>
-            
-                                                            <form  class="auth-input"  action="" method="post">
-                                                                <div class="mb-2">
-                                                                    <label for="username" class="form-label">Username</label>
-                                                                    <input type="text" name="username" class="form-control" id="username" placeholder="Enter username">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                    <label class="form-label" for="password-input">Password</label>
-                                                                    <input type="password"  name="password" class="form-control" placeholder="Enter password">
-                                                                </div>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input "name="remember"  type="checkbox" value="true" id="auth-remember-check">
-                                                                    <label class="form-check-label"  for="auth-remember-check">Remember me</label>
-                                                                </div>
-                                                                <div class="mt-3">
-                                                                    <button class="btn btn-primary w-100" type="submit">Sign In</button>
-                                                                </div>
-                                                                <div class="mt-4 pt-2 text-center">
-                                                                    <div class="signin-other-title">
-                                                                        <h5 class="font-size-14 mb-4 title">Sign In with</h5>
-                                                                    </div>
-                                                                    <div class="pt-2 hstack gap-2 justify-content-center">
-                                                                        <button type="button" class="btn btn-primary btn-sm"><i class="ri-facebook-fill font-size-16"></i></button>
-                                                                        <button type="button" class="btn btn-danger btn-sm"><i class="ri-google-fill font-size-16"></i></button>
-                                                                        <button type="button" class="btn btn-dark btn-sm"><i class="ri-github-fill font-size-16"></i></button>
-                                                                        <button type="button" class="btn btn-info btn-sm"><i class="ri-twitter-fill font-size-16"></i></button>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    
-                                                        <div class="mt-4 text-center">
-                                                            <p class="mb-0">Don't have an account ? <a href="auth-register.html" class="fw-medium text-primary"> Register </a> </p>
-                                                        </div>
-                                                    </div>
-                                                </div>  
-                                        </div>
-                                    </div>
-                                    <!-- end card -->
-                                    
-                                    <div class="mt-5 text-center">
-                                        <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Msi.  <i class="mdi mdi-heart text-danger"></i> Produk  Indonesia</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end col -->
+<div class="authentication-wrapper authentication-cover">
+    <div class="authentication-inner row m-0">
+        <!-- /Left Text -->
+        <div class="d-none d-lg-flex col-lg-7 col-xl-8 align-items-center">
+            <div class="flex-row text-center mx-auto">
+                <img src="/assets/img/pages/auth.png" alt="Auth Cover Bg color" width="520" class="img-fluid authentication-cover-img" >
+                <div class="mx-auto">
+                    <h3>Welcome to Admin! 👋</h3>
+                    <p>
+                        Perfectly  big projects & Applications.
+                    </p>
                 </div>
-                <!-- end row -->
             </div>
         </div>
-        
-</body>
+        <!-- /Left Text -->
+        <!-- Login -->
+        <div class="d-flex col-12 col-lg-5 col-xl-4 align-items-center authentication-bg p-sm-5 p-4">
+            <div class="w-px-400 mx-auto">
+                <!-- Logo -->
+                <div class="app-brand mb-4">
+                           <img src="/assets/img/logo/logo.png" class="app-brand-logo demo" />  
+                        <span class="app-brand-text demo h1 mb-0 fw-bold"> OKEBiling</span>
+                    </a>
+                </div>
+                <!-- /Logo -->
+                <h4 class="mb-2">Welcome to Admin! 👋</h4>
+                <p class="mb-4">
+                    Temukan kenyamanan dan kemudahan dalam melakukan pembayaran tagihan dengan menggunakan OKEBILING.
+                </p>
+                <form id="formAuthentication" class="mb-3" action="" method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email or Username</label>
+                        <input type="text" class="form-control" id="email" name="email-username" placeholder="Enter your email or username" autofocus>
+                    </div>
+                    <div class="mb-3 form-password-toggle">
+                        <div class="d-flex justify-content-between">
+                            <label class="form-label" for="password">Password</label>
+                            <a href="auth-forgot-password-cover.html">
+                                <small>Forgot Password?</small>
+                            </a>
+                        </div>
+                        <div class="input-group input-group-merge">
+                            <input type="password" id="password" class="form-control" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                        <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="remember-me">
+                        <label class="form-check-label" for="remember-me">
+                            Remember Me
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-primary d-grid w-100">
+                    Sign in
+                </button>
+            </form>
+            <p class="text-center">
+                <span>New on our platform?</span>
+                <a href="auth-register-cover.html">
+                    <span>Create an account</span>
+                </a>
+            </p>
+            <div class="divider my-4">
+                <div class="divider-text">
+                    or
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="javascript:;" class="btn btn-icon btn-label-facebook me-3">
+                    <i class="tf-icons bx bxl-facebook"></i>
+                </a>
+
+                <a href="javascript:;" class="btn btn-icon btn-label-google-plus me-3">
+                    <i class="tf-icons bx bxl-google-plus"></i>
+                </a>
+
+                <a href="javascript:;" class="btn btn-icon btn-label-twitter">
+                    <i class="tf-icons bx bxl-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /Login -->
+</div>
+</div>
