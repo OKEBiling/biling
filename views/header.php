@@ -3,7 +3,7 @@
 <head>
         
         <meta charset="utf-8" />
-        <title><?php echo $this->title ?></title>
+        <title><?= isset($this->title) ? $this->title : 'OKEBiling.' ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="OKEBILING membuat pembayaran semudah itu. Temukan kenyamanan dan kemudahan dalam melakukan pembayaran tagihan dengan menggunakan OKEBILING. Nikmati kemudahan ini dan pelajari lebih lanjut di sini." name="description" />
         <meta content="OKEBILING adalah platform pembayaran yang mudah digunakan dan praktis. Dengan OKEBILING, Anda bisa melakukan pembayaran dengan cepat dan aman. Temukan lebih banyak informasi tentang layanan pembayaran ini di sini." name="author" />
@@ -37,6 +37,8 @@
         <link href="<?=$this->baseUrl;?>/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
         <!-- App Css-->
         <link href="<?=$this->baseUrl;?>/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        
+       <!-- Custoom Asset-->
         <?php
             if (!empty($cssLinks)) {
                 foreach ($cssLinks as $cssLink) {
