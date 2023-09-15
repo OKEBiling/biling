@@ -15,6 +15,11 @@ class session {
         self::startSession();
         return $_SESSION[self::SSO_NAMESPACE][$key] ?? null;
     }
+    
+  public static function getAll() {
+        self::startSession();
+        return $_SESSION ?? null;
+    }
 
     public static function set($key, $value) {
         self::startSession();
@@ -57,6 +62,70 @@ class session {
         return $_SESSION[self::SSO_NAMESPACE]['csrf_token'] === $value;
     }
 }
+
+
+class Sessionv2 {
+    private const SSO_NAMESPACE = 'metaOKEBiling';
+
+    public function __construct()
+    {
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        if (empty($_SESSION[self::SSO_NAMESPACE])) {
+            $_SESSION[self::SSO_NAMESPACE] = [];
+        }
+    }
+
+    public function get($key)
+    {
+        return $_SESSION[self::SSO_NAMESPACE][$key] ?? null;
+    }
+
+    public function setCsrfToken()
+    {
+        if (empty($_SESSION[self::SSO_NAMESPACE]['csrf_token'])) {
+            $_SESSION[self::SSO_NAMESPACE]['csrf_token'] = bin2hex(random_bytes(32));
+        }
+    }
+
+    public function matchCsrfToken($value)
+    {
+        return ($_SESSION[self::SSO_NAMESPACE]['csrf_token'] === $value);
+    }
+
+    public function set($key, $value)
+    {
+        $_SESSION[self::SSO_NAMESPACE][$key] = $value;
+    }
+
+    public function setArray(array $array)
+    {
+        foreach ($array as $key => $value) {
+            $_SESSION[self::SSO_NAMESPACE][$key] = $value;
+        }
+    }
+
+    public function remove($key)
+    {
+        unset($_SESSION[self::SSO_NAMESPACE][$key]);
+    }
+
+    public function destroy()
+    {
+        if (session_status() === PHP_SESSION_ACTIVE) {
+            session_destroy();
+            $_SESSION = [];
+        }
+    }
+
+    public function getId()
+    {
+        return session_id();
+    }
+}
+
 
 
 

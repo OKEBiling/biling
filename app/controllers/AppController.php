@@ -4,10 +4,8 @@ class App {
     public $baseUrl;
     public $requestMethod;
     protected $layout = 'index'; // Default layout
-    public  $content ;
+    public $content;
     protected $viewContent;
-
-
 
     public function __construct() {
         $this->requestMethod = URLController::getMetodeSegment();
@@ -22,18 +20,12 @@ class App {
     public function matchRoute($urlSegments) {
         if (!empty($urlSegments)) {
             $page = $urlSegments[1];
-            //daftarkan controller secara manual untuk menghindari konfilik
-            $Controllers = [
-                'home' => 'homeController',
-                'dashboard' => 'dashboardController',
-                'login' => 'loginController',
-                'oke' => 'loginController',
-            ];
-            // jika controller berada di segment 1 maka lanjutkan ke level lebih tinggi yatu panggil filenya dan classnya
-            // Di dalam matchRoute()
-            if (isset($Controllers[$page])) {
+            // Ubah huruf pertama nama controller menjadi huruf besar
+            $controllerName = $page.'Controller';
+            // Cek apakah class controller ada
+            if (isset($controllerName)) {
                 // Panggil loadController untuk mengambil instance controller yang sesuai
-                $controller = $this->loadController($Controllers[$page]);
+                $controller = $this->loadController($controllerName);
                 if ($controller !== null) {
                     // Instance controller berhasil diperoleh, lanjutkan dengan pemanggilan aksi atau metode
                     // $controller->action();
@@ -44,13 +36,12 @@ class App {
                 $this->processUnauthorized();
             }
         } else {
-               die(header('Location: '.URLController::getBaseUrl().'/login'));
+            die(header('Location: '.URLController::getBaseUrl().'/login'));
         }
     }
     private function processUnauthorized() {
         include('error.php');
     }
-    
     private function loadController($controllerName) {
         // Tentukan direktori di mana controller-controller Anda disimpan
         $controllerDirectory = CONTROLLER_DIR;
@@ -63,9 +54,7 @@ class App {
             // Muat file controller
             require_once $controllerFile;
             // Buat nama class controller yang sesuai
-           
             $controllerClassName = $controllerName;
-
             // Periksa apakah class controller ada
             if (class_exists($controllerClassName)) {
                 return new $controllerClassName();
@@ -78,26 +67,19 @@ class App {
             $this->processUnauthorized();
         }
     }
-    
-
-
     public function layout($layoutName = null) {
         if ($layoutName !== null) {
-        $this->layout = $layoutName;
-        return $this;
-        }else{
-        $viewPath = LAYOUT . "index.php";
-        $this->viewContent = $this->renderFile($viewPath);
-        return $this;
+            $this->layout = $layoutName;
+            return $this;
+        } else {
+            $viewPath = LAYOUT . "index.php";
+            $this->viewContent = $this->renderFile($viewPath);
+            return $this;
         }
     }
-    
-    public function debug(){
-        echo   $this->viewContent;
-        
+    public function debug() {
+        echo $this->viewContent;
     }
-    
-    
     public function view($viewName, $data = []) {
         $viewPath = LAYOUT . "$viewName.php";
         $viewContent = $this->renderFile($viewPath, $data);
@@ -106,8 +88,6 @@ class App {
             $layoutData = [
                 'content' => $viewContent,
             ];
-            
-            
             $mergedArray = array_merge($data, $layoutData);
             echo $this->renderFile($layoutPath, $mergedArray);
         } else {

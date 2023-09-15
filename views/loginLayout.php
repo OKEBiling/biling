@@ -13,7 +13,7 @@ if (isset($content)) {
 
 
 ?>
-       </div>
+
        
        
 <?php

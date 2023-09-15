@@ -11,6 +11,7 @@
                     </p>
                 </div>
             </div>
+            
         </div>
         <!-- /Left Text -->
         <!-- Login -->
@@ -19,7 +20,7 @@
                 <!-- Logo -->
                 <div class="app-brand mb-4">
                            <img src="/assets/img/logo/logo.png" class="app-brand-logo demo" />  
-                        <span class="app-brand-text demo h1 mb-0 fw-bold"> OKEBiling</span>
+                        <span class="app-brand-text demo h1 mb-0 mx-sm-1 fw-bold"> OKEBiling</span>
                     </a>
                 </div>
                 <!-- /Logo -->
@@ -30,7 +31,7 @@
                 <form id="formAuthentication" class="mb-3" action="" method="POST">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email or Username</label>
-                        <input type="text" class="form-control" id="email" name="email-username" placeholder="Enter your email or username" autofocus>
+                        <input type="text" class="form-control" id="email" name="username" placeholder="Enter your email or username" autofocus>
                     </div>
                     <div class="mb-3 form-password-toggle">
                         <div class="d-flex justify-content-between">
@@ -40,18 +41,26 @@
                             </a>
                         </div>
                         <div class="input-group input-group-merge">
-                            <input type="password" id="password" class="form-control" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                            <input type="password" id="password"  autocomplete="on"  class="form-control" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
                         <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                     </div>
                 </div>
                 <div class="mb-3">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="remember-me">
+                        <input class="form-check-input" name="remember-me" type="checkbox" id="remember-me">
                         <label class="form-check-label" for="remember-me">
                             Remember Me
                         </label>
                     </div>
                 </div>
+                <?php 
+               if(isset($error) && $error){ ?>
+                    <div class="alert alert-danger" role="alert">
+                        <?php echo $message; ?>  
+                    </div>
+                <?php }
+                ?>
+
                 <button class="btn btn-primary d-grid w-100">
                     Sign in
                 </button>
@@ -80,8 +89,25 @@
                     <i class="tf-icons bx bxl-twitter"></i>
                 </a>
             </div>
+            <div class="card mb-4 mt-2 pd-0">
+      <div class="card-body p-0">
+        <p class="card-text">
+         <span class="badge bg-dark"> DEBUG MODE</span>
+         <div class="alert alert-primary" role="alert">
+             <?= isset($_SESSION) ?  json_encode($_SESSION, JSON_PRETTY_PRINT) :''  ;?>
+             
+        </div>
+        <div class="alert alert-primary" role="alert">
+             <?= isset($_POST) ?  json_encode($_POST, JSON_PRETTY_PRINT) :''  ;?>
+             
+        </div>
+        
+        </p>
+      </div>
+    </div>
         </div>
     </div>
     <!-- /Login -->
 </div>
+
 </div>

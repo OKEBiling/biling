@@ -4,12 +4,8 @@
   <script src="/assets/vendor/libs/popper/popper.js"></script>
   <script src="/assets/vendor/js/bootstrap.js"></script>
   <script src="/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-  
   <script src="/assets/vendor/libs/hammer/hammer.js"></script>
-  
-
   <script src="/assets/vendor/libs/typeahead-js/typeahead.js"></script>
-  
   <script src="/assets/vendor/js/menu.js"></script>
   <!-- endbuild -->
 

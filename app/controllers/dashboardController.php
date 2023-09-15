@@ -20,10 +20,6 @@ class dashboardController extends App {
 
     public function init() {
         $this->title = 'Dashboard - Okebiling';
-        
-        
-        
-        
         $this->layout()->view('dashboard', $this->LoadLib());
         
     }
@@ -33,8 +29,6 @@ class dashboardController extends App {
         
     }
 
-
-    public function doLogin() {}
 
 
     public function LoadLib() {
