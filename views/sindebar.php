@@ -81,7 +81,38 @@
         </ul>
     </li>
      <li class="menu-item ">
-        <a href="javascript:void(0);" class="menu-link menu-toggle"> <i class="menu-icon tf-icons bx bxs-box"></i>
+        <a href="javascript:void(0);" class="menu-link menu-toggle"> <i class="menu-icon tf-icons bx bx-spreadsheet"></i>
+            <div data-i18n="Users">
+                subscriptions 
+            </div>
+        </a>
+        <ul class="menu-sub">
+            <li class="menu-item">
+                <a href="/subscriptions" class="menu-link">
+                    <div data-i18n="List">
+                        Data subscriptions
+                    </div>
+                </a>
+            </li>
+            
+          <li class="menu-item">
+                <a href="/subscriptions/setting" class="menu-link">
+                    <div data-i18n="List">
+                        Data anual 
+                    </div>
+                </a>
+            </li>
+          <li class="menu-item">
+                <a href="/subscriptions/setting" class="menu-link">
+                    <div data-i18n="List">
+                         setting 
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </li>
+     <li class="menu-item ">
+        <a href="javascript:void(0);" class="menu-link menu-toggle"> <i class="menu-icon tf-icons bx bxs-book-content"></i>
             <div data-i18n="Users">
                 Infra Manager
             </div>
