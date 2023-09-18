@@ -7,7 +7,7 @@ include_once MODEL_DIR . 'UserModel.php';
  */
 class LoginController extends App {
     private $userModel;
-
+    private $password;
     public function __construct(){
         parent::__construct();
         $this->userModel = new UserModel();
@@ -25,7 +25,6 @@ class LoginController extends App {
         $this->loadLoginForm();
     }
     private function loadLoginForm($error = null, $message = null) {
-        
         $data = [
             'error' => $error,
             'message' => $message,
@@ -36,6 +35,7 @@ class LoginController extends App {
     private function doLogin(){
         $result = new stdClass();
         if ($this->userModel->authenticateUser($this->username, $this->password)) {
+            $result->id    =   $this->userModel->userid;
             $result->error = false;
         } else {
             // Login gagal, atur properti error dan pesan
@@ -52,7 +52,6 @@ class LoginController extends App {
         }
         return $this;
     }
-
     /**
      * Process the login form submission.
      */
@@ -62,8 +61,9 @@ class LoginController extends App {
             $this->loadLoginForm($result->error, $result->message);
         } else {
             session::set('username',$this->username);
+            session::set('_id',$result->id);
             session::set('logged_in',true);
-            header("Location: dashboard");
+            header("Location: dashboard/?success");
             exit();
         }
     }

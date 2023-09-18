@@ -9,14 +9,17 @@ class App {
 
     public function __construct() {
         $this->requestMethod = URLController::getMetodeSegment();
-        $this->urlSegments   = URLController::getUrlSegments();
-        $this->baseUrl       = URLController::getBaseUrl();
+        $this->urlSegments = URLController::getUrlSegments();
+        $this->baseUrl = URLController::getBaseUrl();
+        $this->user = new mainController();
     }
+
     public function Start() {
         if ($this->matchRoute($this->urlSegments)) {
             return; // Keluar dari metode start() setelah menemukan rute yang cocok
         }
     }
+
     public function matchRoute($urlSegments) {
         if (!empty($urlSegments)) {
             $page = $urlSegments[1];
@@ -36,6 +39,7 @@ class App {
                 $this->processUnauthorized();
             }
         } else {
+
             die(header('Location: '.URLController::getBaseUrl().'/login'));
         }
     }
@@ -43,7 +47,7 @@ class App {
         include('error.php');
     }
     private function loadController($controllerName) {
-        // Tentukan direktori di mana controller-controller Anda disimpan
+        // Tentukan direktori di mana controller-controller  disimpan
         $controllerDirectory = CONTROLLER_DIR;
         // Pastikan controller name aman untuk digunakan dan tidak mengandung karakter yang tidak diizinkan
         $controllerName = preg_replace('/[^a-zA-Z0-9]/', '', $controllerName);
@@ -57,6 +61,8 @@ class App {
             $controllerClassName = $controllerName;
             // Periksa apakah class controller ada
             if (class_exists($controllerClassName)) {
+
+              
                 return new $controllerClassName();
             } else {
                 // Tangani kesalahan jika class controller tidak ditemukan
@@ -77,9 +83,11 @@ class App {
             return $this;
         }
     }
+
     public function debug() {
         echo $this->viewContent;
     }
+
     public function view($viewName, $data = []) {
         $viewPath = LAYOUT . "$viewName.php";
         $viewContent = $this->renderFile($viewPath, $data);
@@ -93,6 +101,7 @@ class App {
         } else {
             echo $viewContent;
         }
+
     }
 
     private function renderFile($filePath, $data = []) {

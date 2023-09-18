@@ -17,7 +17,7 @@
 <ul class="menu-inner py-1">
     <!-- Dashboards -->
         <li class="menu-item">
-        <a href="app-email.html" class="menu-link"> <i class="menu-icon tf-icons bx bx-home-circle"></i>
+        <a href="/dashboard" class="menu-link"> <i class="menu-icon tf-icons bx bx-home-circle"></i>
 
             <div data-i18n="Dashboards">
                 Dashboards
@@ -40,9 +40,107 @@
                 </a>
             </li>
           <li class="menu-item">
-                <a href="/customer" class="menu-link">
+                <a href="/customer/tagihan" class="menu-link">
+                    <div data-i18n="List">
+                         Tagihan Pelanggan
+                    </div>
+                </a>
+            </li>
+          <li class="menu-item">
+                <a href="/customer/setting" class="menu-link">
                     <div data-i18n="List">
                          Setting
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </li>
+    
+     <li class="menu-item ">
+        <a href="javascript:void(0);" class="menu-link menu-toggle"> <i class="menu-icon tf-icons bx bx-code-block"></i>
+            <div data-i18n="Users">
+                Logic Manager
+            </div>
+        </a>
+        <ul class="menu-sub">
+            <li class="menu-item">
+                <a href="/Logic" class="menu-link">
+                    <div data-i18n="List">
+                        Data Router
+                    </div>
+                </a>
+            </li>
+            
+          <li class="menu-item">
+                <a href="/Logic/setting" class="menu-link">
+                    <div data-i18n="List">
+                         Data OLT
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </li>
+     <li class="menu-item ">
+        <a href="javascript:void(0);" class="menu-link menu-toggle"> <i class="menu-icon tf-icons bx bxs-box"></i>
+            <div data-i18n="Users">
+                Infra Manager
+            </div>
+        </a>
+        <ul class="menu-sub">
+            <li class="menu-item">
+                <a href="/Infra" class="menu-link">
+                    <div data-i18n="List">
+                        Data ODC
+                    </div>
+                </a>
+            </li>
+            
+          <li class="menu-item">
+                <a href="/Infra/setting" class="menu-link">
+                    <div data-i18n="List">
+                         Data ODP
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </li>
+     <li class="menu-item ">
+        <a href="javascript:void(0);" class="menu-link menu-toggle"> <i class="menu-icon tf-icons bx bx-wallet-alt"></i>
+            <div data-i18n="Users">
+                Gateway Manager
+            </div>
+        </a>
+        <ul class="menu-sub">
+            <li class="menu-item">
+                <a href="/Gateway" class="menu-link">
+                    <div data-i18n="List">
+                        Setting Gateway
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+     <li class="menu-item ">
+        <a href="javascript:void(0);" class="menu-link menu-toggle"> <i class="menu-icon tf-icons bx bxs-user-detail"></i>
+            <div data-i18n="Users">
+                Staff Manager
+            </div>
+        </a>
+        <ul class="menu-sub">
+            <li class="menu-item">
+                <a href="/Staff" class="menu-link">
+                    <div data-i18n="List">
+                        User
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu-sub">
+            <li class="menu-item">
+                <a href="/Staff/Permission" class="menu-link">
+                    <div data-i18n="List">
+                        Permission Group
                     </div>
                 </a>
             </li>

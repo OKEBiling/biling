@@ -3,7 +3,6 @@
 /**
 *
 */
-
 class dashboardController extends App {
     private $isLogin;
     private $doLogin;
@@ -17,20 +16,16 @@ class dashboardController extends App {
             $this->processPost();
         }
     }
-
     public function init() {
         $this->title = 'Dashboard - Okebiling';
         $this->layout()->view('dashboard', $this->LoadLib());
         
     }
-
     public function isLogin() {
         
         
     }
-
-
-
+    
     public function LoadLib() {
         return [
             'cssLinks' => [

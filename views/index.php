@@ -11,15 +11,10 @@ $title=null;
         <?php
         include('sindebar.php');
         ?>
-        
-        
-        
         <div class="layout-page">
             <?php
         include('headerbar.php');
         ?> 
-            
-            
         <?php
         if (isset($content)) {
             echo $content;
