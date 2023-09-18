@@ -1,6 +1,6 @@
-
-
-
+<div class="content-wrapper">
+ <div class="container-xxl flex-grow-1 container-p-y">   
+   
 <div class="card">
   <h5 class="card-header">Customer data</h5>
   <div class="card-body">
@@ -30,4 +30,6 @@
       </table>
     </div>
   </div>
+</div>
+</div>
 </div>

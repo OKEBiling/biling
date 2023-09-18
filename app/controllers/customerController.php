@@ -21,8 +21,6 @@ class customerController extends App
        
     }
     
-    
-    
     public function init(){
         $this->getCustomer();
         $this->title = 'Customer - Okebiling';
@@ -32,7 +30,6 @@ class customerController extends App
     
     public function getCustomer(){
         $this->customerall= $this->CustomerModel->all();
-        
         return $this->customerall;
     }
 }
