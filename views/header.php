@@ -49,4 +49,17 @@
         <script src="/assets/vendor/js/helpers.js"></script>
         <script src="/assets/vendor/js/template-customizer.js"></script>
         <script src="/assets/js/config.js"></script>
+        <!-- Custom-->
+        <?php 
+
+include_once('header.php');
+if (!empty($cssLinks)) {
+    foreach ($cssLinks as $cssLink) {
+        echo "<link rel=\"stylesheet\" href=\"$cssLink\">";
+    }
+}
+
+
+?> 
+
 </head>

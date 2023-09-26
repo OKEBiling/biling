@@ -1,11 +1,6 @@
-
-
-
                   
                     <?php
                     $setsession=session::getAll()
-                        
-                        
                         ?>
                          
                         <div class="content-wrapper">
@@ -18,7 +13,7 @@
                                 <div class="mb-2 mb-md-0">©
                                     <script>
 document.write(new Date().getFullYear())
-                                    </script>, made with ❤️  <a href="/" target="_blank" class="footer-link fw-semibold">BangAcil</a> <?= isset($setsession) ?  json_encode($setsession, JSON_PRETTY_PRINT) :''  ;?>
+                                    </script>,
                                 </div>
                                 
                             </div>
