@@ -3,7 +3,7 @@ class App {
     public $urlSegments;
     public $baseUrl;
     public $requestMethod;
-    protected $layout = 'index'; // Default layout
+    protected $layout = 'index'; 
     public $content;
     protected $viewContent;
 
@@ -61,8 +61,6 @@ class App {
             $controllerClassName = $controllerName;
             // Periksa apakah class controller ada
             if (class_exists($controllerClassName)) {
-
-              
                 return new $controllerClassName();
             } else {
                 // Tangani kesalahan jika class controller tidak ditemukan

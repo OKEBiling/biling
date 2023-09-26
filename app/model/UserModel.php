@@ -10,6 +10,12 @@ class UserModel extends Database {
     public function __construct() {
         parent::__construct();
     }
+        /**
+         * Mengidentifikasi profil pengguna berdasarkan ID pengguna atau menerapkan penyaringan kondisional
+         * @param string|int|null $id ID pengguna (opsional)
+         * @param array $conditional Array asosiatif untuk penyaringan kondisional (opsional)
+         * @return $this|array|bool
+         */
         public function authenticateUser($username, $password) {
             // Validate input
             if (empty($username) || empty($password)) {

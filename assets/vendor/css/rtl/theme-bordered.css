@@ -1516,3 +1516,21 @@ html:not(.layout-menu-collapsed) .bg-menu-theme.menu-horizontal .menu-inner>.men
     box-shadow: none !important;
     border: 1px solid #d4d8dd !important
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(180,180,180,0.06);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(180,180,180,0.2);
+    border-radius: 12px;
+    background-clip: padding-box;
+    border: 1px solid rgba(180,180,180,0.4);
+    min-height: 28px;
+}
