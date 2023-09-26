@@ -80,31 +80,14 @@
                 <a href="javascript:;" class="btn btn-icon btn-label-facebook me-3">
                     <i class="tf-icons bx bxl-facebook"></i>
                 </a>
-
                 <a href="javascript:;" class="btn btn-icon btn-label-google-plus me-3">
                     <i class="tf-icons bx bxl-google-plus"></i>
                 </a>
-
                 <a href="javascript:;" class="btn btn-icon btn-label-twitter">
                     <i class="tf-icons bx bxl-twitter"></i>
                 </a>
             </div>
-            <div class="card mb-4 mt-2 pd-0">
-      <div class="card-body p-0">
-        <p class="card-text">
-         <span class="badge bg-dark"> DEBUG MODE</span>
-         <div class="alert alert-primary" role="alert">
-             <?= isset($_SESSION) ?  json_encode($_SESSION, JSON_PRETTY_PRINT) :''  ;?>
-             
-        </div>
-        <div class="alert alert-primary" role="alert">
-             <?= isset($_POST) ?  json_encode($_POST, JSON_PRETTY_PRINT) :''  ;?>
-             
-        </div>
-        
-        </p>
-      </div>
-    </div>
+
         </div>
     </div>
     <!-- /Login -->

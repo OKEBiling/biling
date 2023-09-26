@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Autocomplete Select2</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 mb-4">
+        <label for="Provinsi" class="form-label">Provinsi</label>
+        <select id="Provinsi" name="Provinsi" class="select2 form-select form-select-lg" data-allow-clear="true">
+          <!-- Pilihan Provinsi akan ditambahkan secara dinamis dari provinsi.json -->
+        </select>
+      </div>
+      <div class="col-md-2 mb-4">
+        <label for="Kabupaten" class="form-label">Kabupaten</label>
+        <select id="Kabupaten" name="Kabupaten" class="select2 form-select form-select-lg" data-allow-clear="true">
+          <option value=""></option>
+        </select>
+      </div>
+      <div class="col-md-2 mb-4">
+        <label for="Kecamatan" class="form-label">Kecamatan</label>
+        <select id="Kecamatan"  name="kecamatan" class="select2 form-select form-select-lg" data-allow-clear="true">
+          <option value=""></option>
+        </select>
+      </div>
+      <div class="col-md-2 mb-4">
+        <label for="Kelurahan" class="form-label">Kelurahan</label>
+        <select id="Kelurahan"  name="kelurahan" class="select2 form-select form-select-lg" data-allow-clear="true">
+          <option value=""></option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      // Muat data provinsi dari provinsi.json
+      $.ajax({
+        url: 'assets/data/provinsi.json',
+        dataType: 'json',
+        success: function(data) {
+          // Iterasi melalui data provinsi dan tambahkan pilihan provinsi ke elemen select
+          var $selectProvinsi = $('#Provinsi');
+          $.each(data, function(index, provinsi) {
+            $selectProvinsi.append($('<option>', {
+              value: provinsi.id,
+              text: provinsi.nama
+            }));
+          });
+
+          // Inisialisasi Select2 untuk Provinsi setelah pilihan provinsi ditambahkan
+          $selectProvinsi.select2({
+            placeholder: 'Pilih Provinsi',
+          });
+        }
+      });
+
+      // Handler untuk saat Provinsi dipilih
+      $('#Provinsi').on('change', function() {
+        var selectedProvinsiId = $(this).val();
+        loadKabupaten(selectedProvinsiId);
+      });
+
+      // Fungsi untuk mengambil data Kabupaten dari file JSON sesuai dengan Provinsi yang dipilih
+      function loadKabupaten(provinsiId) {
+        $('#Kabupaten').empty(); // Mengosongkan pilihan Kabupaten
+        $('#Kabupaten').select2({
+          placeholder: 'Pilih Kabupaten',
+          ajax: {
+            url: 'assets/data/kabupaten/' + provinsiId + '.json',
+            dataType: 'json',
+            processResults: function(data) {
+              return {
+                results: $.map(data, function(item) {
+                  return {
+                    text: item.nama,
+                    id: item.id
+                  };
+                })
+              };
+            }
+          }
+        });
+      }
+
+      // Handler untuk saat Kabupaten dipilih
+      $('#Kabupaten').on('change', function() {
+        var selectedKabupatenId = $(this).val();
+        loadKecamatan(selectedKabupatenId);
+      });
+
+      // Fungsi untuk mengambil data Kecamatan dari file JSON sesuai dengan Kabupaten yang dipilih
+      function loadKecamatan(kabupatenId) {
+        $('#Kecamatan').empty(); // Mengosongkan pilihan Kecamatan
+        $('#Kecamatan').select2({
+          placeholder: 'Pilih Kecamatan',
+          ajax: {
+            url: 'assets/data/kecamatan/' + kabupatenId + '.json',
+            dataType: 'json',
+            processResults: function(data) {
+              return {
+                results: $.map(data, function(item) {
+                  return {
+                    text: item.nama,
+                    id: item.id
+                  };
+                })
+              };
+            }
+          }
+        });
+      }
+
+      // Handler untuk saat Kecamatan dipilih
+      $('#Kecamatan').on('change', function() {
+        var selectedKecamatanId = $(this).val();
+        loadKelurahan(selectedKecamatanId);
+      });
+
+      // Fungsi untuk mengambil data Kelurahan dari file JSON sesuai dengan Kecamatan yang dipilih
+      function loadKelurahan(kecamatanId) {
+        $('#Kelurahan').empty(); // Mengosongkan pilihan Kelurahan
+        $('#Kelurahan').select2({
+          placeholder: 'Pilih Kelurahan',
+          ajax: {
+            url: 'assets/data/kelurahan/' + kecamatanId + '.json',
+            dataType: 'json',
+            processResults: function(data) {
+              return {
+                results: $.map(data, function(item) {
+                  return {
+                    text: item.nama,
+                    id: item.id
+                  };
+                })
+              };
+            }
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

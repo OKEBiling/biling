@@ -27,7 +27,10 @@ class CustomerModel extends Database {
     }
 
 
-    public function setCustomer() {}
+    public function setCustomer() {
+        
+        
+    }
 
     public function all() {
         $this->customer = $this->db->select('Ok_customer', self::DATAOUTPUT);

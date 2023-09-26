@@ -11,3 +11,18 @@ Stack trace:
 #7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): customerController->__construct()
 #8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
 #9  in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 24
+[26-Sep-2023 12:07:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Object of class SubscriptionsModel could not be converted to string in /www/wwwroot/biling.oke.net.id/views/addcustomer.php:11
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(91): App->renderFile()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/customerController.php(49): App->view()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/customerController.php(26): customerController->add()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/customerController.php(16): customerController->init()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): customerController->__construct()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#8 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#9 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/views/addcustomer.php on line 11
+[26-Sep-2023 12:09:36 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/addcustomer.php on line 11
+[26-Sep-2023 12:09:59 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/addcustomer.php on line 11
