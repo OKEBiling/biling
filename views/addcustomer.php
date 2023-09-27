@@ -28,11 +28,11 @@ $sub = $this->subscriptions->getSubscriptions();
                     </div>
                     <div class="col-md-6">
                       <label class="form-label" for="collapsible-fullname">Nama Belakang</label>
-                      <input type="text" id="collapsible-blakangname" name="lastname" class="form-control" />
+                      <input type="text" id="collapsible-lastname" name="lastname" class="form-control" />
                     </div>
                     <div class="col-md-6">
                       <label class="form-label" for="collapsible-phone">Phone No (Whatsaap)</label>
-                      <input type="text" id="collapsible-phone" name="phone" class="form-control phone-mask" />
+                       <input type="text" id="collapsible-phone" name="phoneNumber" class="form-control phone-mask" />
                     </div>
                     <div class="col-md-6">
                       <label class="form-label" for="collapsible-landmark">Email</label>
@@ -43,32 +43,28 @@ $sub = $this->subscriptions->getSubscriptions();
                       <textarea name="address" class="form-control h-px-100" id="collapsible-address" rows="2"></textarea>
                     </div>
 
-                    <div class="col-md-2 mb-4">
+                    <div class="col-md-3 mb-4">
                       <label for="Provinsi" class="form-label">Provinsi</label>
-                      <select id="Provinsi" name="Provinsi" class="select2 form-select form-select-lg" data-allow-clear="true">
-                        <option value=""></option>
+                      <select id="Provinsi" name="provinsi" class="select2 form-select " data-allow-clear="true">
                       </select>
                     </div>
                     
-                    <div class="col-md-2 mb-4">
+                    <div class="col-md-3 mb-4">
                       <label for="Kabupaten" class="form-label">Kabupaten</label>
-                      <select id="Kabupaten" name="Kabupaten" class="select2 form-select form-select-lg" data-allow-clear="true">
-                        <option value=""></option>
+                      <select id="Kabupaten" name="kabupaten" class="select2 form-select " data-allow-clear="true">
                       </select>
                     </div>
                       <div class="col-md-2 mb-4">
                       <label for="Kecamatan" class="form-label">Kecamatan</label>
-                      <select id="Kecamatan"  name="kecamatan" class="select2 form-select form-select-lg" data-allow-clear="true">
-                        <option value=""></option>
+                      <select id="Kecamatan"  name="kecamatan" class="select2 form-select " data-allow-clear="true">
                       </select>
                     </div>
-                         <div class="col-md-2 mb-4">
+                         <div class="col-md-3 mb-4">
                       <label for="Kelurahan" class="form-label">Kelurahan</label>
-                      <select id="Kelurahan"  name="Kelurahan" class="select2 form-select form-select-lg" data-allow-clear="true">
-                        <option value=""></option>
+                      <select id="Kelurahan"  name="kelurahan" class="select2 form-select " data-allow-clear="true">
                       </select>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                       <label class="form-label" for="collapsible-pincode">Kode Pos</label>
                       <input type="text" name="kodepos" id="collapsible-pincode" class="form-control text-uppercase" />
                     </div>
@@ -83,7 +79,7 @@ $sub = $this->subscriptions->getSubscriptions();
                                 <span class="custom-option-title"> Personal </span>
                                 <small>Rumah Pribadi, Penggunaan Pribadi</small>
                               </span>
-                              <input name="CustomerType" class="form-check-input" type="radio" value="personal" id="CustomerType2" checked="">
+                              <input name="type" class="form-check-input" type="radio" value="personal" id="CustomerType2" checked="">
                             </label>
                           </div>
                         </div>
@@ -95,7 +91,7 @@ $sub = $this->subscriptions->getSubscriptions();
                                 <span class="custom-option-title">Office</span>
                                 <small>Office PT,CV,Gudang </small>
                               </span>
-                              <input name="CustomerType" class="form-check-input" type="radio" value="office" id="CustomerType3">
+                              <input name="type" class="form-check-input" type="radio" value="office" id="CustomerType3">
                             </label>
                           </div>
                         </div>
@@ -107,7 +103,7 @@ $sub = $this->subscriptions->getSubscriptions();
                                 <span class="custom-option-title">UMKM</span>
                                 <small>Toko Market, Supplayer ,Caffe , Cafe</small>
                               </span>
-                              <input name="CustomerType" class="form-check-input" type="radio" value="umkm" id="CustomerType4">
+                              <input name="type" class="form-check-input" type="radio" value="umkm" id="CustomerType4">
                             </label>
                           </div>
                         </div>
@@ -119,7 +115,7 @@ $sub = $this->subscriptions->getSubscriptions();
                                 <span class="custom-option-title">Reseller</span>
                                 <small>RT / RW NET , Warnet </small>
                               </span>
-                              <input name="CustomerType" class="form-check-input" type="radio" value="reseller" id="CustomerType5">
+                              <input name="type" class="form-check-input" type="radio" value="reseller" id="CustomerType5">
                             </label>
                           </div>
                         </div>
@@ -153,7 +149,7 @@ $sub = $this->subscriptions->getSubscriptions();
               <h2 class="accordion-header" id="headingDeliveryOptions">
                 <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseDeliveryOptions" aria-expanded="false" aria-controls="collapseDeliveryOptions"> Subscriptions Options </button>
               </h2>
-              <div id="collapseDeliveryOptions" class="accordion-collapse collapse " aria-labelledby="headingDeliveryOptions" data-bs-parent="#collapsibleSection">
+              <div id="collapseDeliveryOptions" class="accordion-collapse collapse show " aria-labelledby="headingDeliveryOptions" data-bs-parent="#collapsibleSection">
                 <div class="accordion-body">
                   <div class="row"> <?php foreach ($sub as $key => $value): ?> <div class="col-md mb-md-0 mb-2">
                       <div class="form-check custom-option custom-option-basic">
@@ -170,7 +166,7 @@ $sub = $this->subscriptions->getSubscriptions();
                       </div>
                     </div> <?php endforeach; ?> </div>
                   <div class="mt-5">
-                    <button type="submit" id="addcustomer" class="btn btn-primary me-sm-3 me-1">Submit</button>
+                    <button type="submit" id="addcustomer" class="btn  btn-primary me-sm-3 me-1">Simpan</button>
                     <button type="reset" class="btn btn-label-secondary">Cancel</button>
                   </div>
                 </div>

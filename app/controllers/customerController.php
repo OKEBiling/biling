@@ -56,9 +56,10 @@ class customerController extends App
             '/assets/vendor/libs/select2/select2.css',
             '/assets/vendor/libs/bootstrap-select/bootstrap-select.css'],
         'scripts' => [
-            'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
+            '/assets/vendor/libs/leaflet/leaflet.js',
             '/assets/js/forms-selects.js?'.rand(1,100),
             '/assets/vendor/libs/select2/select2.js',
+            '/assets/vendor/libs/cleavejs/cleave.js',
             '/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js',
             '/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js',
             '/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js',
