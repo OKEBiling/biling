@@ -15,7 +15,6 @@ class customerController extends App
         $this->urlSegments = URLController::getSegments();
         $this->init();
     }
-
     public function init() {
         $this->CustomerModel = new CustomerModel();
         array_shift($this->urlSegments);
@@ -78,6 +77,9 @@ class customerController extends App
     
     public function processPost(){
          $this->title = 'Add Customer - Okebiling';
-       echo json_encode($_POST);
+            $postData = json_decode(file_get_contents('php://input'), true);
+       echo json_encode($postData);
+       
+       
     }
 }

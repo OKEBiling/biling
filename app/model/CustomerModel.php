@@ -27,10 +27,12 @@ class CustomerModel extends Database {
     }
 
 
-    public function setCustomer() {
-        
+    public function setCustomer($data) {
+        $this->setCustomer = $this->db->insert('Ok_pending_customer',$data);
+            return $this->setCustomer;
         
     }
+    
 
     public function all() {
         $this->customer = $this->db->select('Ok_customer', self::DATAOUTPUT);

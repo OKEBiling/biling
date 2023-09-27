@@ -12,8 +12,8 @@ $sub = $this->subscriptions->getSubscriptions();
   <div class=" container-xxl flex-grow-1 container-p-y">
     <!-- Collapsible Section -->
     <div class="row my-4">
-      <div class="col">
-        <form id="addCustomer" action="" method="POST" novalidate="novalidate">
+      <div class="col" id="addCustomers">
+        <form id="addCustomer" method="POST" novalidate="">
           <div class="accordion" id="collapsibleSection">
             <div class="card accordion-item">
               <h2 class="accordion-header" id="headingDeliveryAddress">
@@ -22,25 +22,25 @@ $sub = $this->subscriptions->getSubscriptions();
               <div id="collapseDeliveryAddress" class="accordion-collapse collapse show" data-bs-parent="#collapsibleSection">
                 <div class="accordion-body">
                   <div class="row g-3">
-                    <div class="col-md-6">
-                      <label class="form-label" for="collapsible-fullname">Nama Depan</label>
-                      <input type="text" id="collapsible-fullname" name="firstname" class="form-control"  autofocus>
+                    <div class="col-md-6 cek">
+                      <label class="form-label" for="collapsible-firstname">Nama Depan</label>
+                      <input type="text" id="collapsible-firstname" name="firstname" class="form-control"  autofocus>
                     </div>
-                    <div class="col-md-6">
-                      <label class="form-label" for="collapsible-fullname">Nama Belakang</label>
+                    <div class="col-md-6 cek">
+                      <label class="form-label" for="collapsible-lastname">Nama Belakang</label>
                       <input type="text" id="collapsible-lastname" name="lastname" class="form-control" />
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 cek">
                       <label class="form-label" for="collapsible-phone">Phone No (Whatsaap)</label>
                        <input type="text" id="collapsible-phone" name="phoneNumber" class="form-control phone-mask" />
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 cek">
                       <label class="form-label" for="collapsible-landmark">Email</label>
                       <input type="text" id="collapsible-landmark" name="email" class="form-control" />
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 cek">
                       <label class="form-label" for="collapsible-address">Alamat Lengkap</label>
-                      <textarea name="address" class="form-control h-px-100" id="collapsible-address" rows="2"></textarea>
+                      <textarea name="alamat" class="form-control h-px-100" id="collapsible-address" rows="2"></textarea>
                     </div>
 
                     <div class="col-md-3 mb-4">
@@ -122,11 +122,11 @@ $sub = $this->subscriptions->getSubscriptions();
                       </div>
                     </div>
                     <label class="form-check-label">Koordinat Customer</label>
-                    <div class="col-md-6">
+                    <div class="col-md-6 cek">
                       <label class="form-label" for="collapsible-pincode">Latitude</label>
                       <input type="text" name="lat" id="latitude" class="form-control" />
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 cek">
                       <label class="form-label" for="collapsible-pincode">Longitude</label>
                       <input type="text " name="lng" id="longitude" class="form-control" />
                     </div>
