@@ -1,9 +1,5 @@
 <?php
-
-
-
 include_once MODEL_DIR.'DataModel.php';
-
 define("database_type", "mysql");
 define("server", "localhost");
 define("database_name", "bilingoke");

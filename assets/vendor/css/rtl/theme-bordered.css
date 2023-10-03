@@ -1497,7 +1497,7 @@ html:not(.layout-menu-collapsed) .bg-menu-theme.menu-horizontal .menu-inner>.men
 
 .kanban-item {
     box-shadow: none !important;
-    border: 1px solid #d4d8dd
+    border: 1px dashed #d4d8dd;
 }
 
 .bs-stepper:not(.wizard-modern) {

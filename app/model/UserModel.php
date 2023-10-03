@@ -10,12 +10,7 @@ class UserModel extends Database {
     public function __construct() {
         parent::__construct();
     }
-        /**
-         * Mengidentifikasi profil pengguna berdasarkan ID pengguna atau menerapkan penyaringan kondisional
-         * @param string|int|null $id ID pengguna (opsional)
-         * @param array $conditional Array asosiatif untuk penyaringan kondisional (opsional)
-         * @return $this|array|bool
-         */
+
         public function authenticateUser($username, $password) {
             // Validate input
             if (empty($username) || empty($password)) {
@@ -29,12 +24,6 @@ class UserModel extends Database {
                 return false;
             }
         }
-        /**
-         * Mengidentifikasi profil pengguna berdasarkan ID pengguna atau menerapkan penyaringan kondisional
-         * @param string|int|null $id ID pengguna (opsional)
-         * @param array $conditional Array asosiatif untuk penyaringan kondisional (opsional)
-         * @return $this|array|bool
-         */
          
         public function getUser($id = null, $conditional = []) {
             if (!empty($id)) {
@@ -50,10 +39,6 @@ class UserModel extends Database {
             }
         }
         
-        /**
-         * Mengambil semua data pengguna
-         * @return array|bool
-         */
         public function all() {
             $this->user = $this->db->select('Ok_users', '*');
             return $this->user;

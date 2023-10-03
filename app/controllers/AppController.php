@@ -11,7 +11,7 @@ class App {
         $this->requestMethod = URLController::getMetodeSegment();
         $this->urlSegments = URLController::getUrlSegments();
         $this->baseUrl = URLController::getBaseUrl();
-        $this->user = new mainController();
+        $this->mainController = new mainController();
     }
 
     public function Start() {

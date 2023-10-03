@@ -173,14 +173,4 @@
             </ul>
         </li>
     </ul>
-    <div class=" p-2">
-        <div class="card mb-4">
-            <div class="card-body"> <small class="card-text text-uppercase">Debug</small>
-
-                <ul class="list-unstyled mb-0 mt-3 pt-1">
-                    <?=isset($setsession) ? json_encode($setsession, JSON_PRETTY_PRINT) : '' ;?>
-                </ul>
-            </div>
-        </div>
-    </div>
 </aside>

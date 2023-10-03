@@ -1,4 +1,4 @@
-<?php $user = $this->user->getUsers(); ?>
+<?php $user = $this->mainController->getUsers(); ?>
 
 
 <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
