@@ -2,9 +2,11 @@
   #map {
     height: 100%;
   }
-</style> <?php
+  
+</style> 
+<?php
 
-$sub = $this->subscriptions->getSubscriptions();
+$sub =  $this->subscriptions->getSubscriptions()->all();
 ?>
 <!-- Content wrapper -->
 <div class="content-wrapper">
@@ -97,11 +99,23 @@ $sub = $this->subscriptions->getSubscriptions();
                         </div>
                         <div class="col-md mb-md-0 mb-2">
                           <div class="form-check custom-option custom-option-icon">
+                            <label class="form-check-label custom-option-content" for="CustomerType6">
+                              <span class="custom-option-body">
+                                <i class="bx bxs-graduation"></i>
+                                <span class="custom-option-title">instansi</span>
+                                <small>Sekolah, Perguruan tinggi</small>
+                              </span>
+                              <input name="type" class="form-check-input" type="radio" value="instansi" id="CustomerType6">
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md mb-md-0 mb-2">
+                          <div class="form-check custom-option custom-option-icon">
                             <label class="form-check-label custom-option-content" for="CustomerType4">
                               <span class="custom-option-body">
                                 <i class="bx bx-store"></i>
                                 <span class="custom-option-title">UMKM</span>
-                                <small>Toko Market, Supplayer ,Caffe , Cafe</small>
+                                <small>Toko Market, Supplayer ,Caffe </small>
                               </span>
                               <input name="type" class="form-check-input" type="radio" value="umkm" id="CustomerType4">
                             </label>

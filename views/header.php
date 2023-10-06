@@ -4,7 +4,7 @@
            <meta charset="utf-8" />
         <title><?php
         if (isset($this->title)) {echo $this->title;} elseif (isset($title)) {echo $title;} else {echo 'OKEBiling';}?></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta content="OKEBILING membuat pembayaran semudah itu. Temukan kenyamanan dan kemudahan dalam melakukan pembayaran tagihan dengan menggunakan OKEBILING. Nikmati kemudahan ini dan pelajari lebih lanjut di sini." name="description" />
         <meta content="OKEBILING adalah platform pembayaran yang mudah digunakan dan praktis. Dengan OKEBILING, Anda bisa melakukan pembayaran dengan cepat dan aman. Temukan lebih banyak informasi tentang layanan pembayaran ini di sini." name="author" />
         <!-- App favicon -->

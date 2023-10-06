@@ -10,12 +10,7 @@ class UserModel extends Database {
     public function __construct() {
         parent::__construct();
     }
-        /**
-         * Mengidentifikasi profil pengguna berdasarkan ID pengguna atau menerapkan penyaringan kondisional
-         * @param string|int|null $id ID pengguna (opsional)
-         * @param array $conditional Array asosiatif untuk penyaringan kondisional (opsional)
-         * @return $this|array|bool
-         */
+
         public function authenticateUser($username, $password) {
             // Validate input
             if (empty($username) || empty($password)) {
@@ -29,17 +24,11 @@ class UserModel extends Database {
                 return false;
             }
         }
-        /**
-         * Mengidentifikasi profil pengguna berdasarkan ID pengguna atau menerapkan penyaringan kondisional
-         * @param string|int|null $id ID pengguna (opsional)
-         * @param array $conditional Array asosiatif untuk penyaringan kondisional (opsional)
-         * @return $this|array|bool
-         */
          
         public function getUser($id = null, $conditional = []) {
             if (!empty($id)) {
                 $conditions = ["AND" => ["id" => $id]];
-                $this->user = $this->db->get('Ok_users',  ['id', 'name', 'username','email', 'permission_levels', 'role',], $conditions);
+                $this->user = $this->db->get('Ok_users',  ['id', 'name', 'username','email', 'permission_levels', 'role','position'], $conditions);
                 return $this;
             } elseif (!empty($conditional)) {
                 // Menerapkan penyaringan kondisional
@@ -50,15 +39,14 @@ class UserModel extends Database {
             }
         }
         
-        /**
-         * Mengambil semua data pengguna
-         * @return array|bool
-         */
         public function all() {
             $this->user = $this->db->select('Ok_users', '*');
             return $this->user;
         }
         
+         public function privilegeUsers($id) {
+            return $this->db->get('Ok_users', ['permission_levels', 'role','position'],["AND" => ["id" => $id]]);
+        }
         public function get() {
             return $this->user;
         }

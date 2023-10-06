@@ -1,4 +1,4 @@
-<?php $user = $this->user->getUsers(); ?>
+<?php $user = $this->mainController->getUsers(); ?>
 
 
 <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
@@ -325,7 +325,6 @@
                                         <div class="flex-shrink-0 me-3">
                                             <div class="avatar">
                                                 <span class="avatar-initial rounded-circle bg-label-warning"><i class="bx bx-error"></i></span>
-
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
@@ -372,7 +371,7 @@
                                     </div>
                                     <div class="flex-grow-1">
                                         <span class="fw-semibold d-block lh-1"><?php echo $user['name']; ?></span>
-                                        <small><?php echo $user['role']; ?></small>
+                                        <small><?php echo $user['role']; ?> <?php echo $user['position']; ?></small>
 
                                     </div>
                                 </div>
@@ -407,19 +406,16 @@
                         <li>
                             <a class="dropdown-item" href="pages-help-center-landing.html"> <i class="bx bx-support me-2"></i>
                                 <span class="align-middle">Help</span>
-
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="pages-faq.html"> <i class="bx bx-help-circle me-2"></i>
                                 <span class="align-middle">FAQ</span>
-
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="pages-pricing.html"> <i class="bx bx-dollar me-2"></i>
                                 <span class="align-middle">Pricing</span>
-
                             </a>
                         </li>
                         <li>

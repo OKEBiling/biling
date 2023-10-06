@@ -1091,6 +1091,18 @@ var Helpers = {
             }
         }
     },
+    reformatdate: function reformatdate(tanggalAwal) {
+            var tanggalObjek = new Date(tanggalAwal);
+            var tanggal = tanggalObjek.getDate();
+            var bulan = tanggalObjek.getMonth() + 1; 
+            var tahun = tanggalObjek.getFullYear();
+            tanggal = (tanggal < 10) ? '0' + tanggal : tanggal;
+            bulan = (bulan < 10) ? '0' + bulan : bulan;
+            var tanggalReformat = tanggal + '-' + bulan + '-' + tahun;
+            
+            return tanggalReformat;
+    },
+
     // Ajax Call Promise
     ajaxCall: function ajaxCall(url) {
         return new Promise(function(resolve, reject) {

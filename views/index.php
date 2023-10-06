@@ -22,7 +22,7 @@ $title=null;
         ?>
          </div>
     </div>
-  
+    <div class="content-backdrop fade"></div>
   
     <?php include('footer.php') ?>
     
