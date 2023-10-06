@@ -24,6 +24,7 @@ var App = (function () {
     function App() {
         _classCallCheck(this, App);
         this.init();
+        this.GotoMaps();
     }
     _createClass(App, [{
         key: "init",
@@ -56,6 +57,31 @@ var App = (function () {
         });
         
          
+        }
+    },{
+        key: 'GotoMaps',
+        value: function GotoMaps() {
+            
+            $(".koordinat").click(function() {
+                // Mendapatkan nilai lat dan lng dari atribut elemen yang diklik
+                var lat = parseFloat($(this).attr("lat"));
+                var lng = parseFloat($(this).attr("lng"));
+            
+                // Memeriksa apakah nilai lat dan lng adalah angka yang valid
+                if (!isNaN(lat) && !isNaN(lng)) {
+                    // Membangun URL Google Maps dengan koordinat yang didapatkan
+                    var mapsUrl = "https://www.google.com/maps?q=" + lat + "," + lng;
+            
+                    // Mengarahkan ke Google Maps
+                    window.open(mapsUrl, '_blank');
+                } else {
+                    // Tampilkan pesan kesalahan jika koordinat tidak valid
+                    alert("Koordinat tidak valid.");
+                }
+            });
+
+
+
         }
     },]);
 

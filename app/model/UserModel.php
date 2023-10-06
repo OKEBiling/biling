@@ -28,7 +28,7 @@ class UserModel extends Database {
         public function getUser($id = null, $conditional = []) {
             if (!empty($id)) {
                 $conditions = ["AND" => ["id" => $id]];
-                $this->user = $this->db->get('Ok_users',  ['id', 'name', 'username','email', 'permission_levels', 'role',], $conditions);
+                $this->user = $this->db->get('Ok_users',  ['id', 'name', 'username','email', 'permission_levels', 'role','position'], $conditions);
                 return $this;
             } elseif (!empty($conditional)) {
                 // Menerapkan penyaringan kondisional
@@ -44,6 +44,9 @@ class UserModel extends Database {
             return $this->user;
         }
         
+         public function privilegeUsers($id) {
+            return $this->db->get('Ok_users', ['permission_levels', 'role','position'],["AND" => ["id" => $id]]);
+        }
         public function get() {
             return $this->user;
         }

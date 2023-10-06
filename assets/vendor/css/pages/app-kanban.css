@@ -45,8 +45,11 @@
 }
 .app-kanban .kanban-wrapper .kanban-container .kanban-board .kanban-drag {
     min-height:1rem;
-    min-width:16.25rem;
-    padding:0
+    min-width: 12.25rem;
+    padding: 3px;
+    margin: 1px;
+    background: #dddddd;
+    height: 1000px;
 }
 .app-kanban .kanban-wrapper .kanban-container .kanban-board .kanban-title-button {
     position:absolute;

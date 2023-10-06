@@ -17,17 +17,9 @@ class customerController extends App
         $this->urlSegments = URLController::getSegments();
         $this->init();
     }
+    
     public function init() {
-        error_reporting(0);
-        array_shift($this->urlSegments);
-        switch ($this->urlSegments[0]) {
-            case 'task':
-                return new customerTaskController();
-                break;
-            default:
-                return $this->CustomerView();
-                break;
-        }
+    return $this->CustomerView();
     }
     public function CountTask() {
           $this->TaskCustomerModel = new TaskCustomerModel();

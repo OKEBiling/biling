@@ -63,6 +63,7 @@ class LoginController extends App {
             session::set('username',$this->username);
             session::set('_id',$result->id);
             session::set('logged_in',true);
+            session::set('position',true);
             header("Location: dashboard/?success");
             exit();
         }

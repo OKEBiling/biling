@@ -58,7 +58,6 @@
               <th>Nama</th>
               <th>Alamat</th>
               <th>Marketing</th>
-              </th>
               <th>COF</th>
               <th>Subscriptions</th>
               <th>Anual</th>

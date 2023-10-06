@@ -30,7 +30,31 @@ class mainController extends App {
     /**
      * Metode ini digunakan untuk mengambil semua data yang diperlukan.
      */
+     
+     public function roleUser(){
+        
+     }
+     
+     
+     
+     public function permissionUsers($id){
+         
+     }
+     
+     
+     public function Permission($id=null){
+         
+        if ($id === null) {
+            $id = session::get('_id');
+        }
+        return  $this->userModel->privilegeUsers($id); 
+         
+     }
     public function fetchData() {
         // Kode untuk mengambil data di sini
+    }
+    public function privilegeUsers(){
+        return $this->userModel->privilegeUsers(session::get('_id'));
+     ;
     }
 }

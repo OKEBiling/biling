@@ -1,18 +1,22 @@
 <?php
 
+include_once MODEL_DIR . 'CustomerModel.php';
+include_once MODEL_DIR . 'SubscriptionsModel.php';
+include_once MODEL_DIR . 'TaskCustomerModel.php';
 
-class customerTaskController extends customerController
-{
+class taskController extends App{
 
     public function __construct() {
         parent::__construct();
+
+        $this->init();
     }
     public function init() {
         $this->TaskCustomerModel = new TaskCustomerModel();
         array_shift($this->urlSegments);
         if ($this->requestMethod === 'GET') {
             if ($this->urlSegments) {
-                switch ($this->urlSegments[1]) {
+                switch ($this->urlSegments[0]) {
                     case 'kanban':
                         return $this->ViewCustomerKanban();
                         break;
@@ -44,23 +48,36 @@ class customerTaskController extends customerController
 
 
     public function jsonCustomerTask() {
-        echo json_encode($this->TaskCustomerModel->getTask());
-
+        $this->ViewCustomerTask();
+        header('Content-Type: application/json; charset=utf-8');
+        echo json_encode($this->customerTask);
     }
-    
-    public function subscriptionsId($id){
+
+    public function subscriptionsId($id) {
         $subscriptionss = new SubscriptionsModel();
         return $subscriptionss->getSubscriptions($id)->get();
-    } 
-    
-    
-    public function ViewCustomerTaskList(){
-        $this->customerall=$this->TaskCustomerModel->getTask();
-       $this->title = 'Task New Customer - Okebiling';
-        return $this->layout()->view('newcustomer', []);
     }
 
 
+
+    public function ViewCustomerTaskList() {
+      
+        $this->title = 'Task New Customer - Okebiling';
+        return $this->layout()->view('newcustomer', [
+            'scripts' => [
+                '/assets/js/task.js?'.rand(1, 100),
+
+            ]]);
+    }
+
+    public function ViewCustomerTask($conditional = null) {
+
+        if (!empty($conditional)) {
+            return $this->customerTask = $this->TaskCustomerModel->getTask($conditional);
+        } else {
+            return $this->customerTask = $this->TaskCustomerModel->getTask();
+        }
+    }
     public function jkanbanjson() {
         $data = $this->TaskCustomerModel->getTask();
 
@@ -119,10 +136,10 @@ class customerTaskController extends customerController
                     'alamat' => $item['alamat'],
                     'badge-text' => $this->subscriptionsId($item['subscriptions'])['package'],
                     'lat-lng' => $item['lat'] . ',' . $item['lng'],
-                    'phone-number'=> str_replace(' ', '', $item['phoneNumber']),
-                    'email'=>$item['email'],
-                    'type'=>$item['type'],
-                    'updated_at'=>$item['updated_at'],
+                    'phone-number' => str_replace(' ', '', $item['phoneNumber']),
+                    'email' => $item['email'],
+                    'type' => $item['type'],
+                    'updated_at' => $item['updated_at'],
                     'badge' => badgelevel($item['subscriptions']),
                     'start-date' => $item['created_at'],
                     'attachments' => '',
@@ -153,7 +170,6 @@ class customerTaskController extends customerController
     }
 
 
-
     public function processPost() {
         $postData = json_decode(file_get_contents('php://input'), true);
         $postData['id'] = randstring();
@@ -162,23 +178,22 @@ class customerTaskController extends customerController
         echo json_encode($postData);
 
     }
-    
-    
+
+
     public function addCustomerTaskView() {
         $this->subscriptions = new SubscriptionsModel();
         $this->title = 'Add Customer - Okebiling';
         $this->layout()->view('addcustomer', $this->loadlib());
     }
-    public function ViewCustomerTask() {
-        $this->customerall = $this->TaskCustomerModel->getTask();
-        $this->title = 'Customer Pending- Okebiling';
-        return $this->layout()->view('customertasklist', $this->loadlib());
-    }
+    
+
+    
     public function ViewCustomerKanban() {
         $this->customerall = $this->TaskCustomerModel->getTask();
         $this->title = 'Customer Pending- Okebiling';
         return $this->layout()->view('customerKanban', $this->loadlibKanban());
     }
+    
     public function loadlib() {
         return [
             'cssLinks' => [

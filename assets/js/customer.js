@@ -14,7 +14,6 @@ var customerHandle = (function() {
             this.tableresponsive();
 
             if (document.getElementById("map")) {
-                this.GotoMaps();
                 this.ValidasiForm();
                 this.SelectWil();
                 this.showmaps();
@@ -306,25 +305,6 @@ var customerHandle = (function() {
 
         }
     }, {
-        key: 'GotoMaps',
-        value: function GotoMaps() {
-
-            // Menambahkan event click menggunakan jQuery
-            $("#koordinat").click(function() {
-                // Mendapatkan nilai lat dan lng dari atribut elemen
-                var lat = parseFloat($(this).attr("lat"));
-                var lng = parseFloat($(this).attr("lng"));
-
-                // Membangun URL Google Maps dengan koordinat yang didapatkan
-                var mapsUrl = "https://www.google.com/maps?q=" + lat + "," + lng;
-
-                // Mengarahkan ke Google Maps
-                window.open(mapsUrl, '_blank');
-            });
-
-
-        }
-    },{
         key: 'tableresponsive',
         value: function tableresponsive() {
         // Mengumpulkan semua elemen dengan id "tables"

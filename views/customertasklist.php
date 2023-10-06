@@ -1,6 +1,5 @@
 <div class="container-xxl flex-grow-1 container-p-y">
   <!-- Users List Table -->
-  <div class="card ">
     <div class="card-header d-flex justify-content-between align-items-center">
      
       <div class="d-flex justify-content-between  row  gap-3 gap-md-0">
@@ -32,7 +31,16 @@
               <th>Action</th>
             </tr>
           </thead>
-          <tbody class="table-border-bottom-0"> <?php foreach ($this->customerall as $key => $value): ?> <tr>
+          <tbody class="table-border-bottom-0"> <?php foreach ($this->customerall as $key => $value): 
+          
+          
+          if ($value['status']==='pending') {
+            
+            
+            
+            ?>
+            
+             <tr>
               <td>
                 <strong> <?= $value['firstname'].' '.$value['lastname'] ?> </strong>
               </td>
@@ -53,7 +61,16 @@
                   </div>
                 </div>
               </td>
-            </tr> <?php endforeach; ?> </tbody>
+            </tr> 
+            
+            <?php
+            
+            
+            
+          } 
+          
+          
+          ?><?php endforeach; ?> </tbody>
         </table>
       </div>
       <div id="tables" class=" text-nowrap mt-5">
@@ -69,7 +86,10 @@
               <th>Action</th>
             </tr>
           </thead>
-          <tbody class="table-border-bottom-0"> <?php foreach ($this->customerall as $key => $value): ?> <tr>
+          <tbody class="table-border-bottom-0"> <?php foreach ($this->customerall as $key => $value): 
+          
+           if ($value['status']==='onsurvey') {
+          ?> <tr>
               <td>
                 <strong> <?= $value['firstname'].' '.$value['lastname'] ?> </strong>
               </td>
@@ -91,7 +111,13 @@
                   </div>
                 </div>
               </td>
-            </tr> <?php endforeach; ?> </tbody>
+            </tr> 
+            
+            
+            
+            <?php } 
+            
+            endforeach; ?> </tbody>
         </table>
       </div>
       <div id="tables" class=" text-nowrap mt-5">
@@ -107,7 +133,8 @@
               <th>Action</th>
             </tr>
           </thead>
-          <tbody class="table-border-bottom-0"> <?php foreach ($this->customerall as $key => $value): ?> <tr>
+          <tbody class="table-border-bottom-0"> <?php foreach ($this->customerall as $key => $value): 
+           if ($value['status']==='onprogress') {?> <tr>
               <td>
                 <strong> <?= $value['firstname'].' '.$value['lastname'] ?> </strong>
               </td>
@@ -129,7 +156,7 @@
                   </div>
                 </div>
               </td>
-            </tr> <?php endforeach; ?> </tbody>
+            </tr> <?php } endforeach; ?> </tbody>
         </table>
       </div>
       <div id="tables" class=" text-nowrap mt-5">
@@ -145,7 +172,11 @@
               <th>Action</th>
             </tr>
           </thead>
-          <tbody class="table-border-bottom-0"> <?php foreach ($this->customerall as $key => $value): ?> <tr>
+          <tbody class="table-border-bottom-0"> <?php foreach ($this->customerall as $key => $value): 
+          
+          
+           if ($value['status']==='onlogic') {
+          ?> <tr>
               <td>
                 <strong> <?= $value['firstname'].' '.$value['lastname'] ?> </strong>
               </td>
@@ -166,7 +197,8 @@
                   </div>
                 </div>
               </td>
-            </tr> <?php endforeach; ?> </tbody>
+            </tr> <?php }
+            endforeach; ?> </tbody>
         </table>
       </div>
       <div id="tables" class=" text-nowrap mt-5">
@@ -182,7 +214,8 @@
               <th>Action</th>
             </tr>
           </thead>
-          <tbody class="table-border-bottom-0"> <?php foreach ($this->customerall as $key => $value): ?> <tr>
+          <tbody class="table-border-bottom-0"> <?php foreach ($this->customerall as $key => $value): 
+           if ($value['status']==='done') {?> <tr>
               <td>
                 <strong> <?= $value['firstname'].' '.$value['lastname'] ?> </strong>
               </td>
@@ -203,8 +236,7 @@
                   </div>
                 </div>
               </td>
-            </tr> <?php endforeach; ?> </tbody>
+            </tr> <?php } endforeach; ?> </tbody>
         </table>
       </div>
     </div>
-  </div>

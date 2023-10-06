@@ -99,3 +99,35 @@ class Helper {
         return $output;
         
     }
+    
+    
+        function to_fixed($number, $decimals) {
+        return floatval(number_format($number, $decimals, '.', ""));
+    }
+    
+    function reformatDate($inputDate) {
+    // Mengubah format tanggal
+    $newDate = date("d/m/Y", strtotime($inputDate));
+    return $newDate;
+}
+
+function timeAgo($inputDate) {
+    $currentTimestamp = time();
+    $inputTimestamp = strtotime($inputDate);
+
+    $difference = $currentTimestamp - $inputTimestamp;
+
+    if ($difference < 60) {
+        return $difference . " detik yang lalu";
+    } elseif ($difference < 3600) {
+        $minutes = floor($difference / 60);
+        return $minutes . " menit yang lalu";
+    } elseif ($difference < 86400) {
+        $hours = floor($difference / 3600);
+        return $hours . " jam yang lalu";
+    } else {
+        $days = floor($difference / 86400);
+        return $days . " hari yang lalu";
+    }
+}
+
