@@ -131,3 +131,19 @@ function timeAgo($inputDate) {
     }
 }
 
+function timeto($waktustart,$tambahan){
+    
+    
+                $timestamp = strtotime($waktustart);
+                $timestamp_tambahan = $timestamp + ($tambahan * 24 * 60 * 60); 
+                $waktu_hasil = date("d M y", $timestamp_tambahan);
+                
+                return $waktu_hasil;
+}
+
+function formatRupiah($angka){
+    $rupiah = "Rp " . number_format($angka,0,',','.');
+    return $rupiah;
+}
+
+

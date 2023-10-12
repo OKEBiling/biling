@@ -5,7 +5,7 @@ include_once MODEL_DIR . 'SubscriptionsModel.php';
 include_once MODEL_DIR . 'TaskCustomerModel.php';
 
 class taskController extends App{
-
+    protected $TaskCustomerModel;
     public function __construct() {
         parent::__construct();
 
@@ -22,6 +22,9 @@ class taskController extends App{
                         break;
                     case 'del':
                         break;
+                    case 'view':
+                         return $this->viewActivity();
+                        break;
                     case 'debug':
                         return $this->jsonCustomerTask();
                         break;
@@ -30,6 +33,9 @@ class taskController extends App{
                         break;
                     case 'add':
                         return $this->addCustomerTaskView();
+                        break;
+                    case 'detail':
+                        return $this->viewTaskid();
                         break;
                     case 'list':
                         return $this->ViewCustomerTaskList();
@@ -42,15 +48,40 @@ class taskController extends App{
                 $this->ViewCustomerTask();
             }
         } else if ($this->requestMethod === 'POST') {
-            $this->processPost();
+                $this->postData = json_decode(file_get_contents('php://input'), true);
+                $this->action =  $this->postData['action'] ?? '';
+                switch ($this->action) {
+                    case 'followtask':
+                      return $this->InsertFollowTask();
+                        break;
+                    case 'newcustomer':
+                       return $this->insertTask(); 
+                        break;
+                    case 'false':
+                        // code...
+                        break; 
+                    case 'update':
+                        return $this->updateTask(); 
+                        break; 
+                    default:
+                        // code...
+                        break;
+                }
         }
     }
 
-
+    public function viewActivity(){
+        include LAYOUT.'activityview.php';
+    }
     public function jsonCustomerTask() {
         $this->ViewCustomerTask();
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode($this->customerTask);
+    }
+    
+    
+    public function getFollowTask($id){
+        return $this->TaskCustomerModel->getFollowTask($id);
     }
 
     public function subscriptionsId($id) {
@@ -58,18 +89,32 @@ class taskController extends App{
         return $subscriptionss->getSubscriptions($id)->get();
     }
 
-
-
     public function ViewCustomerTaskList() {
-      
+        $privilage = $this->mainController->privilegeUsers();
+        $privilageSet = [
+            'teknisi' => ['pending', 'onprogress', 'onsurvey'],
+            'noc' => ['onlogic'],
+            'owner' => ['pending', 'onprogress', 'onsurvey', 'done','onlogic', 'nocoverage'],
+        ];
+        $this->data = $this->ViewCustomerTask(['Ok_task_customer.status' => $privilageSet[$privilage['position']],'ORDER' =>['created_at' => 'DESC']]); 
         $this->title = 'Task New Customer - Okebiling';
         return $this->layout()->view('newcustomer', [
+            'cssLinks' => ['/assets/vendor/libs/winbox/css/winbox.min.css'],
             'scripts' => [
+                '/assets/vendor/libs/winbox/js/winbox.min.js',
+                '/assets/vendor/libs/block-ui/block-ui.js',
                 '/assets/js/task.js?'.rand(1, 100),
 
             ]]);
     }
-
+    
+    
+    public function viewTaskid($id){
+       return $this->data = $this->TaskCustomerModel->getTaskDetail(['Ok_task_customer.id' =>$id]); 
+       
+    }
+    
+    
     public function ViewCustomerTask($conditional = null) {
 
         if (!empty($conditional)) {
@@ -78,7 +123,93 @@ class taskController extends App{
             return $this->customerTask = $this->TaskCustomerModel->getTask();
         }
     }
-    public function jkanbanjson() {
+ 
+ 
+    public function InsertFollowTask(){
+        unset($this->postData['action']);
+         $this->postData['iduser']=session::get('_id');
+         $this->TaskCustomerModel->insertHisTask(['idcustomer'=> $this->postData['idcustomer'],'type'=>'follow']);
+         $followtask = $this->TaskCustomerModel->followTask($this->postData);
+         echo json_encode($this->postData);
+    }
+
+
+
+    public function insertTask() {
+         unset($this->postData['action']);
+        $this->postData['id'] = randstring();
+        $actions= $this->TaskCustomerModel->insetTask($this->postData); 
+        $this->TaskCustomerModel->insertHisTask(['idcustomer'=> $this->postData['id'],'type'=>'create']);
+        echo json_encode($this->TaskCustomerModel->insertHisTask);
+
+    }
+    
+    public function viewHisTask($array){
+        return  $this->TaskCustomerModel->getHisTask($array);
+    }
+    
+    
+    
+    public function updateTask(){
+        $idcustomer=$this->postData['idcustomer'];
+        unset($this->postData['idcustomer']);
+        unset($this->postData['message']);
+        unset($this->postData['action']);
+         $this->TaskCustomerModel->updateTask($this->postData,['id'=> $idcustomer]);
+       return $this->TaskCustomerModel->insertHisTask(['idcustomer'=>$idcustomer,'type'=>'update','status'=> 'onsurvey']);
+         
+    }
+
+
+    public function addCustomerTaskView() {
+        $this->subscriptions = new SubscriptionsModel();
+        $this->title = 'Add Customer - Okebiling';
+        $this->layout()->view('addcustomer', $this->loadlib());
+    }
+    
+
+    
+    public function ViewCustomerKanban() {
+        $this->customerall = $this->TaskCustomerModel->getTask();
+        $this->title = 'Customer Pending- Okebiling';
+        return $this->layout()->view('customerKanban', $this->loadlibKanban());
+    }
+    
+    public function loadlib() {
+        return [
+            'cssLinks' => [
+                'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
+                '/assets/vendor/libs/select2/select2.css',
+                '/assets/vendor/libs/bootstrap-select/bootstrap-select.css'],
+            'scripts' => [
+                '/assets/vendor/libs/leaflet/leaflet.js',
+                '/assets/js/forms-selects.js?'.rand(1, 100),
+                '/assets/vendor/libs/select2/select2.js',
+                '/assets/vendor/libs/cleavejs/cleave.js',
+                '/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js',
+                '/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js',
+                '/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js',
+                '/assets/js/customer.js?'.rand(1, 100),
+                '/assets/js/ui-popover.js'
+            ]];
+    }
+
+    public function loadlibKanban() {
+        return [
+            'cssLinks' => [
+                '/assets/vendor/libs/jkanban/jkanban.css?'.rand(1, 100),
+                '/assets/vendor/css/pages/app-kanban.css?'.rand(1, 100),
+            ],
+            'scripts' => [
+                '/assets/vendor/libs/moment/moment.js',
+                '/assets/vendor/libs/jkanban/jkanban.js?'.rand(1, 100),
+                '/assets/js/app-kanban.js?'.rand(1, 100),
+
+            ]];
+    }
+
+
+   public function jkanbanjson() {
         $data = $this->TaskCustomerModel->getTask();
 
         $statusToBoardId = [
@@ -168,66 +299,5 @@ class taskController extends App{
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode($output);
     }
-
-
-    public function processPost() {
-        $postData = json_decode(file_get_contents('php://input'), true);
-        $postData['id'] = randstring();
-        $this->TaskCustomerModel->insetTask($postData);
-        //debug
-        echo json_encode($postData);
-
-    }
-
-
-    public function addCustomerTaskView() {
-        $this->subscriptions = new SubscriptionsModel();
-        $this->title = 'Add Customer - Okebiling';
-        $this->layout()->view('addcustomer', $this->loadlib());
-    }
-    
-
-    
-    public function ViewCustomerKanban() {
-        $this->customerall = $this->TaskCustomerModel->getTask();
-        $this->title = 'Customer Pending- Okebiling';
-        return $this->layout()->view('customerKanban', $this->loadlibKanban());
-    }
-    
-    public function loadlib() {
-        return [
-            'cssLinks' => [
-                'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
-                '/assets/vendor/libs/select2/select2.css',
-                '/assets/vendor/libs/bootstrap-select/bootstrap-select.css'],
-            'scripts' => [
-                '/assets/vendor/libs/leaflet/leaflet.js',
-                '/assets/js/forms-selects.js?'.rand(1, 100),
-                '/assets/vendor/libs/select2/select2.js',
-                '/assets/vendor/libs/cleavejs/cleave.js',
-                '/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js',
-                '/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js',
-                '/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js',
-                '/assets/js/customer.js?'.rand(1, 100),
-                '/assets/js/ui-popover.js'
-
-            ]];
-    }
-
-    public function loadlibKanban() {
-        return [
-            'cssLinks' => [
-                '/assets/vendor/libs/jkanban/jkanban.css?'.rand(1, 100),
-                '/assets/vendor/css/pages/app-kanban.css?'.rand(1, 100),
-            ],
-            'scripts' => [
-                '/assets/vendor/libs/moment/moment.js',
-                '/assets/vendor/libs/jkanban/jkanban.js?'.rand(1, 100),
-                '/assets/js/app-kanban.js?'.rand(1, 100),
-
-            ]];
-    }
-
-
 
 }

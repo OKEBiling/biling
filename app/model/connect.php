@@ -15,7 +15,7 @@ class Database{
      */
     public function __construct()
     {
-    $this->db = new medoo([
+    $this->db = new Medoo([
             'database_type' => database_type,
             'database_name' => database_name,
             'server' => server,

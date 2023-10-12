@@ -10,9 +10,7 @@ var customerHandle = (function() {
     _createClass(customerHandle, [{
         key: "init",
         value: function init() {
-            
             this.tableresponsive();
-
             if (document.getElementById("map")) {
                 this.ValidasiForm();
                 this.SelectWil();
@@ -70,9 +68,8 @@ var customerHandle = (function() {
                     longitudeInput.value = match[2];
                     self.defaultmarker.setLatLng([match[1], match[2]]);
                     self.JumpMapsView(match[1], match[2]);
-
                 } else {
-                    alert('Format koordinat tidak valid. Gunakan format -7.745552872294522, 110.40203744233082');
+                    alert('Format koordinat tidak valid. Gunakan format -xxx.xxxx, -xxx.xxxxxx');
                 }
             });
         }
@@ -89,8 +86,6 @@ var customerHandle = (function() {
         value: function ValidasiForm() {
             var self = this;
             const addCustomer = document.querySelector("#addCustomer");
-
-
             var t, y;
             addCustomer && FormValidation.formValidation(addCustomer, {
                 fields: {
@@ -288,7 +283,6 @@ var customerHandle = (function() {
             formData.forEach(function(input) {
                 dataObject[input.name] = input.value;
             });
-
             $.ajax({
                 url: 'customer/add',
                 method: 'POST',

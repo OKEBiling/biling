@@ -64,6 +64,7 @@ class LoginController extends App {
             session::set('_id',$result->id);
             session::set('logged_in',true);
             session::set('position',true);
+            session::setCsrfToken();
             header("Location: dashboard/?success");
             exit();
         }
