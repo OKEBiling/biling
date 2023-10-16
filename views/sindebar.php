@@ -7,7 +7,9 @@
         <a href="index.html" class="app-brand-link"> <span class="app-brand-logo demo">
             <img src="/assets/img/logo/logo.png" class="app-brand-logo demo" />
         </span>
- <span class="app-brand-text demo menu-text fw-bold ms-2"></span>
+ <span class="app-brand-text demo menu-text fw-bold ms-2 " style="
+    color: #737373;
+">OKEBilling</span>
         </a>
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto"> <i class="bx menu-toggle-icon d-none d-xl-block fs-4 align-middle"></i>
  <i class="bx bx-x d-block d-xl-none bx-sm align-middle"></i>
@@ -82,6 +84,11 @@
                 <li class="menu-item">
                     <a href="/task/add" class="menu-link">
                         <div data-i18n="List">New Customer</div>
+                    </a>
+                </li>
+                 <li class="menu-item">
+                    <a href="/task/history" class="menu-link">
+                        <div data-i18n="List">Tracking Data</div>
                     </a>
                 </li>
             </ul>

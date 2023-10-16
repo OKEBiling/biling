@@ -180,6 +180,7 @@ $sub =  $this->subscriptions->getSubscriptions()->all();
                       </div>
                     </div> <?php endforeach; ?> </div>
                   <div class="mt-5">
+                       <input type="hidden" name="action" value="newcustomer">
                     <button type="submit" id="addcustomer" class="btn  btn-primary me-sm-3 me-1">Simpan</button>
                     <button type="reset" class="btn btn-label-secondary">Cancel</button>
                   </div>
