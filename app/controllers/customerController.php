@@ -3,15 +3,11 @@ include_once MODEL_DIR . 'CustomerModel.php';
 include_once MODEL_DIR . 'SubscriptionsModel.php';
 include_once MODEL_DIR . 'TaskCustomerModel.php';
 include_once CONTROLLER_DIR . 'customerTaskController.php';
-/**
-*
-*/
+
 class customerController extends App
 {
 
-    /**
-    *
-    */
+
     public function __construct() {
         parent::__construct();
         $this->urlSegments = URLController::getSegments();

@@ -7,8 +7,8 @@ class Helper {
         }
         return $reindexedArray;
     }
-    
-    
+
+
     public static function singlePing($host) {
         try {
             exec('/bin/ping -qc 1 '.$host['ip'].' | awk -F/ \'/^rtt/ { print $5 }\'', $result);
@@ -23,89 +23,93 @@ class Helper {
 
             return 'tidak dapat melakukan ping';
         }
-        }
-        
-    public static function  redirectLogin($argv){
-            die(header('Location: '.URLController::getBaseUrl().'/login'));
-            
-        }
-        
+    }
+
+    public static function redirectLogin($argv) {
+        die(header('Location: '.URLController::getBaseUrl().'/login'));
+
+    }
     
+    public static function ArrayByWhitelist($array, $whitelist) {
+            return array_intersect_key($array, array_flip($whitelist));
+        }
+
+
 }
 
-    function randstring($len = 6, $type = 1, $prefix = null) {
-        $str = '';
+function randstring($len = 6, $type = 1, $prefix = null) {
+    $str = '';
 
-        switch ($type) {
-            case 1:
-                $chars = str_repeat('0123456789', 3);
-                break;
-            case 2:
-                $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-                break;
-            case 3:
-                $chars = 'abcdefghijklmnopqrstuvwxyz';
-                break;
-            case 4:
-                $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-                break;
-            case 5:
-                $chars = 'ABCDEFGHIJKMNPQRSTUVWXYZ1234567890abcdefghijkmnpqrstuvwxyz_-';
-                break;
-            default:
+    switch ($type) {
+        case 1:
+            $chars = str_repeat('0123456789', 3);
+            break;
+        case 2:
+            $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            break;
+        case 3:
+            $chars = 'abcdefghijklmnopqrstuvwxyz';
+            break;
+        case 4:
+            $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+            break;
+        case 5:
+            $chars = 'ABCDEFGHIJKMNPQRSTUVWXYZ1234567890abcdefghijkmnpqrstuvwxyz_-';
+            break;
+        default:
 
-                $chars = 'ABCDEFGHIJKMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz1234567890';
-                break;
-        }
-
-        if ($len > 10) {
-            $chars = $type == 1 ? str_repeat($chars, $len) : str_repeat($chars, 5);
-        }
-
-        $chars = str_shuffle($chars);
-        $str   = substr($chars, 0, $len);
-
-        return $prefix . $str;
+            $chars = 'ABCDEFGHIJKMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz1234567890';
+            break;
     }
 
-    function badgelevel($number){
-        
-        switch ($number) {
-            case '1':
-                $output ='bg-primary';
-                break;
-            case '2':
-                $output = 'bg-secondary';
-                break;
-            case '3':
-                $output = 'bg-success';
-                break;
-            case '4':
-                 $output ='bg-info';
-                break;
-            case '5':
-                 $output ='bg-warning';
-                break;
-            case '6':
-               $output ='bg-danger';
-                break;
-            case '7':
-                 $output ='bg-dark';
-                break;
-            default:
-                break;
-        }
-        
-        return $output;
-        
+    if ($len > 10) {
+        $chars = $type == 1 ? str_repeat($chars, $len) : str_repeat($chars, 5);
     }
-    
-    
-        function to_fixed($number, $decimals) {
-        return floatval(number_format($number, $decimals, '.', ""));
+
+    $chars = str_shuffle($chars);
+    $str = substr($chars, 0, $len);
+
+    return $prefix . $str;
+}
+
+function badgelevel($number) {
+
+    switch ($number) {
+        case '1':
+            $output = 'bg-primary';
+            break;
+        case '2':
+            $output = 'bg-secondary';
+            break;
+        case '3':
+            $output = 'bg-success';
+            break;
+        case '4':
+            $output = 'bg-info';
+            break;
+        case '5':
+            $output = 'bg-warning';
+            break;
+        case '6':
+            $output = 'bg-danger';
+            break;
+        case '7':
+            $output = 'bg-dark';
+            break;
+        default:
+            break;
     }
-    
-    function reformatDate($inputDate) {
+
+    return $output;
+
+}
+
+
+function to_fixed($number, $decimals) {
+    return floatval(number_format($number, $decimals, '.', ""));
+}
+
+function reformatDate($inputDate) {
     // Mengubah format tanggal
     $newDate = date("d/m/Y", strtotime($inputDate));
     return $newDate;
@@ -131,19 +135,60 @@ function timeAgo($inputDate) {
     }
 }
 
-function timeto($waktustart,$tambahan){
-    
-    
-                $timestamp = strtotime($waktustart);
-                $timestamp_tambahan = $timestamp + ($tambahan * 24 * 60 * 60); 
-                $waktu_hasil = date("d M y", $timestamp_tambahan);
-                
-                return $waktu_hasil;
+function timeto($waktustart, $tambahan) {
+
+
+    $timestamp = strtotime($waktustart);
+    $timestamp_tambahan = $timestamp + ($tambahan * 24 * 60 * 60);
+    $waktu_hasil = date("d M y", $timestamp_tambahan);
+
+    return $waktu_hasil;
 }
 
-function formatRupiah($angka){
-    $rupiah = "Rp " . number_format($angka,0,',','.');
+function formatRupiah($angka) {
+    $rupiah = "Rp " . number_format($angka, 0, ',', '.');
     return $rupiah;
 }
+
+function formatWaktu($waktu) {
+    $timestamp = strtotime($waktu); // Mengonversi string waktu menjadi timestamp.
+    if ($timestamp === false) {
+        return false; // Handling kesalahan jika string waktu tidak valid.
+    }
+
+    $hariInggris = date('l', $timestamp); // Mendapatkan nama hari dalam bahasa Inggris.
+    $hariIndonesia = '';
+
+    // Mengonversi nama hari dalam bahasa Inggris ke bahasa Indonesia.
+    switch ($hariInggris) {
+        case 'Monday':
+            $hariIndonesia = 'Senin';
+            break;
+        case 'Tuesday':
+            $hariIndonesia = 'Selasa';
+            break;
+        case 'Wednesday':
+            $hariIndonesia = 'Rabu';
+            break;
+        case 'Thursday':
+            $hariIndonesia = 'Kamis';
+            break;
+        case 'Friday':
+            $hariIndonesia = 'Jumat';
+            break;
+        case 'Saturday':
+            $hariIndonesia = 'Sabtu';
+            break;
+        case 'Sunday':
+            $hariIndonesia = 'Minggu';
+            break;
+    }
+
+    $tanggal = date('d/m/Y', $timestamp); // Format tanggal.
+    $jam = date('H:i', $timestamp); // Format jam.
+
+    return "Pada Hari $hariIndonesia, $tanggal Pukul $jam";
+}
+
 
 

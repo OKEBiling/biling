@@ -206,8 +206,6 @@ var customerHandle = (function() {
                     }
                 });
             });
-
-
         }
     }, {
         key: "SelectWil",

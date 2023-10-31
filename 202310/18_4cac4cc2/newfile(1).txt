@@ -1,0 +1,40 @@
+  $idcustomer=$this->postData['idcustomer'];
+        $message= $this->postData['message'];
+        $schedule = $this->postData['schedule'];
+        unset($this->postData['idcustomer']);
+        unset($this->postData['message']);
+        unset($this->postData['action']);
+        unset($this->postData['file']);
+        unset($this->postData['fn']);
+        unset($this->postData['idodp']);
+        
+         $this->TaskCustomerModel->updateTask($this->postData,['id'=> $idcustomer]);
+         
+         echo json_encode($this->postData);
+       return $this->TaskCustomerModel->insertHisTask(['idcustomer'=>$idcustomer,'type'=>'update','status'=> $this->postData['status'],'message'=>$message,'schedule'=>$schedule]);
+       <div class="card bg-transparent border-0 ">
+                                             <div class="d-flex justify-content-between"> 
+                                             <div  class="d-flex justify-content-start mx-2">Team :</div>
+                                                <div class="d-flex justify-content-end"> <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap border-bottom-1 p-0">
+                                          <div class="d-flex flex-wrap align-items-center">
+                                            <ul class="list-unstyled users-list d-flex align-items-center avatar-group m-0  me-2">
+                                              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" aria-label="Vinnie Mostowy" data-bs-original-title="Vinnie Mostowy">
+                                                <img class="rounded-circle" src="../../assets/img/avatars/5.png" alt="Avatar">
+                                              </li>
+                                              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" aria-label="Allen Rieske" data-bs-original-title="Allen Rieske">
+                                                <img class="rounded-circle" src="../../assets/img/avatars/12.png" alt="Avatar">
+                                              </li>
+                                              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" aria-label="Julee Rossignol" data-bs-original-title="Julee Rossignol">
+                                                <img class="rounded-circle" src="../../assets/img/avatars/6.png" alt="Avatar">
+                                              </li>
+                                            </ul>
+                                            
+                                          </div>
+                                          
+                                        </li>
+                                       
+                                      </ul></div>
+                                             
+                                             </div>
+                                      </div>

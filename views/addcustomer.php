@@ -11,7 +11,7 @@ $sub =  $this->subscriptions->getSubscriptions()->all();
 <!-- Content wrapper -->
 <div class="content-wrapper">
   <!-- Content -->
-  <div class=" container-xxl flex-grow-1 container-p-y">
+<div class="flex-grow-1 container-fluid">
     <!-- Collapsible Section -->
     <div class="row my-4">
       <div class="col" id="addCustomers">
@@ -61,12 +61,12 @@ $sub =  $this->subscriptions->getSubscriptions()->all();
                       <select id="Kecamatan"  name="kecamatan" class="select2 form-select " data-allow-clear="true">
                       </select>
                     </div>
-                         <div class="col-md-3 mb-4">
+                         <div class="col-md-2 mb-4">
                       <label for="Kelurahan" class="form-label">Kelurahan</label>
                       <select id="Kelurahan"  name="kelurahan" class="select2 form-select " data-allow-clear="true">
                       </select>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-2">
                       <label class="form-label" for="collapsible-pincode">Kode Pos</label>
                       <input type="text" name="kodepos" id="collapsible-pincode" class="form-control text-uppercase" />
                     </div>
