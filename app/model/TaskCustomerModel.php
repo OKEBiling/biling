@@ -6,11 +6,11 @@ class TaskCustomerModel extends Database {
     const MAINTABLE = 'Ok_task_customer';
     const PROGTABLE = 'Ok_follow_task_progress';
     const HISTTABLE = 'Ok_task_progress_his';
+    const FILETABLE = 'Ok_task_files';
+    const USERTABLE = 'Ok_users';
 
     public function __construct() {
         parent::__construct();
-
-
     }
 
     public function getTask($conditional = null) {
@@ -37,12 +37,14 @@ class TaskCustomerModel extends Database {
             "[>]Ok_subscriptions" => ["subscriptions" => "id"]
         ], [
             'Ok_task_customer.id',
+            'Ok_task_customer.SN',
             'Ok_task_customer.firstname',
             'Ok_task_customer.lastname',
             'Ok_task_customer.idfrom',
             'Ok_task_customer.created_at',
             'Ok_task_customer.alamat',
             'Ok_task_customer.status',
+            'Ok_task_customer.phoneNumber',
             'Ok_subscriptions.package',
             'Ok_subscriptions.amount',
             'Ok_subscriptions.service'
@@ -57,7 +59,6 @@ class TaskCustomerModel extends Database {
 
     public function followTask($data) {
         return $this->insetFollowTask = $this->db->insert(self::PROGTABLE, $data);
-
     }
 
     public function insertHisTask($data) {
@@ -70,10 +71,9 @@ class TaskCustomerModel extends Database {
          return $this->updateTask = $this->db->update(self::MAINTABLE, $data, $conditional);
     }
     
-    
     public function getHisTask($data) {
         return $this->getTask = $this->db->select(self::HISTTABLE, [
-            "[>]Ok_users" => ["iduser" => "id"],
+            "[>]". self::USERTABLE => ["iduser" => "id"],
         ], [
             self::HISTTABLE.'.idcustomer',
             self::HISTTABLE.'.type',
@@ -81,12 +81,25 @@ class TaskCustomerModel extends Database {
             self::HISTTABLE.'.comment',
             self::HISTTABLE.'.subject',
             self::HISTTABLE.'.task',
+            self::HISTTABLE.'.message',
+            self::HISTTABLE.'.schedule',
             self::HISTTABLE.'.status',
+            self::HISTTABLE.'.cr',
+            self::HISTTABLE.'.idfiles',
             self::HISTTABLE.'.created_at',
-            'Ok_users.name',
-            'Ok_users.position'
+            self::USERTABLE.'.name',
+            self::USERTABLE.'.position'
         ], $data);
 
+    }
+        
+    public function getHisPhotos($id) {
+      return $result = $this->db->select(self::FILETABLE, [
+            "idfiles",
+            "file_path"
+        ], [
+            "idtask" => $id, // Sesuaikan dengan idtask yang diinginkan
+        ]);
     }
 
     public function getFollowTask($id) {
@@ -95,9 +108,7 @@ class TaskCustomerModel extends Database {
                 "iduser" => session::get('_id'),
                 "idcustomer" => $id
             ]]);
-
     }
-
 
     public function countsTask() {
         return $this->countsTask = $this->db->count(self::MAINTABLE);
@@ -105,5 +116,19 @@ class TaskCustomerModel extends Database {
 
     public function setTask() {}
 
-
+    public function getTableColumns($tableName) {
+         return $this->insetFollowTask = $this->db->query("DESCRIBE $tableName")->fetchAll(PDO::FETCH_COLUMN);
+    }
+    
+    
+    public function getLatestMessage($idTertentu){
+   return $this->db->select(self::HISTTABLE, [
+            'message', 'created_at'
+        ], [
+            'task'=>'status',
+            'idcustomer' => $idTertentu,
+            'ORDER' => ['created_at' => 'DESC'], 
+            'LIMIT' => 1 
+        ]);
+    }
 }

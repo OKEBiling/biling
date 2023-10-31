@@ -1,6 +1,26 @@
 <?php
 
 /**
+ * The Medoo raw object.
+ */
+class Raw
+{
+    /**
+     * The array of mapping data for the raw string.
+     *
+     * @var array
+     */
+    public $map;
+
+    /**
+     * The raw string.
+     *
+     * @var string
+     */
+    public $value;
+}
+
+/**
  * @method array select(string $table, array $columns, array $where)
  * @method null select(string $table, array $columns, callable $callback)
  * @method null select(string $table, array $columns, array $where, callable $callback)

@@ -1,3 +1,9 @@
+
+<h5 class="card-header pt-2 ps-0">
+    <i class="fas fa-tasks mx-2"></i> Task Activity
+</h5>
+
+
 <?php
 $statusLabels = [
     'pending' => ['label' => 'Pending', 'color' => 'bg-secondary'],
@@ -8,7 +14,6 @@ $statusLabels = [
     'nocoverage' => ['label' => 'Uncoverage', 'color' => 'bg-danger'],
 ];
 
-
 if (!isset($_GET["authorization"]) || ($_GET["authorization"] !== session::get('csrf_token'))) {
     $res = ["success" => 0,
         "message" => "Unauthorized request, Silahkan Login Melalui admin"];
@@ -16,7 +21,6 @@ if (!isset($_GET["authorization"]) || ($_GET["authorization"] !== session::get('
     header("Content-Type: application/json; charset=UTF-8");
     http_response_code(401);
     die(json_encode($res));
-
 } elseif (!isset($_GET["id"])) {
     $res = ["success" => 0,
         "message" => "Id sudah tidak di temukan"];
@@ -24,265 +28,497 @@ if (!isset($_GET["authorization"]) || ($_GET["authorization"] !== session::get('
     header("Content-Type: application/json; charset=UTF-8");
     http_response_code(401);
     die(json_encode($res));
-
-
 }
 
 if ($this->getFollowTask($_GET["id"])) {
-
     $data = $this->viewTaskid($_GET["id"]);
-    ?> <h5 class="card-header my-2">
-        <i class="fas fa-tasks mx-2"></i> Task Activity
-    </h5>
-    <div class="card h-100">
-        <div class="card-body pb-0">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="dropdown btn-pinned">
-                    <button class="btn p-0" type="button" id="financoalReport" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="bx bx-dots-vertical-rounded"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="financoalReport">
-                        <a class="dropdown-item" id="cekodp" data-id="<?=$_GET["id"] ?>" href="javascript:void(0);">ODP Terdekat</a>
-                        <a class="dropdown-item" href="javascript:void(0);">Hitung jarak</a>
-                        <a class="dropdown-item" href="javascript:void(0);">Tidak terjedia</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide pb-1">
-                <h5 class="mb-2"><?=$data["firstname"] ?> <?=$data["lastname"] ?></h5>
-                <div class="d-flex align-items-center gap-2">
-                    <small><?=$data["alamat"] ?></small>
-                    <div class="d-flex text-success">
-                        <small class="fw-medium"></small>
-                        <i class="mdi mdi-chevron-up"></i>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center mt-3 me-2">
-                    <div class="d-flex flex-column w-100 ">
-                        <div class=" d-flex flex-nowrap gap-3  ">
-                            <ul class="list-unstyled mb-0 gap-2 ">
-                                <li class="d-flex mb-2 pb-1 align-items-center">
-                                    <small class="mb-0 me-2 sales-text-bg bg-label-danger">Package</small>
-                                    <small class="mb-0 text-truncate"><?=$data["package"] ?> Mbps</small>
-                                </li>
-                                <li class="d-flex mb-2 align-items-center">
-                                    <small class="mb-0 me-2 sales-text-bg bg-label-danger">Service</small>
-                                    <small class="mb-0 text-truncate"><?=$data["service"] ?></small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <small class="mb-0 me-2 sales-text-bg bg-label-danger">Plan</small>
-                                    <small class="mb-0 text-truncate">Pascabayar</small>
-                                </li>
-                            </ul>
+    $status = $data['status'];
 
-                            <ul class="list-unstyled mb-0">
-                                <li class="d-flex mb-2 pb-1 align-items-center">
-                                    <small class="mb-0 me-2 sales-text-bg bg-label-danger">Tagihan</small>
-                                    <small class="mb-0 text-truncate"><?=formatRupiah($data["amount"]) ?></small>
-                                </li>
+    $statusTexts = [
+        'pending' => 'Survey',
+        'onsurvey' => 'Survey',
+        'onprogress' => 'Installasi',
+        'onlogic' => 'SETUP',
+        'done' => 'SELESAI',
+        'nocoverage' => '',
+    ];
 
-                                <li class="d-flex mb-2 pb-1 align-items-center">
-                                    <small class="mb-0 me-2 sales-text-bg bg-label-danger">Status</small>
-                                    <small class="mb-0 text-truncate"><?= $data["status"] ?></small>
-                                </li>
-                                <li class="d-flex  mb-2 align-items-center">
-                                    <small class="mb-0 me-2 sales-text-bg bg-label-danger">Isolir</small>
-                                    <small class="mb-0 text-truncate">1-20 Setiap Bulan</small>
-                                </li>
-                            </ul>
+    $statusLabel = $statusLabels[$status];
 
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-2 pt-1 d-flex align-items-center ">
-                    <button type="button" class="btn btn-sm btn-outline-primary me-3">Details</button>
-                    <a class="btn btn-primary btn-sm  me-3" data-bs-toggle="collapse" href="#updateCollapse" role="button" aria-expanded="true" aria-controls="updateCollapse"> Update </a>
-                    <button type="button" class="btn btn-sm btn-primary">Report</button>
-                </div>
-            </div>
-        </div>
-        <div class="card-footer mt-2 pt-0 d-flex justify-content-between border-bottom">
-            <div class="d-flex align-items-center flex-wrap cursor-pointer gap-3">
-                <i class="bx bx-link"></i>
-                <div class="position-relative">
-                    <i class="bx bx-message"></i>
-                    <span class="badge rounded-pill bg-info badge-dot badge-notifications"></span>
-                </div>
-                <i class="bx bx-user"></i>
-            </div>
-            <p class="mb-0">
-                <span class="text-muted">Due Date:</span> 15th
-            </p>
-        </div>
-        <div class="collapse border-bottom" id="updateCollapse" style="">
-            <div class="card-body -flex align-items-center justify-content-between">
-                <form id="update" method="POST" novalidate="">
-                    <div class="row mb-3">
-                        <label class="col-sm-3 col-form-label" for="basic-default-name">Status</label>
-                        <div class="col-sm-9">
-                            <select id="defaultSelect" name="status" class="form-select">
-                                <option value="onsurvey">Survey</option>
-                                <option value="nocoverage">Tidak Tersedia</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="html5-datetime-local-input" class="col-md-3 col-form-label">schedule</label>
-                        <div class="col-md-9">
-                            <input class="form-control" type="datetime-local" value="<?php echo strftime('%Y-%m-%d %H:%M:%S', time()); ?>"id="html5-datetime-local-input">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <label class="col-sm-3 col-form-label" for="message">Message</label>
-                        <div class="col-sm-9">
-                            <textarea id="message" name="message" class="form-control" placeholder="Tambahkan Catatan disini" style="height: 55px;"></textarea>
-                        </div>
-                    </div>
-                    <div class=" d-flex justify-content-end">
-                        <input type="hidden" name="action" value="update">
-                        <input type="hidden" name="idcustomer" value="<?=$data["id"] ?>">
-                        <button type="submit" id="updateButton" class="btn btn-sm btn-primary">Send</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="card-header pb-2 d-flex align-items-center justify-content-between">
-            <h5 class="card-title m-0 me-2">Activity Timeline</h5>
-        </div>
-
-        <div class="overflow-hidden card-body" id="taskActivity" style="height: 300px;">
-            <div class="mt-4">
-                <ul class="timeline ">
-                    <?php foreach ($this->viewHisTask(['idcustomer' => $_GET["id"], 'ORDER' => ['created_at' => 'ASC']]) as $key => $value): ?>
-                    <?php if ($value['type'] == 'create'): ?>
-                    <li class="timeline-item  timeline-item-dark ps-4 mb-2">
-                        <span class="timeline-point timeline-point-warning"></span>
-                        <div class="timeline-event pb-2">
-                            <div class="timeline-header mb-1">
-                                <h6 class="mb-0">Create New Customer</h6>
-                                <small class="text-muted"> <?= timeAgo($value['created_at']) ?> </small>
-                            </div>
-                            <ul class="list-group list-group-flush mb-2">
-                                <li class="list-group-item d-flex mb-2 mt-2 justify-content-between align-items-center flex-wrap border-top-0 p-0">
-                                    <div class="customer mb-sm-0 mb-2">
-                                        <p class="mb-0">
-                                            Customer
-                                        </p>
-                                        <span class="text-muted"> <?= $data['firstname']; ?> <?= $data['lastname']; ?> </span>
-                                    </div>
-                                    <div class="price mb-sm-0 mb-2">
-                                        <p class="mb-0">
-                                            CID
-                                        </p>
-                                        <span class="text-danger"> <?= $value['idcustomer'] ?> </span>
-                                    </div>
-                                    <div class="price">
-                                        <p class="mb-0">
-                                            Subscriptions
-                                        </p>
-                                        <span class="text-muted"> <?= $data['package']; ?> Mbps </span>
-                                    </div>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap pb-0 px-0">
-                                    <div class="d-flex flex-wrap">
-                                        <div class="avatar me-3">
-                                            <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
-                                        </div>
-                                        <div>
-                                            <p class="mb-0">
-                                                <?= $value['name'] ?>
-                                            </p>
-                                            <span class="text-muted"> <?= $value['position'] ?> </span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-wrap align-items-center cursor-pointer">
-                                        <i class="bx bx-message me-2"></i>
-                                        <i class="bx bx-phone-call"></i>
-                                    </div>
-
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <?php endif; ?>
-                    <?php if ($value['type'] == 'follow'): ?>
-                    <li class="timeline-item timeline-item-success ps-4 mb-2">
-                        <span class="timeline-point timeline-point-info"></span>
-                        <div class="timeline-event pb-2">
-                            <div class="timeline-header mb-1">
-                                <h6 class="mb-0">
-                                    <small class="text-danger "> <?= $value['name'] ?> </small>follow  task
-                                </h6>
-                                <small class="text-muted"> <?= timeAgo($value['created_at']) ?> </small>
-                            </div>
-                            <p class="mb-2">
-                                Sekarang anda telah mengikuti task ini
-                            </p>
-                            <div class="d-flex align-items-center avatar-group"></div>
-                        </div>
-                    </li>
-                    <?php endif; ?>
-                    <?php if ($value['type'] == 'update'): ?>
-
-                    <?php if ($value['task'] == 'status'): ?>
-                    <li class="timeline-item timeline-item-danger  ps-4 mb-2">
-                        <span class="timeline-point timeline-point-success "></span>
-                        <div class="timeline-event pb-2">
-                            <div class="timeline-header mb-1">
-                                <h6 class="mb-0">
-                                    <small class="text-danger "> <?= $value['name'] ?> </small>update status
-                                </h6>
-                                <small class="text-muted"> <?= timeAgo($value['created_at']) ?> </small>
-                            </div>
-                            <p>
-                                Task Sedang disurvey
-                            </p>
-                        </div>
-                    </li>
-                    <?php endif; ?>
-                    <?php endif; ?>
-
-                    <?php endforeach; ?>
-                    <li class="timeline-end-indicator">
-                        <i class="bx bx-check-circle"></i>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="card-footer border-bottom">
-            <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                    <i class="bx bx-check"></i> <?= count($this->viewHisTask(['idcustomer' => $_GET["id"], 'ORDER' => ['created_at' => 'ASC']])); ?>  Tasks
-                </li>
-            </ul>
-        </div>
-    </div>
-    <?php
-} else {
+    $statusText = $statusTexts[$status];
+    $statusInfo = ($status == 'pending' ? 'Task Sedang Disurvey' : '');
     ?>
-    <h5 class="card-header my-2">
-        <i class="fas fa-tasks mx-2"></i> Task Activity
-    </h5>
-    <div class="d-flex  ">
-        <div class="h-100 col-12 col-xl-8 col-md-8 align-items-center">
-            <div class="card ">
-                <div class="card-body">
-                    <div class="bg-label-primary rounded-3 text-center mb-3 pt-4">
-                        <img class="img-fluid w-60" src="../../assets/img/illustrations/sitting-girl-with-laptop-dark.png" alt="Card girl image">
-                    </div>
-                    <h4 class="mb-2 pb-1">Follow This Task</h4>
-                    <p class="small">
-                        Untuk Melihat anda perlu melakukan follow task
-                    </p>
-                    <div class="row mb-3 g-3"></div>
-                    <button id="followtask" data-id="<?=$_GET["id"] ?>" class="btn btn-primary w-100">Follow </button>
+
+
+<div class="card h-100">
+    <div class="card-header pb-1 pt-2 ">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-end align-items-center">
+                <small class="text-danger "> Flag : </small>
+            </div>
+            <div class="d-flex justify-content-end align-items-center">
+                <span class="badge badge-center rounded-pill bg-secondary mx-2 "><i class="bx bxs-lock-alt"></i></i></span>
+                <span class="badge bg-danger">HIGH</span>
+                <?php
+                    if (isset($statusLabels[$status])) {
+                        $statusLabel = $statusLabels[$status];
+                        echo '<span id="copy" data-id="'.$data['id'].'" class="badge  mx-2 ' . $statusLabel['color'] . '">' . $statusLabel['label'] . '</span>';
+                    } else {
+                        echo 'Unknown Status';
+                    } ?>
+                <span class="badge bg-success">OPEN</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="card-body">
+
+        <div class="row ">
+            <div class="">
+                
+                    <h6 class="pb-0 my-2">Bill To:</h6>
+                <div class="my-2 border-dashed-2 dashed-blue p-2 rounded-3">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="pe-3 fw-medium">Nama</td>
+                                <td>: </td>
+                                <td> <?= $data['firstname']; ?> <?= $data['lastname']; ?></td>
+                            </tr>
+                            <tr>
+                                <td class="pe-3 fw-medium">Alamat</td>
+                                <td>: </td>
+                                <td> <?= $data['alamat']; ?></td>
+                            </tr>
+                            <tr>
+                                <td class="pe-3 fw-medium">Phone</td>
+                                <td>: </td>
+                                <td> <?=  str_replace(' ', '', $data['phoneNumber']); ?></td>
+                            </tr>
+                            <tr>
+                                <td class="pe-3 fw-medium">CID</td>
+                                <td>:</td>
+                                <td> <?= $data['id']; ?></td>
+                            </tr>
+                            <tr>
+                                <td class="pe-3 fw-medium">SWIFT code</td>
+                                <td>: </td>
+                                <td> BR91905</td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                    <img src="../../assets/img/illustrations/boy-deal-review-light.png" class="position-absolute bottom-0 end-0 me-3 mb-5" height="140" alt="view customer">
                 </div>
+            </div>
+            <div class="">
+                <h6 class="pb-0 my-2">Servicer</h6>
+                <div class="my-2 border-dashed-2 dashed-blue p-2 rounded-3 d-flex">
+                     
+                    <table>
+                        
+                        <tbody>
+                            <tr>
+                                <td class="pe-3 fw-medium">Subscriptions</td>
+                                <td>: </td>
+                                <td> <?= $data['package']; ?> Mbps</td>
+                            </tr>
+                            <tr>
+                                <td class="pe-3 fw-medium">Plan</td>
+                                <td>: </td>
+                                <td> Pascabayar</td>
+                            </tr>
+                            <tr>
+                                <td class="pe-3 fw-medium">Tagihan</td>
+                                <td>: </td>
+                                <td> 1-20 Berulang</td>
+                            </tr>
+                            <tr>
+                                <td class="pe-3 fw-medium">Service </td>
+                                <td>: </td>
+                                <td> Okehome</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <img src="../../assets/img/illustrations/boy-deal-review-light.png" class="position-absolute bottom-0 end-0 me-3 mb-5" height="140" alt="view customer">
+                </div>
+                <img src="../../assets/img/illustrations/boy-deal-review-light.png" class="position-absolute bottom-0 end-0 me-3 mb-5" height="140" alt="view customer">
+            </div>
+        </div>
+
+
+
+        <div class="card shadow-none ">
+            <div class="card-body border-0 p-2 ">
+
+                <div class="mb-0  text-body">
+                    Catatan Terbaru :
+                </div>
+                <p class="mb-0 text-body">
+                   <?php 
+                    
+                   $lastMessage = $this->viewHisTask(['task'=>['status','schedule'],'idcustomer' => $data['id'], 'ORDER' => ['created_at' => 'DESC'],'LIMIT' => 2 ]);
+                   if ($lastMessage[0]['message']==null) {
+                       
+                       if ($lastMessage[1]['message']==null) {
+                           echo '<p class="text-muted mb-0">Belum ada catatan terakhir</p>';
+                       } else {
+                         echo '<small class="text-primary ">'.$lastMessage[1]['name'].' : </small> '. $lastMessage[1]['message'].'<br>';
+                       }
+                       
+                      
+                   } else {
+                    echo '<small class="text-primary ">'.$lastMessage[0]['name'].' : </small> '. $lastMessage[0]['message'].'<br>';
+                   }
+                   ?>
+                   
+                </p>
             </div>
         </div>
     </div>
-    <?php
 
 
-}
+    <div class="card-footer pb-2 pt-2 d-flex justify-content-between border-bottom">
+        <div class="d-flex align-items-center flex-wrap cursor-pointer gap-3">
+            <div class="position-relative">
+                <a class="" data-bs-toggle="collapse" href="#globalComent" role="button" aria-expanded="true" aria-controls="globalComent"> <i class="bx bx-message"></i> </a>
+                <span class="badge rounded-pill bg-info badge-dot badge-notifications"></span>
+            </div>
+            <i class="bx bx-user"></i>
+        </div>
 
+        <div class="align-items-center d-flex justify-content-between">
+            <button type="button" class="btn btn-sm btn-outline-primary me-1" data-bs-toggle="modal" data-bs-target="#exLargeModal">Details</button>
+            <a class="btn btn-primary btn-sm  me-1" data-bs-toggle="collapse" href="#updateCollapse" role="button" aria-expanded="true" aria-controls="updateCollapse"> Update </a>
+            <button class="btn p-0" type="button" id="financoalReport" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="bx bx-dots-vertical-rounded"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="financoalReport">
+                <a class="dropdown-item" id="cekodp" data-id="<?=$_GET["id"] ?>" href="javascript:void(0);">ODP Terdekat</a>
+                <a class="dropdown-item" href="javascript:void(0);">Tidak terjedia</a>
+            </div>
+        </div>
+    </div>
+    <div class="collapse  border-top-0" id="globalComent">
+        <div class="overflow-hidden card-body  border-top-0 feed-comments bg-white p-2 " id="commentarea" style="height: 500px;">
+
+            <div role="log" class="conversations p-2  ">
+                <article class="timeline-comment">
+                    <a class="avatar" href="#" target="_blank" tabindex="-1">
+                        <img height="33" width="33" alt="@OKEBiling" src="https://avatars.githubusercontent.com/u/144347553?v=4?v=3&amp;s=88">
+                    </a>
+                    <div class="comment">
+                        <header class="comment-header">
+                            <span class="comment-meta">
+                                <a class="text-link" href="#" target="_blank">
+                                    <strong>ADMIN</strong>
+                                </a> commented <a class="text-link" href="#" target="_blank">on 1 Mei 2023</a>
+                            </span>
+                            <div class="comment-actions"></div>
+                        </header>
+                        <div class="markdown-body p-2 markdown-body-scrollable">
+                            <p dir="auto">
+                                Mohon segera di pasang
+                            </p>
+                        </div>
+                        <div class="comment-footer">
+                            <form class="reaction-list BtnGroup" action="javascript:">
+                                <button class="btn BtnGroup-item reaction-button" value="+1" aria-label="Toggle Thumbs Up reaction" reaction-count="1"> 👍 </button>
+                                <button class="btn BtnGroup-item reaction-button" value="-1" aria-label="Toggle Thumbs Down reaction" reaction-count="2"> 👎 </button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-comment">
+                    <a class="avatar" href="#" target="_blank" tabindex="-1">
+                        <img height="33" width="33" alt="@OKEBiling" src="https://avatars.githubusercontent.com/u/144347553?v=4?v=3&amp;s=88">
+                    </a>
+                    <div class="comment">
+                        <header class="comment-header">
+                            <span class="comment-meta">
+                                <a class="text-link" href="#" target="_blank">
+                                    <strong>Irwan Simanjuntak</strong>
+                                </a> commented <a class="text-link" href="#" target="_blank">on 2 Mei 2023</a>
+                            </span>
+                            <div class="comment-actions">
+                                <span class="author-association-badge">Moderator</span>
+                            </div>
+                        </header>
+                        <div class="markdown-body p-2 markdown-body-scrollable">
+                            <p dir="auto">
+                                Pelanggan sudah menanyakan mohon segera di pasang
+                            </p>
+                        </div>
+                        <div class="comment-footer">
+                            <form class="reaction-list BtnGroup" action="javascript:">
+                                <button class="btn BtnGroup-item reaction-button" value="+1" aria-label="Toggle Thumbs Up reaction" reaction-count="5"> 👍 </button>
+                                <button class="btn BtnGroup-item reaction-button" value="-1" aria-label="Toggle Thumbs Down reaction" reaction-count="2"> 👎 </button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-comment">
+                    <a class="avatar" href="#" target="_blank" tabindex="-1">
+                        <img height="33" width="33" alt="@OKEBiling" src="https://avatars.githubusercontent.com/u/144347553?v=4?v=3&amp;s=88">
+                    </a>
+                    <div class="comment">
+                        <header class="comment-header">
+                            <span class="comment-meta">
+                                <a class="text-link" href="#" target="_blank">
+                                    <strong>Administator</strong>
+                                </a> commented <a class="text-link" href="#" target="_blank">on 2 Mei 2023</a>
+                            </span>
+                            <div class="comment-actions">
+                                <span class="author-association-badge">Author</span>
+                            </div>
+                        </header>
+                        <div class="markdown-body p-2 markdown-body-scrollable">
+                            <p dir="auto">
+                                Kendala Hujan pak
+                            </p>
+                        </div>
+                        <div class="comment-footer">
+                            <form class="reaction-list BtnGroup" action="javascript:">
+                                <button class="btn BtnGroup-item reaction-button" value="+1" aria-label="Toggle Thumbs Up reaction" reaction-count="5"> 👍 </button>
+                                <button class="btn BtnGroup-item reaction-button" value="-1" aria-label="Toggle Thumbs Down reaction" reaction-count="1"> 👎 </button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-comment">
+                    <a class="avatar" target="_blank" tabindex="-1" href="#">
+                        <img height="44" width="44" alt="@OKEBiling" src="https://avatars.githubusercontent.com/u/144347553?v=4?v=3&amp;s=88">
+                    </a>
+
+                    <form class="comment" accept-charset="UTF-8" action="javascript:">
+                        <header class="new-comment-header tabnav">
+                            <div class="tabnav-tabs" role="tablist">
+                                <button type="button" class="tabnav-tab tab-write" role="tab" aria-selected="true"> Write </button>
+                                <button type="button" class="tabnav-tab tab-preview" role="tab" aria-selected="false"> Preview </button>
+                            </div>
+                        </header>
+
+                        <div class="comment-body">
+                            <textarea class="form-control message" id="message" placeholder="Leave a comment" aria-label="comment" style=""></textarea>
+                            <div class="markdown-body" style="display: none;">
+                                Nothing to preview
+                            </div>
+                        </div>
+                        <footer class="new-comment-footer">
+
+                            <button class="btn btn-success btn-sm" type="submit">Comment</button>
+
+                        </footer>
+                    </form>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="collapse " id="updateCollapse" style="">
+        <div class="card-body -flex align-items-center justify-content-between">
+            <?php if ($status == 'pending'): ?>
+            <h6 class="fw-normal">Tambahkan Informasi untuk <?= $statusText ?></h6>
+            <?php elseif ($status == 'onsurvey'): ?>
+            <h6 class="fw-normal">Tambahkan Informasi Hasil <?= $statusText ?></h6>
+            <?php elseif ($status == 'onprogress'): ?>
+            <h6 class="fw-normal">Tambahkan Informasi Progress <?= $statusText ?></h6>
+            <?php endif; ?>
+
+            <form id="update" method="POST" novalidate="">
+
+                <?php if ($status == 'pending'): ?>
+                <div class="mb-3">
+                    <label class="form-label" for="basic-default-fullname">ubah status menjadi</label>
+                    <select id="defaultSelect" name="status" class="select2 form-select">
+                        <option value="onsurvey">Survey</option>
+                        <option value="nocoverage">Tidak Tersedia</option>
+                    </select>
+                </div>
+                <div class="mb-3 ">
+                    <label for="html5-datetime-local-input" class="form-label">Schedule</label>
+                    <input type="text" class="form-control flatpickr-input" name="schedule"  id="flatpickr-datetime" readonly="readonly">
+                </div>
+                <div class="mb-3 ">
+                    <label for="html5-datetime-local-input" class="form-label">Team</label>
+                    <input name="team" type="text" class="form-control " disabled="">
+                </div>
+                <?php elseif ($status == 'onsurvey'): ?>
+                <div class="mb-3">
+                    <label class="form-label" for="basic-default-fullname">ubah status menjadi</label>
+                    <select id="selectOption" name="status"  class="select2 form-select" data-allow-clear="true">
+                        <option value="onprogress" selected>PROGRESS INSTALLASI</option>
+                        <option value="reschedule">JADWAL ULANG</option>
+                        <option value="nocoverage">Tidak Tersedia</option>
+                    </select>
+                </div>
+                    <div id="hidenformAll">
+                <div class="mb-3 ">
+                    <label for="html5-datetime-local-input" class="form-label">Schedule</label>
+                    <input name="schedule" type="text" class="form-control flatpickr-input"  id="flatpickr-datetime" readonly="readonly">
+                </div>
+                
+                <div id="hidenform">
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                <label class="form-label" for="password">Rencana ODP</label>
+                <a href="javascript(0);">
+                  <small>Tambahkan ODP ?</small>
+                </a>
+              </div>
+                    <select id="DaftraOdp" name="idodp" class="select2 form-select">
+                        <option value="">DAFTAR ODP NANTI DISINI</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="basic-default-company">Panjang Kabel</label>
+                    <div class="input-group input-group-merge">
+                        <input type="number" class="form-control" placeholder="">
+                        <span class="input-group-text" id="basic-addon33">Meter</span>
+                    </div>
+                </div>
+                
+                <div class="mb-3 ">
+                    <label for="html5-datetime-local-input" class="form-label">Team</label>
+                    <input name="team" type="text" class="form-control ">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="basic-default-phone ">UPLOAD FOTO</label>
+                    <div class="dropzone needsclick p-1 " id="upload-files">
+                        <div class="dz-message needsclick m-0 p-5  ">
+                            <small> Taruh file disini atau klik untuk upload</small>
+                        </div>
+                        <div class="fallback">
+                            <input name="file" type="file" />
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <?php elseif ($status == 'onprogress'): ?>
+                <div class="mb-3">
+                    <label class="form-label" for="basic-default-fullname">ubah status menjadi</label>
+                      <select id="selectOption" name="status"  class="select2 form-select" data-allow-clear="true">
+                        <option value="onprogress" disabled="">PROGRESS INSTALLASI</option>
+                        <option value="onlogic">INSTALLASI SELESAI</option>
+                        <option value="reschedule">JADWAL ULANG</option>
+                        <option value="nocoverage">Tidak Tersedia</option>
+                    </select>
+                </div>
+                
+                <div id="scheduleForm">
+                <div class="mb-3 ">
+                    <label for="html5-datetime-local-input" class="form-label">Schedule</label>
+                    <input name="schedule" type="text" class="form-control flatpickr-input"  id="flatpickr-datetime" readonly="readonly">
+                </div>
+                </div>
+                <div id="form">
+                 <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                <label class="form-label" for="odp">ODP</label>
+                <a href="javascript(0);">
+                  <small>Tambahkan ODP ?</small>
+                </a>
+              </div>
+                    <select id="DaftraOdp" name="idodp" class="select2 form-select">
+                        <option value="">DAFTAR ODP NANTI DISINI</option>
+                    </select>
+                </div>
+                
+                 <div class="mb-3">
+                    <label class="form-label" for="basic-default-fullname">PORT ODP</label>
+                    <input class="form-control" type="text" name="">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="basic-default-fullname">Merk Modem</label>
+                      <select id="selectOptions" name="modem"  class="select2 form-select" data-allow-clear="true">
+                        <option value="zte">ZTE</option>
+                        <option value="Huawei">HUAWEI</option>
+                        <option value="nokia">NOKIA</option>
+                        <option value="other">OTHER</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="basic-default-fullname">Status Modem</label>
+                      <select id="selectOptions" name="modem"  class="select2 form-select" data-allow-clear="true">
+                        <option value="dipinjamkan">Dipinjamkan</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="basic-default-fullname">Serial Number Modem</label>
+                    <div class="input-group">
+                        <span class="input-group-text cursor-pointer" id="SN"><i class="fa fa-camera" aria-hidden="true"></i></span>
+                        <input type="text" name="SN"class="text-uppercase form-control" placeholder="SN" aria-label="SN" aria-describedby="SN">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="basic-default-phone ">UPLOAD FOTO</label>
+                    <div class="dropzone needsclick p-1 " id="upload-files">
+                        <div class="dz-message needsclick m-0 p-5  ">
+                            <small> Taruh file disini atau klik untuk upload</small>
+                        </div>
+                        <div class="fallback">
+                            <input name="file" type="file" />
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <?php endif; ?>
+            
+               
+                <?php if ($status == 'onlogic'): ?>
+                <div class="card-body card-body col-8 p-0">
+                <h5 class="card-title">Special Setup treatment</h5>
+                <p class="card-text">Setelah anda menekan tombol di bawah ini maka orang lain sementara waktu tidak dapat melakukan update task ini kecuali anda sendiri untuk menghindari konflik configurasi</p>
+                <a href="javascript:void(0)" id="setupmode" class="btn btn-primary btn-sm">Start Setup</a>
+              </div>
+                
+                
+                 <?php else: ?>
+                  <div class="mb-3">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control message" placeholder="Tambahkan Catatan disini" style="height: 55px;"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+
+                    <input type="hidden" name="action" value="update">
+                    <input type="hidden" name="fn" value="updateTask<?= ucfirst($status) ?>">
+                    <input type="hidden" name="cr" value="<?= $status ?>">
+                    <input type="hidden" name="idcustomer" value="<?= $data["id"] ?>">
+                    <button type="submit" id="updateButton" class="btn btn-sm btn-primary">Send</button>
+                </div>
+                 
+                 
+                 <?php endif; ?>
+                 
+                 
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<?php
+} else {
 ?>
+<div class="d-flex  ">
+    <div class="h-100 align-items-center">
+        <div class="card ">
+            <div class="card-body">
+                <div class="bg-label-primary rounded-3 text-center mb-3 pt-4">
+                    <img class="img-fluid w-60" src="../../assets/img/illustrations/sitting-girl-with-laptop-dark.png" alt="Card girl image">
+                </div>
+                <h4 class="mb-2 pb-1">Follow This Task</h4>
+                <p class="small">
+                    Untuk Melihat anda perlu melakukan follow task
+                </p>
+                <div class="row mb-3 g-3"></div>
+                <button id="followtask" data-id="<?= $_GET["id"]; ?>" class="btn btn-primary w-100">Follow</button>
+            </div>
+        </div>
+    </div>
+</div>
+<?php
+} ?>

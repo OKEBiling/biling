@@ -1,301 +1,17 @@
-[06-Oct-2023 16:38:18 Asia/Jakarta] PHP Warning:  include(): open_basedir restriction in effect. File(/view/activityview.php) is not within the allowed path(s): (/tmp/:/www/wwwroot/biling.oke.net.id/) in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 53
-[06-Oct-2023 16:38:18 Asia/Jakarta] PHP Warning:  include(/view/activityview.php): failed to open stream: Operation not permitted in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 53
-[06-Oct-2023 16:38:18 Asia/Jakarta] PHP Warning:  include(): Failed opening '/view/activityview.php' for inclusion (include_path='.:') in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 53
-[06-Oct-2023 16:38:31 Asia/Jakarta] PHP Warning:  include(view/activityview.php): failed to open stream: No such file or directory in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 53
-[06-Oct-2023 16:38:31 Asia/Jakarta] PHP Warning:  include(): Failed opening 'view/activityview.php' for inclusion (include_path='.:') in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 53
-[06-Oct-2023 16:41:07 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 1
-[06-Oct-2023 19:11:02 Asia/Jakarta] PHP Notice:  Constant BASIC_PATH already defined in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 1
-[06-Oct-2023 19:13:54 Asia/Jakarta] PHP Warning:  Use of undefined constant BASICPATH - assumed 'BASICPATH' (this will throw an Error in a future version of PHP) in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 3
-[06-Oct-2023 19:14:03 Asia/Jakarta] PHP Warning:  Use of undefined constant BASICPATH - assumed 'BASICPATH' (this will throw an Error in a future version of PHP) in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 3
-[06-Oct-2023 19:17:38 Asia/Jakarta] PHP Notice:  Undefined index: firstname in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 30
-[06-Oct-2023 19:17:38 Asia/Jakarta] PHP Notice:  Undefined index: lastname in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 30
-[06-Oct-2023 19:17:38 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 31
-[06-Oct-2023 19:17:38 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 31
-[06-Oct-2023 19:17:38 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 33
-[06-Oct-2023 19:17:38 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 19:17:38 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 33
-[06-Oct-2023 19:17:38 Asia/Jakarta] PHP Notice:  Undefined index: status in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 38
-[06-Oct-2023 19:17:38 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 45
-[06-Oct-2023 21:09:19 Asia/Jakarta] PHP Notice:  Undefined variable: customerID in /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php on line 23
-[06-Oct-2023 21:09:19 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 24
-[06-Oct-2023 21:09:24 Asia/Jakarta] PHP Notice:  Undefined variable: customerID in /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php on line 23
-[06-Oct-2023 21:09:24 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 24
-[06-Oct-2023 21:09:42 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 24
-[06-Oct-2023 21:09:46 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 24
-[06-Oct-2023 21:09:57 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 24
-[06-Oct-2023 21:10:08 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 24
-[06-Oct-2023 21:10:37 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 24
-[06-Oct-2023 21:11:42 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 24
-[06-Oct-2023 21:12:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 24
-[06-Oct-2023 21:12:12 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 24
-[06-Oct-2023 21:14:54 Asia/Jakarta] PHP Fatal error:  Cannot declare class Medoo, because the name is already in use in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 38
-[06-Oct-2023 21:14:55 Asia/Jakarta] PHP Fatal error:  Cannot declare class Medoo, because the name is already in use in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 38
-[06-Oct-2023 21:15:19 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Cannot use table.* to select all columns while joining table. in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:760
+[14-Oct-2023 08:27:28 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 185
+[14-Oct-2023 08:54:50 Asia/Jakarta] PHP Warning:  pathinfo() expects parameter 1 to be string, array given in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 19
+[14-Oct-2023 08:55:55 Asia/Jakarta] PHP Warning:  pathinfo() expects parameter 1 to be string, array given in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 19
+[14-Oct-2023 08:59:17 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 180
+[14-Oct-2023 09:00:53 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 180
+[14-Oct-2023 09:15:58 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 187
+[14-Oct-2023 09:16:01 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 187
+[14-Oct-2023 09:16:12 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 187
+[14-Oct-2023 09:17:46 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 187
+[14-Oct-2023 09:19:37 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 187
+[14-Oct-2023 15:43:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1185): Medoo->columnPush()
-#1 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1556): Medoo->selectContext()
-#2 /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php(20): Medoo->select()
-#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(94): TaskCustomerModel->getTask()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(79): taskController->ViewCustomerTask()
-#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(38): taskController->ViewCustomerTaskList()
-#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
-#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
-#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 760
-[06-Oct-2023 21:15:42 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Cannot use table.* to select all columns while joining table. in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:760
-Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1185): Medoo->columnPush()
-#1 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1556): Medoo->selectContext()
-#2 /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php(20): Medoo->select()
-#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(94): TaskCustomerModel->getTask()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(79): taskController->ViewCustomerTask()
-#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(38): taskController->ViewCustomerTaskList()
-#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
-#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
-#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 760
-[06-Oct-2023 21:15:56 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Cannot use table.* to select all columns while joining table. in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:760
-Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1185): Medoo->columnPush()
-#1 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1556): Medoo->selectContext()
-#2 /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php(20): Medoo->select()
-#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(94): TaskCustomerModel->getTask()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(79): taskController->ViewCustomerTask()
-#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(38): taskController->ViewCustomerTaskList()
-#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
-#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
-#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 760
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:17:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:18:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:20:36 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 746
-[06-Oct-2023 21:20:36 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1300
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: created_at in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 32
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:24:28 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined index: subscriptions in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Undefined property: SubscriptionsModel::$subscriptions in /www/wwwroot/biling.oke.net.id/app/model/SubscriptionsModel.php on line 43
-[06-Oct-2023 21:28:34 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 34
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabel in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[06-Oct-2023 21:49:42 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/newcustomer.php on line 41
-[07-Oct-2023 00:38:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
-Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/views/sindebar.php(1): mainController->privilegeUsers()
-#1 /www/wwwroot/biling.oke.net.id/views/index.php(12): include('/www/wwwroot/bi...')
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include('/www/wwwroot/bi...')
-#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(80): App->renderFile()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/customerController.php(33): App->layout()
-#5 /www/wwwroot/biling.oke.net.id/app/controllers/customerController.php(22): customerController->CustomerView()
-#6 /www/wwwroot/biling.oke.net.id/app/controllers/customerController.php(18): customerController->init()
-#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): customerController->__construct()
-#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadCon in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
-[07-Oct-2023 15:07:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
-Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(72): mainController->privilegeUsers()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(38): taskController->ViewCustomerTaskList()
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(100): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(41): taskController->ViewCustomerTaskList()
 #2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
 #3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
 #4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
@@ -303,10 +19,24 @@ Stack trace:
 #6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
 #7 {main}
   thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
-[07-Oct-2023 15:07:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+[14-Oct-2023 20:55:29 Asia/Jakarta] PHP Notice:  Undefined variable: value in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 117
+[14-Oct-2023 20:55:29 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 117
+[14-Oct-2023 23:07:02 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 49
+[14-Oct-2023 23:07:02 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 69
+[14-Oct-2023 23:07:02 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 94
+[14-Oct-2023 23:07:02 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 139
+[14-Oct-2023 23:07:02 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 49
+[14-Oct-2023 23:07:02 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 69
+[14-Oct-2023 23:07:02 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 94
+[14-Oct-2023 23:07:02 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 139
+[14-Oct-2023 23:07:12 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 49
+[14-Oct-2023 23:07:12 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 69
+[14-Oct-2023 23:07:12 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 94
+[14-Oct-2023 23:07:12 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 139
+[16-Oct-2023 08:17:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(72): mainController->privilegeUsers()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(38): taskController->ViewCustomerTaskList()
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(100): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(41): taskController->ViewCustomerTaskList()
 #2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
 #3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
 #4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
@@ -314,7 +44,467 @@ Stack trace:
 #6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
 #7 {main}
   thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
-[07-Oct-2023 15:09:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+[16-Oct-2023 08:17:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(100): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(41): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[16-Oct-2023 08:47:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(100): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(41): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[16-Oct-2023 09:00:53 Asia/Jakarta] PHP Notice:  Undefined index: fristname in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 45
+[16-Oct-2023 10:56:45 Asia/Jakarta] PHP Warning:  move_uploaded_file(uploads/task/520118/onsurvey/original/652cb47df0471.jpeg): failed to open stream: No such file or directory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 10:56:45 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpmko6K8' to 'uploads/task/520118/onsurvey/original/652cb47df0471.jpeg' in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 10:56:45 Asia/Jakarta] PHP Warning:  move_uploaded_file(uploads/task/520118/onsurvey/original/652cb47df0608.jpeg): failed to open stream: No such file or directory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 10:56:45 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpkiGgut' to 'uploads/task/520118/onsurvey/original/652cb47df0608.jpeg' in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 10:56:45 Asia/Jakarta] PHP Warning:  move_uploaded_file(uploads/task/520118/onsurvey/original/652cb47df074a.jpeg): failed to open stream: No such file or directory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 10:56:45 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php2YZxdO' to 'uploads/task/520118/onsurvey/original/652cb47df074a.jpeg' in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 10:59:12 Asia/Jakarta] PHP Warning:  move_uploaded_file(uploads/task/520118/onsurvey/original/652cb51093b96.jpg): failed to open stream: No such file or directory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 10:59:12 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpSCRaii' to 'uploads/task/520118/onsurvey/original/652cb51093b96.jpg' in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 10:59:12 Asia/Jakarta] PHP Warning:  move_uploaded_file(uploads/task/520118/onsurvey/original/652cb51093d5e.png): failed to open stream: No such file or directory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 10:59:12 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php6MNRmM' to 'uploads/task/520118/onsurvey/original/652cb51093d5e.png' in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 11:00:24 Asia/Jakarta] PHP Warning:  move_uploaded_file(uploads/task/520118/onsurvey/original/652cb558c5b31.png): failed to open stream: No such file or directory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 11:00:24 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php8EK2HN' to 'uploads/task/520118/onsurvey/original/652cb558c5b31.png' in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 34
+[16-Oct-2023 11:05:39 Asia/Jakarta] PHP Warning:  move_uploaded_file(uploads/task/618165/onsurvey/original/652cb693cb89a.png): failed to open stream: No such file or directory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 33
+[16-Oct-2023 11:05:39 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpOXEoJn' to 'uploads/task/618165/onsurvey/original/652cb693cb89a.png' in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 33
+[16-Oct-2023 11:05:39 Asia/Jakarta] PHP Warning:  move_uploaded_file(uploads/task/618165/onsurvey/original/652cb693cba42.jpeg): failed to open stream: No such file or directory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 33
+[16-Oct-2023 11:05:39 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpeV9Wct' to 'uploads/task/618165/onsurvey/original/652cb693cba42.jpeg' in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 33
+[16-Oct-2023 11:05:39 Asia/Jakarta] PHP Warning:  move_uploaded_file(uploads/task/618165/onsurvey/original/652cb693cbbcc.jpeg): failed to open stream: No such file or directory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 33
+[16-Oct-2023 11:05:39 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php8kVBGy' to 'uploads/task/618165/onsurvey/original/652cb693cbbcc.jpeg' in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 33
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 65
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagecreatefromjpeg(): 'uploads/task/379456/onsurvey/original/652cb75142702.png' is not a valid JPEG file in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 65
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagecopyresized() expects parameter 2 to be resource, bool given in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 66
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Notice:  Undefined property: FileUploader::$thumbnailDirectory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 67
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagejpeg(): open_basedir restriction in effect. File(/thumbnail/652cb75142702.png) is not within the allowed path(s): (/tmp/:/www/wwwroot/biling.oke.net.id/) in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 68
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagejpeg(/thumbnail/652cb75142702.png): failed to open stream: Operation not permitted in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 68
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagedestroy() expects parameter 1 to be resource, bool given in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 70
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Notice:  Undefined property: FileUploader::$thumbnailDirectory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 67
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagejpeg(): open_basedir restriction in effect. File(/thumbnail/652cb75142a47.jpeg) is not within the allowed path(s): (/tmp/:/www/wwwroot/biling.oke.net.id/) in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 68
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagejpeg(/thumbnail/652cb75142a47.jpeg): failed to open stream: Operation not permitted in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 68
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Notice:  Undefined property: FileUploader::$thumbnailDirectory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 67
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagejpeg(): open_basedir restriction in effect. File(/thumbnail/652cb75146482.jpeg) is not within the allowed path(s): (/tmp/:/www/wwwroot/biling.oke.net.id/) in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 68
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagejpeg(/thumbnail/652cb75146482.jpeg): failed to open stream: Operation not permitted in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 68
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Notice:  Undefined property: FileUploader::$thumbnailDirectory in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 67
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagejpeg(): open_basedir restriction in effect. File(/thumbnail/652cb75149833.jpeg) is not within the allowed path(s): (/tmp/:/www/wwwroot/biling.oke.net.id/) in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 68
+[16-Oct-2023 11:08:49 Asia/Jakarta] PHP Warning:  imagejpeg(/thumbnail/652cb75149833.jpeg): failed to open stream: Operation not permitted in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 68
+[16-Oct-2023 11:25:06 Asia/Jakarta] PHP Fatal error:  Uncaught ImagickException: unable to open image `uploads/task/520118/onsurvey/thumbnail/652cbb21e6386.jpg': No such file or directory @ error/blob.c/OpenBlob/2701 in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php:69
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php(69): Imagick->writeimage()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php(36): FileUploader->createThumbnail()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(175): FileUploader->uploadFile()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(64): taskController->uploadTask()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php( in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 69
+[16-Oct-2023 11:56:43 Asia/Jakarta] PHP Fatal error:  Uncaught ImagickException: WriteBlob Failed `uploads/task/520118/onsurvey/thumbnail/652cc28bd49cc.png' @ error/png.c/MagickPNGErrorHandler/1628 in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php:72
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php(72): Imagick->writeimage()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php(41): FileUploader->createThumbnail()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(175): FileUploader->uploadFile()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(64): taskController->uploadTask()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRout in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 72
+[16-Oct-2023 12:04:29 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Incorrect column name: 0. in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:692
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1729): Medoo->columnQuote()
+#1 /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php(67): Medoo->update()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(165): TaskCustomerModel->updateTask()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(67): taskController->updateTask()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#8 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#9 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 692
+[16-Oct-2023 12:07:38 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 52
+[16-Oct-2023 12:15:25 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 52
+[16-Oct-2023 12:22:56 Asia/Jakarta] PHP Fatal error:  Uncaught ImagickException: must specify image size `/tmp/magick-32634qnx3pcoGYOZ7' @ error/mvg.c/ReadMVGImage/185 in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php:70
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php(70): Imagick->__construct()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php(41): FileUploader->createThumbnail()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(175): FileUploader->uploadFile()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(64): taskController->uploadTask()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#8 /www/wwwroot/biling.ok in /www/wwwroot/biling.oke.net.id/app/controllers/UploadController.php on line 70
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:41 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 14:59:43 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:00:28 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:07:03 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1632
+[16-Oct-2023 15:21:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 258
+[16-Oct-2023 16:24:47 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 161
+[16-Oct-2023 16:24:47 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[16-Oct-2023 16:24:47 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 170
+[16-Oct-2023 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 161
+[16-Oct-2023 16:25:05 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[16-Oct-2023 16:25:05 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 170
+[16-Oct-2023 16:25:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 161
+[16-Oct-2023 16:25:36 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[16-Oct-2023 16:25:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 170
+[16-Oct-2023 16:30:49 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 161
+[16-Oct-2023 16:30:49 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[16-Oct-2023 16:30:49 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 170
+[16-Oct-2023 18:16:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 161
+[16-Oct-2023 18:16:59 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[16-Oct-2023 18:16:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 170
+[17-Oct-2023 00:16:18 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:16:18 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:16:18 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:16:18 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:16:18 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 62
+[17-Oct-2023 00:16:18 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 62
+[17-Oct-2023 00:16:50 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:16:50 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:16:50 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:16:50 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:16:50 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 62
+[17-Oct-2023 00:16:50 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 62
+[17-Oct-2023 00:17:47 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:17:47 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:17:47 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:17:47 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:17:47 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 62
+[17-Oct-2023 00:17:47 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 62
+[17-Oct-2023 00:19:46 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:19:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:19:46 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:19:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 50
+[17-Oct-2023 00:19:46 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 62
+[17-Oct-2023 00:19:46 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 62
+[17-Oct-2023 07:09:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(101): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(43): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[17-Oct-2023 11:17:07 Asia/Jakarta] PHP Notice:  Undefined index: pakage in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 78
+[17-Oct-2023 13:25:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 166
+[17-Oct-2023 13:25:11 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[17-Oct-2023 13:25:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 175
+[17-Oct-2023 13:26:26 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 166
+[17-Oct-2023 13:26:26 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[17-Oct-2023 13:26:26 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 175
+[17-Oct-2023 13:28:39 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 166
+[17-Oct-2023 13:28:39 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[17-Oct-2023 13:28:39 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 175
+[17-Oct-2023 13:31:36 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$postData in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 53
+[17-Oct-2023 13:31:36 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$postData in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 170
+[17-Oct-2023 13:31:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 170
+[17-Oct-2023 13:31:36 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[17-Oct-2023 13:31:36 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 179
+[17-Oct-2023 13:32:06 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 171
+[17-Oct-2023 13:32:06 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[17-Oct-2023 13:32:06 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 180
+[17-Oct-2023 13:32:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 171
+[17-Oct-2023 13:32:17 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[17-Oct-2023 13:32:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 180
+[17-Oct-2023 13:32:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 171
+[17-Oct-2023 13:32:24 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[17-Oct-2023 13:32:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 180
+[17-Oct-2023 13:33:04 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 54
+[17-Oct-2023 13:34:08 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 171
+[17-Oct-2023 13:34:08 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1728
+[17-Oct-2023 13:34:08 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 180
+[17-Oct-2023 13:34:18 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 38
+[17-Oct-2023 13:34:18 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 40
+[17-Oct-2023 13:34:18 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 37
+[17-Oct-2023 13:34:18 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 39
+[17-Oct-2023 14:16:12 Asia/Jakarta] PHP Notice:  Undefined variable: value in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 58
+[17-Oct-2023 14:16:12 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 58
+[17-Oct-2023 14:16:12 Asia/Jakarta] PHP Notice:  Undefined variable: value in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 65
+[17-Oct-2023 14:16:12 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 65
+[17-Oct-2023 14:16:30 Asia/Jakarta] PHP Notice:  Undefined variable: value in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 64
+[17-Oct-2023 14:16:30 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 64
+[17-Oct-2023 22:16:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Object of class taskController could not be converted to string in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:173
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(74): taskController->updateTask()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#6 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 22:17:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Object of class taskController could not be converted to string in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:173
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(74): taskController->updateTask()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#6 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 22:17:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Object of class taskController could not be converted to string in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:173
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(74): taskController->updateTask()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#6 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 22:19:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Object of class taskController could not be converted to string in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:173
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(74): taskController->updateTask()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#6 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 22:20:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Object of class taskController could not be converted to string in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:173
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(74): taskController->updateTask()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#6 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 22:21:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Object of class taskController could not be converted to string in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:173
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(74): taskController->updateTask()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#6 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 22:22:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Raw' not found in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:589
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(459): Medoo::raw()
+#1 /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php(103): Medoo->query()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(181): TaskCustomerModel->getTableColumns()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(174): taskController->updateTaskPending()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(74): taskController->updateTask()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#9 /www/wwwroot/biling.oke.net.id/i in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 589
+[17-Oct-2023 22:23:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Medoo' not found in /www/wwwroot/biling.oke.net.id/app/model/connect.php:18
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/model/UserModel.php(11): Database->__construct()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php(16): UserModel->__construct()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(14): mainController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/index.php(11): App->__construct()
+#4 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/model/connect.php on line 18
+[17-Oct-2023 22:23:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Medoo' not found in /www/wwwroot/biling.oke.net.id/app/model/connect.php:18
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/model/UserModel.php(11): Database->__construct()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php(16): UserModel->__construct()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(14): mainController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/index.php(11): App->__construct()
+#4 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/model/connect.php on line 18
+[17-Oct-2023 22:23:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Medoo' not found in /www/wwwroot/biling.oke.net.id/app/model/connect.php:18
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/model/UserModel.php(11): Database->__construct()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php(16): UserModel->__construct()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(14): mainController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/index.php(11): App->__construct()
+#4 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/model/connect.php on line 18
+[17-Oct-2023 22:23:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Medoo' not found in /www/wwwroot/biling.oke.net.id/app/model/connect.php:18
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/model/UserModel.php(11): Database->__construct()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php(16): UserModel->__construct()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(14): mainController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/index.php(11): App->__construct()
+#4 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/model/connect.php on line 18
+[17-Oct-2023 22:23:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Medoo' not found in /www/wwwroot/biling.oke.net.id/app/model/connect.php:18
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/model/UserModel.php(11): Database->__construct()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php(16): UserModel->__construct()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(14): mainController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/index.php(11): App->__construct()
+#4 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/model/connect.php on line 18
+[17-Oct-2023 22:23:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Medoo' not found in /www/wwwroot/biling.oke.net.id/app/model/connect.php:18
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/model/UserModel.php(11): Database->__construct()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php(16): UserModel->__construct()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(14): mainController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/index.php(11): App->__construct()
+#4 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/model/connect.php on line 18
+[17-Oct-2023 22:23:55 Asia/Jakarta] PHP Warning:  The use statement with non-compound name 'PDO' has no effect in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 17
+[17-Oct-2023 22:23:55 Asia/Jakarta] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 18
+[17-Oct-2023 22:23:55 Asia/Jakarta] PHP Warning:  The use statement with non-compound name 'PDOException' has no effect in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 19
+[17-Oct-2023 22:23:55 Asia/Jakarta] PHP Warning:  The use statement with non-compound name 'PDOStatement' has no effect in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 20
+[17-Oct-2023 22:23:55 Asia/Jakarta] PHP Warning:  The use statement with non-compound name 'InvalidArgumentException' has no effect in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 21
+[17-Oct-2023 22:23:57 Asia/Jakarta] PHP Warning:  The use statement with non-compound name 'PDO' has no effect in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 17
+[17-Oct-2023 22:23:57 Asia/Jakarta] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 18
+[17-Oct-2023 22:23:57 Asia/Jakarta] PHP Warning:  The use statement with non-compound name 'PDOException' has no effect in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 19
+[17-Oct-2023 22:23:57 Asia/Jakarta] PHP Warning:  The use statement with non-compound name 'PDOStatement' has no effect in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 20
+[17-Oct-2023 22:23:57 Asia/Jakarta] PHP Warning:  The use statement with non-compound name 'InvalidArgumentException' has no effect in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 21
+[17-Oct-2023 22:26:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Method name must be a string in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:173
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(74): taskController->updateTask()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#6 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 22:27:11 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 22:27:11 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$Array in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 22:27:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 22:27:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Function name must be a string in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:173
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(74): taskController->updateTask()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#6 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 22:37:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:173
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(74): taskController->updateTask()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#6 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 173
+[17-Oct-2023 23:12:06 Asia/Jakarta] PHP Notice:  Undefined variable: allowedData in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 191
+[17-Oct-2023 23:12:06 Asia/Jakarta] PHP Notice:  Undefined variable: allowedData in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 193
+[17-Oct-2023 23:13:04 Asia/Jakarta] PHP Notice:  Undefined variable: allowedData in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 191
+[17-Oct-2023 23:13:04 Asia/Jakarta] PHP Notice:  Undefined variable: allowedData in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 193
+[17-Oct-2023 23:37:11 Asia/Jakarta] PHP Notice:  Undefined index: schedule in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 170
+[17-Oct-2023 23:57:56 Asia/Jakarta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function taskController::getLatestMessage(), 0 passed in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 152 and exactly 1 expected in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:210
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/views/activityview.php(152): taskController->getLatestMessage()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(84): include('/www/wwwroot/bi...')
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(26): taskController->viewActivity()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#7 /www/wwwroot/biling.oke.net.id/index.php(13):  in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 210
+[17-Oct-2023 23:58:54 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 214
+[17-Oct-2023 23:58:54 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 214
+[17-Oct-2023 23:59:41 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 214
+[17-Oct-2023 23:59:41 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 214
+[18-Oct-2023 00:07:48 Asia/Jakarta] PHP Notice:  Undefined index: join in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1256
+[18-Oct-2023 00:07:48 Asia/Jakarta] PHP Notice:  Undefined index: table in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1256
+[18-Oct-2023 00:07:48 Asia/Jakarta] PHP Notice:  Undefined index: table in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1293
+[18-Oct-2023 00:07:48 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Medoo::tableQuote() must be of the type string, null given, called in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1293 and defined in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:689
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1293): Medoo->tableQuote()
+#1 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1167): Medoo->buildJoin()
+#2 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1575): Medoo->selectContext()
+#3 /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php(117): Medoo->select()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(212): TaskCustomerModel->getLatestMessage()
+#5 /www/wwwroot/biling.oke.net.id/views/activityview.php(152): taskController->getLatestMessage()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(84): include('/www/wwwroot/bi...')
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(26): taskController->viewActi in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 689
+[18-Oct-2023 00:10:02 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 152
+[18-Oct-2023 00:13:29 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 152
+[18-Oct-2023 00:20:10 Asia/Jakarta] PHP Notice:  Undefined index: phoneNumber in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 93
+[18-Oct-2023 00:42:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(106): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(43): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[18-Oct-2023 07:21:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(106): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(43): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[18-Oct-2023 08:35:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
 Stack trace:
 #0 /www/wwwroot/biling.oke.net.id/views/sindebar.php(1): mainController->privilegeUsers()
 #1 /www/wwwroot/biling.oke.net.id/views/index.php(12): include('/www/wwwroot/bi...')
@@ -326,246 +516,530 @@ Stack trace:
 #7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
 #8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
 #9 /www/ in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
-[09-Oct-2023 09:19:52 Asia/Jakarta] PHP Notice:  Undefined variable: postData in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 216
-[09-Oct-2023 09:21:04 Asia/Jakarta] PHP Notice:  Undefined variable: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 51
-[09-Oct-2023 09:21:04 Asia/Jakarta] PHP Notice:  Undefined variable: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 54
-[09-Oct-2023 09:21:04 Asia/Jakarta] PHP Notice:  Undefined variable: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 57
-[09-Oct-2023 09:27:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Cannot access private property TaskCustomerModel::$db in /www/wwwroot/biling.oke.net.id/app/model/connect.php:18
+[18-Oct-2023 09:18:36 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$allowedDataTask in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 206
+[18-Oct-2023 09:18:36 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1748
+[18-Oct-2023 09:18:36 Asia/Jakarta] PHP Notice:  Undefined variable: allowedDataHistory in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 210
+[18-Oct-2023 09:19:10 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$allowedDataTask in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 206
+[18-Oct-2023 09:19:10 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1748
+[18-Oct-2023 09:19:10 Asia/Jakarta] PHP Notice:  Undefined variable: allowedDataHistory in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 210
+[18-Oct-2023 09:20:59 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$allowedDataTask in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 206
+[18-Oct-2023 09:20:59 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1748
+[18-Oct-2023 09:20:59 Asia/Jakarta] PHP Notice:  Undefined variable: allowedDataHistory in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 211
+[18-Oct-2023 13:52:40 Asia/Jakarta] PHP Notice:  Undefined index: reschedule in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 212
+[18-Oct-2023 14:48:42 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 218
+[18-Oct-2023 15:59:47 Asia/Jakarta] PHP Notice:  Undefined variable: allowedDataHistory in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 227
+[18-Oct-2023 16:03:56 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 201
+[19-Oct-2023 09:26:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php(10): Database->__construct()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(15): TaskCustomerModel->__construct()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
-#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
-#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
-#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
-#7 {main}
-  thrown in /www/wwwroot/biling.oke.net.id/app/model/connect.php on line 18
-[09-Oct-2023 09:28:04 Asia/Jakarta] PHP Notice:  Undefined property: UserModel::$db in /www/wwwroot/biling.oke.net.id/app/model/UserModel.php on line 48
-[09-Oct-2023 09:28:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in /www/wwwroot/biling.oke.net.id/app/model/UserModel.php:48
-Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php(57): UserModel->privilegeUsers()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(97): mainController->privilegeUsers()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(38): taskController->ViewCustomerTaskList()
-#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
-#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
-#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
-#7 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
-#8 {main}
-  thrown in /www/wwwroot/biling.oke.net.id/app/model/UserModel.php on line 48
-[09-Oct-2023 14:09:43 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 118
-[09-Oct-2023 14:18:00 Asia/Jakarta] PHP Notice:  Undefined index: create_at in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 57
-[09-Oct-2023 14:44:43 Asia/Jakarta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function timeto(), 1 passed in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 61 and exactly 2 expected in /www/wwwroot/biling.oke.net.id/app/function/Helper.php:134
-Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/views/activityview.php(61): timeto()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(81): include('/www/wwwroot/bi...')
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(26): taskController->viewActivity()
-#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
-#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
-#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
-#7 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
-#8 {main}
-  thrown in /www/wwwroot/biling.oke.net.id/app/function/Helper.php on line 134
-[09-Oct-2023 15:01:55 Asia/Jakarta] PHP Notice:  Undefined variable: value in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 44
-[09-Oct-2023 15:01:55 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 44
-[09-Oct-2023 17:38:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
-Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(100): mainController->privilegeUsers()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(41): taskController->ViewCustomerTaskList()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(109): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(44): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(13): taskController->init()
 #3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
 #4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
 #5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
 #6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
 #7 {main}
   thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
-[09-Oct-2023 17:38:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+[19-Oct-2023 11:17:26 Asia/Jakarta] PHP Notice:  A non well formed numeric value encountered in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 234
+[19-Oct-2023 11:17:26 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 6530 in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 234
+[19-Oct-2023 11:17:26 Asia/Jakarta] PHP Notice:  A non well formed numeric value encountered in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 234
+[19-Oct-2023 11:17:26 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 6530 in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 234
+[19-Oct-2023 11:21:38 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 230
+[19-Oct-2023 11:21:38 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 230
+[19-Oct-2023 11:21:38 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 230
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 236
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 236
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 237
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 237
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 236
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 236
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 237
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 237
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 236
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 236
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 237
+[19-Oct-2023 11:22:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 237
+[19-Oct-2023 11:33:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined method Helper::randstring() in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:227
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(100): mainController->privilegeUsers()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(41): taskController->ViewCustomerTaskList()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(195): taskController->updateTaskOnsurvey()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(79): taskController->updateTask()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
 #3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
 #4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
 #5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
 #6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
 #7 {main}
-  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
-[10-Oct-2023 10:32:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined method TaskCustomerModel::hisTask() in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:227
-Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(58): taskController->insertTask()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
-#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
-#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
-#6 {main}
   thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 227
-[10-Oct-2023 10:32:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined method TaskCustomerModel::hisTask() in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:227
+[19-Oct-2023 11:36:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined method Helper::randstring() in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:227
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(58): taskController->insertTask()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
-#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
-#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
-#6 {main}
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(195): taskController->updateTaskOnsurvey()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(79): taskController->updateTask()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
   thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 227
-[10-Oct-2023 10:34:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined method TaskCustomerModel::hisTask() in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:227
+[19-Oct-2023 11:45:47 Asia/Jakarta] PHP Notice:  Undefined offset: 0 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 159
+[19-Oct-2023 11:45:47 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 159
+[19-Oct-2023 11:45:47 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 161
+[19-Oct-2023 11:45:47 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 161
+[19-Oct-2023 12:06:32 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 12:06:44 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 12:06:54 Asia/Jakarta] PHP Notice:  Undefined index: file_path in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 217
+[19-Oct-2023 12:12:48 Asia/Jakarta] PHP Notice:  Undefined index: idfiles in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 217
+[19-Oct-2023 12:12:48 Asia/Jakarta] PHP Notice:  Undefined variable: conditional in /www/wwwroot/biling.oke.net.id/app/model/FileModel.php on line 15
+[19-Oct-2023 12:12:48 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Incorrect table name: self::MAINTABLE. in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:695
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(58): taskController->insertTask()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
-#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
-#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
-#6 {main}
-  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 227
-[10-Oct-2023 10:43:00 Asia/Jakarta] PHP Notice:  Undefined index: column in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 774
-[10-Oct-2023 10:43:00 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Medoo::columnQuote() must be of the type string, null given, called in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 774 and defined in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:684
+#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1160): Medoo->tableQuote()
+#1 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1575): Medoo->selectContext()
+#2 /www/wwwroot/biling.oke.net.id/app/model/FileModel.php(15): Medoo->select()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(161): FileModel->GetFile()
+#4 /www/wwwroot/biling.oke.net.id/views/activitytimeline.php(217): taskController->GetFile()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(92): include('/www/wwwroot/bi...')
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(30): taskController->timelineView()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#9 /www/wwwroot/biling.ok in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 695
+[19-Oct-2023 12:13:28 Asia/Jakarta] PHP Notice:  Undefined index: idfiles in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 217
+[19-Oct-2023 12:13:28 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Incorrect table name: self::MAINTABLE. in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:695
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(774): Medoo->columnQuote()
-#1 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1184): Medoo->columnPush()
-#2 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1555): Medoo->selectContext()
-#3 /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php(67): Medoo->select()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(142): TaskCustomerModel->getHisTask()
-#5 /www/wwwroot/biling.oke.net.id/views/activityview.php(33): taskController->viewHisTask()
-#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(71): include('/www/wwwroot/bi...')
-#7 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(26): taskController->viewActivity()
-#8 /w in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 684
-[10-Oct-2023 11:05:46 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:05:46 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:05:46 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:05:46 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:05:46 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:05:46 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:05:46 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:05:46 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:05:46 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:05 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:05 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:05 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:05 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:05 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:05 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:05 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:06 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:06 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:06 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:06 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:06 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:06 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:06 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:48 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:48 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:48 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:48 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:48 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:48 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:48 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:48 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:06:48 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:08:03 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:08:03 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:08:03 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:08:03 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:08:03 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:08:03 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:08:03 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:08:03 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:08:03 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 109
-[10-Oct-2023 11:08:58 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 111
-[10-Oct-2023 11:08:58 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 111
-[10-Oct-2023 11:08:58 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 111
-[10-Oct-2023 11:08:58 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 111
-[10-Oct-2023 11:08:58 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 111
-[10-Oct-2023 11:08:58 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 111
-[10-Oct-2023 11:08:58 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 111
-[10-Oct-2023 11:08:58 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 111
-[10-Oct-2023 11:08:58 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 111
-[10-Oct-2023 11:09:16 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 113
-[10-Oct-2023 11:09:16 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 113
-[10-Oct-2023 11:09:16 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 113
-[10-Oct-2023 11:09:16 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 113
-[10-Oct-2023 11:09:16 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 113
-[10-Oct-2023 11:09:16 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 113
-[10-Oct-2023 11:09:16 Asia/Jakarta] PHP Notice:  Uninitialized string offset: 0 in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 113
-[10-Oct-2023 11:09:16 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 113
-[10-Oct-2023 11:09:16 Asia/Jakarta] PHP Warning:  Illegal string offset 'type' in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 113
-[10-Oct-2023 11:16:34 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 116
-[10-Oct-2023 14:01:32 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 154
-[10-Oct-2023 14:01:34 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 154
-[10-Oct-2023 14:01:42 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 154
-[10-Oct-2023 21:07:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1160): Medoo->tableQuote()
+#1 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1575): Medoo->selectContext()
+#2 /www/wwwroot/biling.oke.net.id/app/model/FileModel.php(15): Medoo->select()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(161): FileModel->GetFile()
+#4 /www/wwwroot/biling.oke.net.id/views/activitytimeline.php(217): taskController->GetFile()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(92): include('/www/wwwroot/bi...')
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(30): taskController->timelineView()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#9 /www/wwwroot/biling.ok in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 695
+[19-Oct-2023 12:13:50 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Incorrect table name: self::MAINTABLE. in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:695
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(90): mainController->privilegeUsers()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(41): taskController->ViewCustomerTaskList()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1160): Medoo->tableQuote()
+#1 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1575): Medoo->selectContext()
+#2 /www/wwwroot/biling.oke.net.id/app/model/FileModel.php(15): Medoo->select()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(161): FileModel->GetFile()
+#4 /www/wwwroot/biling.oke.net.id/views/activitytimeline.php(217): taskController->GetFile()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(92): include('/www/wwwroot/bi...')
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(30): taskController->timelineView()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#9 /www/wwwroot/biling.ok in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 695
+[19-Oct-2023 12:26:01 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Medoo::dataMap() must be of the type array, string given, called in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1450 and defined in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:1361
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1450): Medoo->dataMap()
+#1 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1389): Medoo->dataMap()
+#2 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1608): Medoo->dataMap()
+#3 /www/wwwroot/biling.oke.net.id/app/model/FileModel.php(19): Medoo->select()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(161): FileModel->GetFile()
+#5 /www/wwwroot/biling.oke.net.id/views/activitytimeline.php(217): taskController->GetFile()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(92): include('/www/wwwroot/bi...')
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(30): taskController->timelineView()
+#8 /www/wwwroot/biling.oke.net.id/ap in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1361
+[19-Oct-2023 12:26:52 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Medoo::dataMap() must be of the type array, string given, called in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1450 and defined in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php:1361
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1450): Medoo->dataMap()
+#1 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1389): Medoo->dataMap()
+#2 /www/wwwroot/biling.oke.net.id/app/model/DataModel.php(1608): Medoo->dataMap()
+#3 /www/wwwroot/biling.oke.net.id/app/model/FileModel.php(20): Medoo->select()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(161): FileModel->GetFile()
+#5 /www/wwwroot/biling.oke.net.id/views/activitytimeline.php(217): taskController->GetFile()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(92): include('/www/wwwroot/bi...')
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(30): taskController->timelineView()
+#8 /www/wwwroot/biling.oke.net.id/ap in /www/wwwroot/biling.oke.net.id/app/model/DataModel.php on line 1361
+[19-Oct-2023 12:29:20 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/app/model/FileModel.php on line 14
+[19-Oct-2023 12:29:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on null in /www/wwwroot/biling.oke.net.id/app/model/FileModel.php:16
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(161): FileModel->GetFile()
+#1 /www/wwwroot/biling.oke.net.id/views/activitytimeline.php(217): taskController->GetFile()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(92): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(30): taskController->timelineView()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#8 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#9 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/model/FileModel.php on line 16
+[19-Oct-2023 12:29:58 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/app/model/FileModel.php on line 14
+[19-Oct-2023 12:29:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on null in /www/wwwroot/biling.oke.net.id/app/model/FileModel.php:16
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(161): FileModel->GetFile()
+#1 /www/wwwroot/biling.oke.net.id/views/activitytimeline.php(217): taskController->GetFile()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(92): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(30): taskController->timelineView()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#8 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#9 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/model/FileModel.php on line 16
+[19-Oct-2023 12:30:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on null in /www/wwwroot/biling.oke.net.id/app/model/FileModel.php:19
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(161): FileModel->GetFile()
+#1 /www/wwwroot/biling.oke.net.id/views/activitytimeline.php(217): taskController->GetFile()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(92): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(30): taskController->timelineView()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#8 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#9 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/model/FileModel.php on line 19
+[19-Oct-2023 12:31:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on null in /www/wwwroot/biling.oke.net.id/app/model/FileModel.php:19
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(161): FileModel->GetFile()
+#1 /www/wwwroot/biling.oke.net.id/views/activitytimeline.php(217): taskController->GetFile()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(92): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(30): taskController->timelineView()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#8 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#9 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/model/FileModel.php on line 19
+[19-Oct-2023 13:48:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined method taskController::GetFile2() in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php:217
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(92): include()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(30): taskController->timelineView()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 217
+[19-Oct-2023 13:54:54 Asia/Jakarta] PHP Warning:  Illegal string offset '$value' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 13:54:54 Asia/Jakarta] PHP Notice:  Undefined index: $value in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 13:54:54 Asia/Jakarta] PHP Warning:  Illegal string offset '$value' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 13:54:54 Asia/Jakarta] PHP Notice:  Undefined index: $value in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 13:54:54 Asia/Jakarta] PHP Warning:  Illegal string offset '$value' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 13:55:28 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 13:55:28 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 13:55:28 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 13:55:28 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 13:55:28 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 218
+[19-Oct-2023 13:56:44 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:56:44 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:56:44 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:56:44 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:56:44 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:56:44 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:56:44 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:56:44 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:56:44 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:56:44 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:57:14 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:57:14 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:57:14 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:57:14 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:57:14 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:58:06 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:58:06 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:58:06 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:58:06 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 13:58:06 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_paths' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 224
+[19-Oct-2023 14:10:24 Asia/Jakarta] PHP Notice:  Undefined variable: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 220
+[19-Oct-2023 14:10:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 220
+[19-Oct-2023 14:10:24 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 220
+[19-Oct-2023 14:10:24 Asia/Jakarta] PHP Notice:  Undefined variable: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 220
+[19-Oct-2023 14:10:24 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 220
+[19-Oct-2023 14:10:24 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 220
+[19-Oct-2023 14:12:50 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 219
+[19-Oct-2023 14:12:50 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 219
+[19-Oct-2023 14:12:50 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 219
+[19-Oct-2023 14:12:50 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 219
+[19-Oct-2023 14:13:08 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 221
+[19-Oct-2023 14:13:08 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 221
+[19-Oct-2023 14:13:08 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 221
+[19-Oct-2023 14:13:08 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 221
+[19-Oct-2023 14:14:01 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 221
+[19-Oct-2023 14:14:01 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 221
+[19-Oct-2023 14:14:22 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 219
+[19-Oct-2023 14:14:22 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 219
+[19-Oct-2023 14:14:22 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 219
+[19-Oct-2023 14:14:22 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 219
+[19-Oct-2023 14:15:53 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_path' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 217
+[19-Oct-2023 14:15:53 Asia/Jakarta] PHP Warning:  Illegal string offset 'file_path' in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 217
+[19-Oct-2023 14:16:08 Asia/Jakarta] PHP Notice:  Undefined index: file_path in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 217
+[19-Oct-2023 14:16:08 Asia/Jakarta] PHP Notice:  Undefined index: file_path in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 217
+[19-Oct-2023 14:18:00 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 223
+[19-Oct-2023 14:18:00 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 223
+[19-Oct-2023 14:18:00 Asia/Jakarta] PHP Notice:  Undefined index: file_paths in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 223
+[19-Oct-2023 14:18:00 Asia/Jakarta] PHP Warning:  Invalid argument supplied for foreach() in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 223
+[19-Oct-2023 14:21:59 Asia/Jakarta] PHP Notice:  Undefined index: file_path in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 225
+[19-Oct-2023 14:21:59 Asia/Jakarta] PHP Notice:  Undefined index: file_path in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 225
+[19-Oct-2023 14:26:44 Asia/Jakarta] PHP Notice:  Undefined variable: values in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 229
+[19-Oct-2023 14:26:44 Asia/Jakarta] PHP Notice:  Undefined variable: values in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 229
+[19-Oct-2023 14:26:44 Asia/Jakarta] PHP Notice:  Undefined variable: values in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 229
+[19-Oct-2023 14:26:44 Asia/Jakarta] PHP Notice:  Undefined variable: values in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 229
+[19-Oct-2023 14:48:12 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 290
+[19-Oct-2023 14:48:12 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 290
+[19-Oct-2023 14:48:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 290
+[19-Oct-2023 14:48:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 290
+[19-Oct-2023 16:08:26 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 16:10:19 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 16:11:36 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 16:12:26 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 16:17:21 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 16:18:25 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 16:19:58 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 16:23:27 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 18:02:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(110): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(45): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
 #3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
 #4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
 #5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
 #6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
 #7 {main}
   thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
-[10-Oct-2023 21:07:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+[19-Oct-2023 18:22:43 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 19:01:13 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 19:06:39 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 67
+[19-Oct-2023 19:26:47 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 67
+[19-Oct-2023 19:29:24 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 67
+[19-Oct-2023 19:31:57 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 19:32:39 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 19:33:41 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 19:36:17 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 19:40:36 Asia/Jakarta] PHP Notice:  Undefined index: action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 19:51:33 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 20:07:00 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 20:08:37 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 20:08:51 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 20:17:48 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 20:18:06 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 20:20:50 Asia/Jakarta] PHP Notice:  Undefined property: taskController::$action in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 65
+[19-Oct-2023 20:30:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(90): mainController->privilegeUsers()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(41): taskController->ViewCustomerTaskList()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(110): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(45): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
 #3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
 #4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
 #5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
 #6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
 #7 {main}
   thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
-[11-Oct-2023 09:36:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+[19-Oct-2023 20:41:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(90): mainController->privilegeUsers()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(41): taskController->ViewCustomerTaskList()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(110): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(45): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
 #3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
 #4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
 #5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
 #6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
 #7 {main}
   thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
-[11-Oct-2023 12:27:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+[19-Oct-2023 21:32:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(90): mainController->privilegeUsers()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(41): taskController->ViewCustomerTaskList()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(110): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(45): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
 #3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
 #4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
 #5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
 #6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
 #7 {main}
   thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
-[11-Oct-2023 21:07:41 Asia/Jakarta] PHP Warning:  number_format() expects parameter 1 to be float, string given in /www/wwwroot/biling.oke.net.id/app/function/Helper.php on line 145
-[12-Oct-2023 08:51:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+[20-Oct-2023 12:22:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(90): mainController->privilegeUsers()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(41): taskController->ViewCustomerTaskList()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(110): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(45): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
 #3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
 #4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
 #5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
 #6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
 #7 {main}
   thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
-[12-Oct-2023 10:47:05 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 154
-[12-Oct-2023 10:49:36 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 154
-[12-Oct-2023 12:39:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:159
+[20-Oct-2023 13:12:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
 Stack trace:
-#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(64): taskController->updateTask()
-#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(12): taskController->init()
-#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
-#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
-#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
-#5 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
-#6 {main}
-  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 159
-[12-Oct-2023 12:49:23 Asia/Jakarta] PHP Notice:  Undefined index: task in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 216
-[12-Oct-2023 12:49:37 Asia/Jakarta] PHP Notice:  Undefined index: task in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 216
-[12-Oct-2023 12:50:46 Asia/Jakarta] PHP Notice:  Undefined index: task in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 216
-[12-Oct-2023 12:54:48 Asia/Jakarta] PHP Notice:  Undefined index: status in /www/wwwroot/biling.oke.net.id/views/activityview.php on line 222
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(110): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(45): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[20-Oct-2023 13:18:59 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53
+[20-Oct-2023 13:25:24 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53
+[20-Oct-2023 13:27:58 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53
+[23-Oct-2023 11:07:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(110): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(45): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[24-Oct-2023 13:22:58 Asia/Jakarta] PHP Notice:  Undefined offset: 2 in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 5
+[24-Oct-2023 13:28:35 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 6
+[24-Oct-2023 13:36:33 Asia/Jakarta] PHP Notice:  Undefined variable: statusLabels in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 20
+[24-Oct-2023 13:36:33 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 20
+[24-Oct-2023 13:36:33 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 182
+[24-Oct-2023 13:37:30 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[24-Oct-2023 13:38:10 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[24-Oct-2023 13:38:30 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[24-Oct-2023 13:39:20 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[24-Oct-2023 14:28:21 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[24-Oct-2023 14:28:36 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[24-Oct-2023 14:29:02 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[24-Oct-2023 14:29:25 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[24-Oct-2023 14:30:07 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[24-Oct-2023 14:31:21 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[25-Oct-2023 12:08:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(144): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(48): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[26-Oct-2023 12:42:05 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 12:49:38 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 12:51:03 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 12:51:03 Asia/Jakarta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function TaskCustomerModel::getHisPhotos(), 0 passed in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 267 and exactly 1 expected in /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php:95
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(267): TaskCustomerModel->getHisPhotos()
+#1 /www/wwwroot/biling.oke.net.id/views/setupmode.php(272): taskController->viewPhotos()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(91): App->renderFile()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(123): App->view()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(29): taskController->setupModeView()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/Ap in /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php on line 95
+[26-Oct-2023 12:51:13 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 12:51:13 Asia/Jakarta] PHP Notice:  Undefined variable: data in /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php on line 101
+[26-Oct-2023 12:51:13 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php on line 101
+[26-Oct-2023 12:51:35 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 12:51:37 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 12:52:12 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 12:56:39 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 12:56:52 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 12:58:07 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 12:58:07 Asia/Jakarta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function TaskCustomerModel::getHisPhotos(), 0 passed in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 267 and exactly 1 expected in /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php:95
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(267): TaskCustomerModel->getHisPhotos()
+#1 /www/wwwroot/biling.oke.net.id/views/setupmode.php(272): taskController->viewPhotos()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(91): App->renderFile()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(123): App->view()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(29): taskController->setupModeView()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/Ap in /www/wwwroot/biling.oke.net.id/app/model/TaskCustomerModel.php on line 95
+[26-Oct-2023 12:58:18 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:11:58 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:13:38 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:15:10 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:16:01 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:17:48 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:31:12 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:32:33 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:33:01 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:33:29 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:34:40 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:35:07 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:35:30 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:36:00 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:36:42 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:37:13 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:37:32 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:41:04 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:41:40 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:43:14 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:43:44 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:44:35 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:47:53 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:48:06 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:48:20 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:49:08 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:49:22 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 13:50:32 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 16:08:08 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 16:08:33 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 16:09:02 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 190
+[26-Oct-2023 16:10:07 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 207
+[26-Oct-2023 16:10:11 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 207
+[26-Oct-2023 16:10:46 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 208
+[26-Oct-2023 16:11:10 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 208
+[26-Oct-2023 16:11:32 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 207
+[26-Oct-2023 16:11:46 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 207
+[26-Oct-2023 16:12:03 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 188
+[26-Oct-2023 16:13:00 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 188
+[26-Oct-2023 16:13:13 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 188
+[26-Oct-2023 16:13:24 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 188
+[26-Oct-2023 16:13:50 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 188
+[26-Oct-2023 16:14:11 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 188
+[26-Oct-2023 16:14:59 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 188
+[26-Oct-2023 16:15:58 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 198
+[26-Oct-2023 16:16:31 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 197
+[26-Oct-2023 16:17:03 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 197
+[26-Oct-2023 16:17:27 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 195
+[26-Oct-2023 16:18:24 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 191
+[26-Oct-2023 16:19:12 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 191
+[26-Oct-2023 16:20:34 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 177
+[26-Oct-2023 16:21:17 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 211
+[26-Oct-2023 16:23:28 Asia/Jakarta] PHP Notice:  Undefined index: onlogic in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 149
+[26-Oct-2023 16:23:28 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 211
+[26-Oct-2023 16:23:47 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 211
+[26-Oct-2023 16:29:22 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 211
+[26-Oct-2023 16:30:09 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 211
+[26-Oct-2023 16:30:27 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 211
+[26-Oct-2023 19:15:03 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 211
+[26-Oct-2023 19:15:52 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 211
+[26-Oct-2023 19:49:19 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 19:50:06 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 19:50:53 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 19:51:21 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 19:52:27 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 19:53:07 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 19:54:26 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:18:42 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:18:49 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:19:14 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:19:34 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:20:24 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:20:53 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:21:11 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:21:20 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:21:44 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:22:32 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:22:42 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:44:55 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 60
+[26-Oct-2023 20:45:19 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 56
+[26-Oct-2023 20:46:05 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 56
+[28-Oct-2023 07:25:53 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53
+[28-Oct-2023 07:26:20 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53
+[28-Oct-2023 07:27:05 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53
+[28-Oct-2023 07:27:10 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53
+[31-Oct-2023 08:45:44 Asia/Jakarta] PHP Notice:  Undefined index: SN in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 165
+[31-Oct-2023 08:47:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/views/sindebar.php(1): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/views/index.php(12): include('/www/wwwroot/bi...')
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(80): App->renderFile()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(104): App->layout()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(29): taskController->setupModeView()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#9 /www/wwwr in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
