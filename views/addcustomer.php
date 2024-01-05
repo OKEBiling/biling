@@ -33,6 +33,18 @@ $sub =  $this->subscriptions->getSubscriptions()->all();
                       <input type="text" id="collapsible-lastname" name="lastname" class="form-control" />
                     </div>
                     <div class="col-md-6 cek">
+                      <label class="form-label" for="collapsible-firstname">NIK/PASPOR</label>
+                      <input type="text" id="collapsible-firstname" name="nik" class="form-control"  autofocus>
+                    </div>
+                     <div class="col-md-6 cek">
+                      <label class="form-label" for="collapsible-firstname">CID</label>
+                      <input type="text" id="collapsible-firstname" name="name" class="form-control"  autofocus>
+                    </div>
+                    <div class="col-md-6 cek">
+                      <label class="form-label" for="collapsible-firstname">SLI</label>
+                      <input type="text" id="collapsible-firstname" name="name" class="form-control"  autofocus>
+                    </div>
+                    <div class="col-md-6 cek">
                       <label class="form-label" for="collapsible-phone">Phone No (Whatsaap)</label>
                        <input type="text" id="collapsible-phone" name="phoneNumber" class="form-control phone-mask" />
                     </div>
@@ -41,7 +53,7 @@ $sub =  $this->subscriptions->getSubscriptions()->all();
                       <input type="text" id="collapsible-landmark" name="email" class="form-control" />
                     </div>
                     <div class="col-12 cek">
-                      <label class="form-label" for="collapsible-address">Alamat Lengkap</label>
+                      <label class="form-label" for="collapsible-address">Alamat Lengkap Sesuai ktp</label>
                       <textarea name="alamat" class="form-control h-px-100" id="collapsible-address" rows="2"></textarea>
                     </div>
 

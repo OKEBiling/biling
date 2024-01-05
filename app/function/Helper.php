@@ -190,5 +190,20 @@ function formatWaktu($waktu) {
     return "Pada Hari $hariIndonesia, $tanggal Pukul $jam";
 }
 
+function reformatDateTime($datetime) {
+    // Ubah string datetime ke dalam objek DateTime
+    $date = new DateTime($datetime);
+    
+    // Format ulang menjadi format yang diinginkan (1 Nov 23)
+    $formattedDate = $date->format('j M y');
 
+    // Ubah M menjadi huruf besar
+    $formattedDate = str_replace(
+        ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        $formattedDate
+    );
+
+    return $formattedDate;
+}
 

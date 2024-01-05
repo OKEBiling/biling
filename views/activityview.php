@@ -96,15 +96,11 @@ if ($this->getFollowTask($_GET["id"])) {
                                 <td> <?=  str_replace(' ', '', $data['phoneNumber']); ?></td>
                             </tr>
                             <tr>
-                                <td class="pe-3 fw-medium">CID</td>
+                                <td class="pe-3 fw-medium">CID code</td>
                                 <td>:</td>
                                 <td> <?= $data['id']; ?></td>
                             </tr>
-                            <tr>
-                                <td class="pe-3 fw-medium">SWIFT code</td>
-                                <td>: </td>
-                                <td> BR91905</td>
-                            </tr>
+                           
                            
                         </tbody>
                     </table>
@@ -117,7 +113,11 @@ if ($this->getFollowTask($_GET["id"])) {
                      
                     <table>
                         
-                        <tbody>
+                        <tbody> <tr>
+                                <td class="pe-3 fw-medium">SLI code</td>
+                                <td>: </td>
+                                <td> OKN22<?= $data['id']; ?>01</td>
+                            </tr>
                             <tr>
                                 <td class="pe-3 fw-medium">Subscriptions</td>
                                 <td>: </td>

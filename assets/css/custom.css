@@ -2556,7 +2556,7 @@ a.mention:hover {
 .timeline-comment {
     align-items: flex-start;
     display: flex;
-    margin: 16px 0
+    margin: 8px 0;
 }
 
 .timeline-comment .avatar {
@@ -2590,7 +2590,7 @@ a.mention:hover {
 }
 
 .timeline-comment .comment-meta {
-    padding: 10px 16px
+    padding: 5px 8px;
 }
 
 .timeline-comment .comment-actions {
@@ -2632,7 +2632,7 @@ a.mention:hover {
 }
 
 .timeline-comment .comment-body textarea:focus {
-    box-shadow: 0 0 0 .2em #0366d64d
+    box-shadow: 0 0 0 0.1em #0078ff;
 }
 
 .timeline-comment .comment-body textarea:disabled {
@@ -2996,3 +2996,51 @@ a.tabnav-extra:hover {
 .dashed-orange {
   border-color: orange;
 }
+
+  .highlight-color--red {
+        background-color: #ffa5a7;
+        padding: 0px 5px;
+        color: #677788;
+        border-radius: 2px;
+    }
+
+    .highlight-color--orange {
+        background-color: #fdca8d;
+        padding: 0px 5px;
+        color: #677788;
+        border-radius: 2px;
+    }
+
+    .highlight-color--yellow {
+        background-color: #ffef85;
+        padding: 0px 5px;
+        color: #677788;
+        border-radius: 2px;
+    }
+        
+    .highlight-color--blue {
+        background-color: #caf0f8;
+        padding: 0px 5px;
+        color: #677788;
+        border-radius: 2px;
+    }
+
+    .highlight-color--green {
+        background-color: #b7e4c7;
+        padding: 0px 5px;
+        color: #677788;
+        border-radius: 2px;
+    }
+
+    .highlight-color--purple {
+        background-color: #e2cfea;
+        padding: 0px 5px;
+        color: #677788;
+        border-radius: 2px;
+    }
+
+    .rem-text {
+        padding-left: 20px!important;
+    }
+    
+    
