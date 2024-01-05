@@ -2,7 +2,7 @@ var Task = (function() {
     function Task() {
         _classCallCheck(this, Task);
         this.winbox;
-         this.csrfToken;
+        this.csrfToken;
         this.myLeafletMaps;
         this.defaultOrigin = [-7.75601670793721, 110.39742489154364];
         this.defaultZoom = 15;
@@ -15,6 +15,7 @@ var Task = (function() {
                 this.clickRowsTask();
                 this.publisher();
                 this.scrollHandle();
+                this.expands();
             }
         },
         {
@@ -82,7 +83,7 @@ var Task = (function() {
                 var self = this;
                 var csrfTokenMeta = document.querySelector('meta[name="csrf-token"]');
                 this.csrfToken = csrfTokenMeta.getAttribute('content');
-                $.get("/task/view/?authorization=" +  this.csrfToken + "&id=" + id, {
+                $.get("/task/view/?authorization=" + this.csrfToken + "&id=" + id, {
                     nocache: Math.random()
                 }, function(data) {
                     if ($(window).width() < 758) {
@@ -91,39 +92,34 @@ var Task = (function() {
                         }, 1000);
                     }
                     $("#showTaskView").html(data).hide().fadeIn(1000);
-                    
                     self.clicksetup(id);
-                    self.selectOptionEach();
                     self.copyStatus();
                     self.followTask();
                     self.cekodp();
                     self.clickUpdate();
                     self.CameraSN();
-                    var nilaiFn = $("input[name='fn']").val();
+                    var nilaiFn = $("input[name='fn' ]").val();
                     self.updateTask(nilaiFn, id);
                     self.scrollHandle();
                     $('#showTaskView').unblock();
                 });
-
-                $.get("/task/timelineView/?authorization=" +  this.csrfToken + "&id=" + id, {
+                $.get("/task/timelineView/?authorization=" + this.csrfToken + "&id=" + id, {
                     nocache: Math.random()
                 }, function(data) {
 
                     $("#showTaskTImeLineView").html(data).hide().fadeIn(1000);
-                    
                     self.scrollHandle();
                 });
             }
-        },
-        {
+        }, {
             key: "blockUI",
             value: function blockUI(id) {
                 var self = this;
                 $("#showTaskView").empty();
                 $("#showTaskTImeLineView").empty();
                 return $("#showTaskView").block({
-                    message: '<div class="spinner-border text-primary" role="status"></div>',
-                    timeout: 100,
+                   message: '<div class="sk-fold sk-primary"><div class="sk-fold-cube"></div><div class="sk-fold-cube"></div><div class="sk-fold-cube"></div><div class="sk-fold-cube"></div></div><h5>LOADING...</h5>',
+                    timeout: 1000,
                     fadeIn: 200,
                     fadeOut: 400,
                     onBlock: function() {},
@@ -135,13 +131,12 @@ var Task = (function() {
                         border: "0"
                     },
                     overlayCSS: {
-                        backgroundColor: "#fff",
-                        opacity: 0.8
+                         backgroundColor: $("html").hasClass("dark-style") ? "#000" : "#fff",
+                        opacity: 0.55
                     }
                 });
             }
-        },
-        {
+        }, {
             key: "cekodp",
             value: function cekodp() {
                 var self = this;
@@ -175,34 +170,32 @@ var Task = (function() {
                     self.winbox.resize("50%", "50%").move("center", "center");
                 });
             }
-        },{
+        }, {
             key: "optionSet",
             value: function optionSet() {
                 var self = this;
-               
             }
-        },
-        {
+        }, {
             key: "uploadHandle",
             value: function uploadHandle(param, idcustomer) {
                 var self = this;
                 var e = ` <div class="dz-preview ms-1 dz-file-preview mt-1 pd-3 mb-1">
-                <div class="progress">
-                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-dz-uploadprogress></div>
-                </div>
-                <div class="dz-details">
-                    <div class="dz-thumbnail">
-                        <img data-dz-thumbnail>
-                        <span class="dz-nopreview">No preview</span>
-                        <div class="dz-success-mark"></div>
-                        <div class "dz-error-mark"></div>
-                        <div class="dz-error-message"></div>
-                    </div>
-                    <div class="dz-filename" data-dz-name></div>
-                    <div class="dz-size" data-dz-size></div>
-                    <span data-dz-errormessage class="text-center" style="color: red;"></span>
-                </div>
-            </div> `;
+    <div class="progress">
+        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-dz-uploadprogress></div>
+    </div>
+    <div class="dz-details">
+        <div class="dz-thumbnail">
+            <img data-dz-thumbnail>
+            <span class="dz-nopreview">No preview</span>
+            <div class="dz-success-mark"></div>
+            <div class "dz-error-mark"></div>
+            <div class="dz-error-message"></div>
+        </div>
+        <div class="dz-filename" data-dz-name></div>
+        <div class="dz-size" data-dz-size></div>
+        <span data-dz-errormessage class="text-center" style="color: red;"></span>
+    </div>
+    </div> `;
                 Dropzone.autoDiscover = false;
                 this.myDropzone = new Dropzone("#upload-files", {
                     dictRemoveFile: "Remove foto",
@@ -241,29 +234,29 @@ var Task = (function() {
                     $(this).find('.message').focus();
                 });
             }
-        },{
+        }, {
             key: "selectOptionEach",
             value: function selectOptionEach() {
-            var self = this;
-            var t = $(".select2");
-            t.each(function() {
-                var es = $(this);
-                es.wrap('<div class="position-relative"></div>').select2({
-                    placeholder: "Select value",
-                    dropdownParent: es.parent(),
-                    allowClear: false,
-                    minimumResultsForSearch: Infinity, // Disable the clear option
-                });
-                es.attr("required", true);
-                $(this).on('select2:unselecting', function (e) {
-                    // Cegah penghapusan semua item
-                    e.preventDefault();
-                    Okebar.show({
-                    text: 'Setidaknya anda perlu memilih satu',
-                    showAction: false,
+                var self = this;
+                var t = $(".select2");
+                t.each(function() {
+                    var es = $(this);
+                    es.wrap('<div class="position-relative"></div>').select2({
+                        placeholder: "Select value",
+                        dropdownParent: es.parent(),
+                        allowClear: false,
+                        minimumResultsForSearch: Infinity, // Disable the clear option
+                    });
+                    es.attr("required", true);
+                    $(this).on('select2:unselecting', function(e) {
+                        // Cegah penghapusan semua item
+                        e.preventDefault();
+                        Okebar.show({
+                            text: 'Setidaknya anda perlu memilih satu',
+                            showAction: false,
+                        });
                     });
                 });
-            });
             }
         },
 
@@ -297,7 +290,7 @@ var Task = (function() {
             key: "updateTaskPending",
             value: function updateTaskPending() {
                 var self = this;
-                
+
                 $('#update').on('submit', function(event) {
                     Okebar.show({
                         text: 'Updating.'
@@ -312,41 +305,39 @@ var Task = (function() {
             key: "clicksetup",
             value: function clicksetup(id) {
                 var self = this;
-                
-                $("#setupmode").click(function() {
-                    
-                 window.history.pushState(null,"",'/task/setup/'+id);
-                $.get("/task/setupmode/?authorization=" +  self.csrfToken + "&id=" + id, {
-                    nocache: Math.random()
-                }, function(data) {
 
-                    $("#workflow").html(data).hide().fadeIn(1000);
-                    
-                  
+                $("#setupmode").click(function() {
+
+                    window.history.pushState(null, "", '/task/setup/' + id);
+                    $.get("/task/setupmode/?authorization=" + self.csrfToken + "&id=" + id, {
+                        nocache: Math.random()
+                    }, function(data) {
+                        $("#workflow").html(data).hide().fadeIn(1000);
+                        
+                        self.selectOptionEach();
+                        window.Helpers.initPasswordToggle();
+                        self.expands();
+                    });
                 });
-                    
-                });
-                
-                
             }
         },
         {
             key: "updateTaskOnsurvey",
             value: function updateTaskOnsurvey() {
                 var self = this;
-            $('#selectOption').on('select2:select', function (e) {
+                $('#selectOption').on('select2:select', function(e) {
                     var data = e.params.data;
                     if (data.id == "reschedule") {
-                         $('#hidenformAll').show();
+                        $('#hidenformAll').show();
                         $('#hidenformAll [name]').prop('disabled', false);
                         $('#hidenform').hide();
                         $('#hidenform [name]').prop('disabled', true);
-                    } else if(data.id == "nocoverage") {
-                        
+                    } else if (data.id == "nocoverage") {
+
                         $('#hidenformAll').hide();
                         $('#hidenformAll [name]').prop('disabled', true);
-                    }else {
-                        
+                    } else {
+
                         $('#hidenformAll').show();
                         $('#hidenformAll [name]').prop('disabled', false);
                         $('#hidenform').show();
@@ -389,24 +380,24 @@ var Task = (function() {
             key: "updateTaskOnprogress",
             value: function updateTaskOnprogress() {
                 var self = this;
-                
-                        $('#scheduleForm').hide();
-                        $('#scheduleForm [name]').prop('disabled', true);
-           
-           
-           
-           
-            $('#selectOption').on('select2:select', function (e) {
+
+                $('#scheduleForm').hide();
+                $('#scheduleForm [name]').prop('disabled', true);
+
+
+
+
+                $('#selectOption').on('select2:select', function(e) {
                     var data = e.params.data;
                     if (data.id == "reschedule") {
-                         $('#scheduleForm').show();
-                         $('#scheduleForm [name]').prop('disabled', false);
-                         $('#form').hide();
-                         $('#form [name]').prop('disabled', true);
-                    } else if(data.id == "nocoverage") {
+                        $('#scheduleForm').show();
+                        $('#scheduleForm [name]').prop('disabled', false);
+                        $('#form').hide();
+                        $('#form [name]').prop('disabled', true);
+                    } else if (data.id == "nocoverage") {
                         $('#scheduleForm').hide();
                         $('#hidenformAll [name]').prop('disabled', true);
-                    }else {
+                    } else {
                         $('#form').show();
                         $('#form [name]').prop('disabled', false);
                         $('#scheduleForm').hide();
@@ -500,58 +491,78 @@ var Task = (function() {
         }, {
             key: "scrollHandle",
             value: function scrollHandle() {
-              var taskActivity = $("#taskActivity");
-            var commentArea = $("#commentarea");
-            
-            if (taskActivity.length > 0) {
-                new PerfectScrollbar(taskActivity[0], {
-                    wheelPropagation: false,
-                });
-            }
-            
-            if (commentArea.length > 0) {
-                new PerfectScrollbar(commentArea[0], {
-                    wheelPropagation: false,
-                });
-            }
+                var taskActivity = $("#taskActivity");
+                var commentArea = $("#commentarea");
+
+                if (taskActivity.length > 0) {
+                    new PerfectScrollbar(taskActivity[0], {
+                        wheelPropagation: false,
+                    });
+                }
+
+                if (commentArea.length > 0) {
+                    new PerfectScrollbar(commentArea[0], {
+                        wheelPropagation: false,
+                    });
+                }
 
             }
-        },{
+        }, {
             key: "flatpiker",
             value: function flatpiker() {
-              var  a = document.querySelector("#flatpickr-datetime");
-              const now = new Date();
+                var a = document.querySelector("#flatpickr-datetime");
+                const now = new Date();
                 const year = now.getFullYear();
                 const month = String(now.getMonth() + 1).padStart(2, '0');
                 const day = String(now.getDate()).padStart(2, '0');
                 const hours = String(now.getHours()).padStart(2, '0');
                 const minutes = String(now.getMinutes()).padStart(2, '0');
-                
+
                 const formattedTime = `${year}-${month}-${day} ${hours}:${minutes}:00`;
                 a.flatpickr({
-                        enableTime: true,
-                        dateFormat: "Y-m-d H:i:S",
-                        time_24hr: true,
-                        minDate: "today",
-                        defaultHour: new Date().getHours(),
-                        defaultMinute: new Date().getMinutes(),
-                         defaultDate: formattedTime,
-                    
+                    enableTime: true,
+                    dateFormat: "Y-m-d H:i:S",
+                    time_24hr: true,
+                    minDate: "today",
+                    defaultHour: new Date().getHours(),
+                    defaultMinute: new Date().getMinutes(),
+                    defaultDate: formattedTime,
+
                 });
-            
-        }
+
+            }
         }, {
             key: "copyStatus",
             value: function copyStatus() {
-              $('[id="copy"]').each(function () {
-                var dataId = $(this).data('id');
-                var pasteElement = $('[id="paste"][data-id="' + dataId + '"]');
-                var copyText = $(this).text();
-                var copyClass = $(this).attr('class');
-                pasteElement.text(copyText);
-                pasteElement.attr('class', copyClass);
-              });
+                $('[id="copy"]').each(function() {
+                    var dataId = $(this).data('id');
+                    var pasteElement = $('[id="paste"][data-id="' + dataId + '"]');
+                    var copyText = $(this).text();
+                    var copyClass = $(this).attr('class');
+                    pasteElement.text(copyText);
+                    pasteElement.attr('class', copyClass);
+                });
             }
+        },{
+            key: "expands",
+            value: function expands() {
+            var collapsibleButtons = document.querySelectorAll(".card-collapsible");
+        
+            collapsibleButtons.forEach(function(button, index) {
+                button.addEventListener("click", function(event) {
+                    event.preventDefault();
+        
+                    var collapseElement = document.querySelectorAll(".collapse")[index]; // Menggunakan index untuk menemukan elemen collapse yang sesuai
+                    var cardHeader = button.closest(".card-header");
+                    var icon = button.firstElementChild;
+        
+                    new bootstrap.Collapse(collapseElement);
+                    cardHeader.classList.toggle("collapsed");
+                    Helpers._toggleClass(icon, "bx-chevron-down", "bx-chevron-up");
+                });
+            });
+        }
+
         },
         {
             key: "followTask",

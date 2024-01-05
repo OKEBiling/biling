@@ -1043,3 +1043,230 @@ Stack trace:
 #7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
 #8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
 #9 /www/wwwr in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[31-Oct-2023 11:37:18 Asia/Jakarta] PHP Notice:  Undefined index: email in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 77
+[31-Oct-2023 15:30:51 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:30:51 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:30:53 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:30:53 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:30:54 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:30:54 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:31:02 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:31:02 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:31:04 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:31:04 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:31:05 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:31:05 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:31:14 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:31:14 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[31-Oct-2023 15:32:23 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53
+[31-Oct-2023 15:32:39 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53
+[01-Nov-2023 08:02:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/views/sindebar.php(1): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/views/index.php(12): include('/www/wwwroot/bi...')
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(80): App->renderFile()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(104): App->layout()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(29): taskController->setupModeView()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(14): taskController->init()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#9 /www/wwwr in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[01-Nov-2023 10:24:46 Asia/Jakarta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function taskController::showComments(), 0 passed in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 356 and exactly 1 expected in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php:105
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/views/setupmode.php(356): taskController->showComments()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include('/www/wwwroot/bi...')
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(91): App->renderFile()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(133): App->view()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(32): taskController->setupModeView()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31 in /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php on line 105
+[01-Nov-2023 10:25:45 Asia/Jakarta] PHP Notice:  Undefined index: id in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 356
+[01-Nov-2023 10:27:04 Asia/Jakarta] PHP Notice:  Array to string conversion in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 356
+[01-Nov-2023 10:38:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /www/wwwroot/biling.oke.net.id/views/Comment.php on line 9
+[01-Nov-2023 10:39:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Object of class CommentController could not be converted to string in /www/wwwroot/biling.oke.net.id/views/Comment.php:6
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/CommentController.php(26): include()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(107): CommentController->showComments()
+#2 /www/wwwroot/biling.oke.net.id/views/setupmode.php(240): taskController->showComments()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include('/www/wwwroot/bi...')
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(91): App->renderFile()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(133): App->view()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(32): taskController->setupModeView()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct() in /www/wwwroot/biling.oke.net.id/views/Comment.php on line 6
+[01-Nov-2023 11:30:38 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[01-Nov-2023 11:30:38 Asia/Jakarta] PHP Notice:  Undefined index: idseles in /www/wwwroot/biling.oke.net.id/views/customer.php on line 74
+[01-Nov-2023 13:21:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(154): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(51): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[01-Nov-2023 13:21:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(154): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(51): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[01-Nov-2023 16:14:37 Asia/Jakarta] PHP Notice:  Undefined index: modem in /www/wwwroot/biling.oke.net.id/views/setupmode.php on line 165
+[02-Nov-2023 15:58:19 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53
+[02-Nov-2023 20:18:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(154): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(51): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[03-Nov-2023 09:33:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(154): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(51): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[03-Nov-2023 09:34:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(154): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(51): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[03-Nov-2023 11:39:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(154): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(51): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[04-Nov-2023 10:44:37 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53
+[04-Nov-2023 17:24:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(154): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(51): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[04-Nov-2023 17:24:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/views/sindebar.php(1): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/views/index.php(12): include('/www/wwwroot/bi...')
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(80): App->renderFile()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/dashboardController.php(21): App->layout()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/dashboardController.php(14): dashboardController->init()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): dashboardController->__construct()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#9 /www/ in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[04-Nov-2023 22:14:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(154): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(51): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[05-Nov-2023 12:07:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(154): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(51): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[15-Nov-2023 10:32:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(154): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(51): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[15-Nov-2023 10:33:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(154): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(51): taskController->ViewCustomerTaskList()
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/taskController.php(16): taskController->init()
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): taskController->__construct()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#6 /www/wwwroot/biling.oke.net.id/index.php(13): App->Start()
+#7 {main}
+  thrown in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[02-Dec-2023 22:26:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/views/sindebar.php(1): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/views/index.php(12): include('/www/wwwroot/bi...')
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(80): App->renderFile()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/dashboardController.php(21): App->layout()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/dashboardController.php(14): dashboardController->init()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): dashboardController->__construct()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#9 /www/ in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[02-Dec-2023 22:26:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/views/sindebar.php(1): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/views/index.php(12): include('/www/wwwroot/bi...')
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(80): App->renderFile()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/dashboardController.php(21): App->layout()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/dashboardController.php(14): dashboardController->init()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): dashboardController->__construct()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadController()
+#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(18): App->matchRoute()
+#9 /www/ in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[07-Dec-2023 23:39:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function privilegeUsers() on null in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php:57
+Stack trace:
+#0 /www/wwwroot/biling.oke.net.id/views/sindebar.php(1): mainController->privilegeUsers()
+#1 /www/wwwroot/biling.oke.net.id/views/index.php(12): include('/www/wwwroot/bi...')
+#2 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(111): include('/www/wwwroot/bi...')
+#3 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(80): App->renderFile()
+#4 /www/wwwroot/biling.oke.net.id/app/controllers/customerController.php(29): App->layout()
+#5 /www/wwwroot/biling.oke.net.id/app/controllers/customerController.php(18): customerController->CustomerView()
+#6 /www/wwwroot/biling.oke.net.id/app/controllers/customerController.php(14): customerController->init()
+#7 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(64): customerController->__construct()
+#8 /www/wwwroot/biling.oke.net.id/app/controllers/AppController.php(31): App->loadCon in /www/wwwroot/biling.oke.net.id/app/controllers/mainController.php on line 57
+[04-Jan-2024 08:12:22 Asia/Jakarta] PHP Notice:  Undefined index:  in /www/wwwroot/biling.oke.net.id/views/activitytimeline.php on line 53

@@ -4,7 +4,9 @@ include_once MODEL_DIR . "CustomerModel.php";
 include_once MODEL_DIR . "SubscriptionsModel.php";
 include_once MODEL_DIR . "TaskCustomerModel.php";
 include_once MODEL_DIR . "FileModel.php";
+include_once MODEL_DIR . "CommentModel.php";
 include_once CONTROLLER_DIR . "UploadController.php";
+include_once CONTROLLER_DIR . "CommentController.php";
 
 class taskController extends App
 {
@@ -15,6 +17,7 @@ class taskController extends App
     }
     public function init() {
         $this->TaskCustomerModel = new TaskCustomerModel();
+         
         array_shift($this->urlSegments);
         if ($this->requestMethod === "GET") {
             if ($this->urlSegments) {
@@ -96,6 +99,12 @@ class taskController extends App
     }
     public function timelineView() {
         include LAYOUT . "activitytimeline.php";
+    }
+    
+    
+    public function showComments($data){
+       $this->comments= new CommentController();
+       return   $this->comments->showComments($data);
     }
     
     public function setupModeView() {

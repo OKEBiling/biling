@@ -43,7 +43,7 @@ if (!isset($_GET["authorization"]) || ($_GET["authorization"] !== session::get('
 <h5 class="card-header pt-2 ps-0">
         <i class="fas fa-tasks mx-2"></i> Activity Timeline
     </h5>
-  <div class="card h-100">
+  <div class="card bg-body h-100">
         <div class="overflow-hidden card-body" id="taskActivity" style="height: 700px;">
             <div class="mt-2">
                 <ul class="timeline">
@@ -126,7 +126,7 @@ if (!isset($_GET["authorization"]) || ($_GET["authorization"] !== session::get('
                         <?php if ($value['type'] == 'update'): ?>
 
                             <?php if ($value['task'] == 'status'): ?>
-                                <li class="timeline-item timeline-item-transparent  ps-4 mb-2">
+                                <li class="timeline-item timeline-item-transparent ps-4 mb-2">
                                     <span class="timeline-point timeline-point-success "></span>
                                     <div class="timeline-event border ps-2  pb-0   pt-1 ">
                                         <div class="timeline-header mb-1">
@@ -223,7 +223,7 @@ if (!isset($_GET["authorization"]) || ($_GET["authorization"] !== session::get('
                                           
                                             <a class="spotlight" href="/<?=$path?>" data-title="<?= $value['name'] ?> Uploaded" data-download="true" >
                                                             <img src="/<?=str_replace("/original/", "/thumbnail/", $path);?>" class="rounded mb-sm-0 mb-3 mt-2 me-1" alt="Shoe img" height="62" width="62">
-                                                        </a>
+                                                </a>
                                                         
                                                         
                                            <?php endforeach; ?>
